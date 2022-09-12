@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# DA261 - SAP HANA Cloud Database Administration and Development
 
 ## Description
 
