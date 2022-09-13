@@ -27,49 +27,49 @@ A new SAP HANA Cloud instance will be created and this process will take approx.
 
 # Part 1: Introduction to the Tools and Initial Project Deployment
 
-# SAP Business Techology Platform (SAP BTP)
+## SAP Business Techology Platform (SAP BTP)
 Overview
 
-## SAP Business Technology Exercises
+### SAP Business Technology Platform Exercises
 
-- [Exercise 1 - SAP BTP Overview and Cockpit](exercises/sap_btp/ex1/)
+- [Exercise 1 - SAP Business Technology Platform Overview](exercises/sap_btp/ex1/)
 
-# SAP HANA Cloud Central
+## SAP HANA Cloud Central
 
 The SAP HANA Cloud Central tool provides database administrators (DBAs) with a simple and centralized overview of their SAP HANA Cloud databases and SAP HANA Cloud data lake instances. You can also perform management tasks such as creating new instances, checking their status, reviewing any notifications and alerts that might have been raised, examining memory and storage consumption, and start/stop/edit/delete your instances. This section of the workshop will introduce you to the SAP HANA Cloud Central tool and how you can use it to perform different operations.
 
 To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigated to the "SAP HANA Cloud" page.
 
-## SAP HANA Cloud Central Exercises
+### SAP HANA Cloud Central Exercises
 
 - [Exercise 1 - Launch SAP HANA Cloud Central](exercises/hana_cloud_central/ex1/)
 - [Exercise 2 - Create Instances](exercises/hana_cloud_central/ex2/)
 - [Exercise 3 - Edit Instances](exercises/hana_cloud_central/ex3/)
 - [Exercise 4 - Start, Stop, Upgrade Instances, and Other Actions](exercises/hana_cloud_central/ex4/)
 
-# SAP HANA Cockpit
+## SAP HANA Cockpit
 
 The SAP HANA cockpit tool provides administration and monitoring of individual SAP HANA Cloud database instances. With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, SAP HANA services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also administer backups, configuration parameters, table distribution, smart data access (SDA) and smart data integration (SDI). Finally, you can perform security tasks such as user & role management, data encryption, auditing, data anonymization and trust configuration. This workshop guides you through the basic operations to manage SAP HANA Cloud databases.
 
-## SAP HANA Cockpit Exercises
+### SAP HANA Cockpit Exercises
 
 - [Exercise 1 - The Database Overview Page](exercises/hana_cockpit/ex1/)
 - [Exercise 2 - Configuring Database Properties](exercises/hana_cockpit/ex2/)
 
 
-# SAP HANA Database Explorer
+## SAP HANA Database Explorer
 
 The SAP HANA database explorer is a web-based tool for browsing and working with SAP HANA database objects such as tables, views, functions, stored procedures, executing SQL statements, importing and exporting data, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  As of March 2021, it also offers support for Data Lake IQ connections.
 
-## SAP HANA Database Explorer Exercises
+### SAP HANA Database Explorer Exercises
 
 - [Exercise 1 - Launch the SAP HANA Database Explorer](exercises/database_explorer/ex1/)
 
-# SAP Business Application Studio
+## SAP Business Application Studio
 
 The SAP Business Application Studio is a web-based tool that can be used to build and deploy native SAP HANA database artifacts such as tables and calculation views.  
 
-## SAP Business Application Studio Exercises
+### SAP Business Application Studio Exercises
 
 - [Exercise 1 - Launch the SAP Business Application Studio](exercises/business_app_studio/ex1/)
 - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](exercises/business_app_studio/ex2/)
@@ -77,23 +77,23 @@ The SAP Business Application Studio is a web-based tool that can be used to buil
 
 # Part 2: Administration and Monitoring
 
-## SAP HANA Database Explorer Exercises
+### SAP HANA Database Explorer Exercises
 
 - [Exercise 2 - Using the SQL Console](exercises/database_explorer/ex2/)
 - [Exercise 3 - Catalog Browser and Object Search](exercises/database_explorer/ex3/)
 
-## SAP Business Technology Exercises
+### SAP Business Technology Exercises
 
 - [Exercise 2 - Services and keys](exercises/sap_btp/ex2/)
 
 
-## SAP HANA Cockpit Exercises
+### SAP HANA Cockpit Exercises
 
 - [Exercise 3 - Managing Alerts](exercises/hana_cockpit/ex3/)
 - [Exercise 4 - Monitoring Memory Usage](exercises/hana_cockpit/ex4/)
 - [Exercise 5 - Security Basics](exercises/hana_cockpit/ex5/)
 
-## SAP Business Application Studio Exercises
+### SAP Business Application Studio Exercises
 
 - [Exercise 3 - Analyze Performance with PlanViz](exercises/business_app_studio/ex3/)
 

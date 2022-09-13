@@ -1,34 +1,52 @@
-# Exercise 1 - SAP BTP Overview and Cockpit
+# Exercise 1 - SAP Business Technology Platform (SAP BTP) Overview
 
 This exercise will provide a brief overview of the SAP BTP and demonstrate how to navigate to the SAP HANA Cloud tab.
 
-1. The SAP BTP platform is available on multiple platforms in multiple regions.  The available options can be seen within the SAP Discovery Center.
-<br>![](/exercises/sap_bpt/images/availability.png)
+1. Brief overview with screenshot.  Mention the areas we will be using/focusing on.
 
-2. Additional details on the available free tier, trial, and paid service plans can be found at [Trial Accounts and Free Tier](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/046f127f2a614438b616ccfc575fdb16.html).
+2. The SAP BTP platform is organized by a global account, one or more subaccounts, if Cloud Foundry is enabled, a Cloud Foundry organization and one or more spaces.  
 
-3. The SAP BTP platform is organized by global account, sub account ...
-<br>![](/exercises/sap_bpt/images/availability.png)
+    Subaccounts are created in a specific data center such as the one shown below.
 
-4. The SAP BTP platform provides multiple environments.  In this session we will be using the Cloud Foundry environment.  Another option is the Kyma environment which ...
-<br>![](/exercises/sap_bpt/images/environments.png)
+    ![](images/subaccount.png)
 
-5. The SAP BTP platform provides a set of services that can be used to build SAP business applications.  One of the services is the SAP HANA Cloud database and another is the SAP Business Application Studio.
-<br>![](/exercises/sap_bpt/images/service-marketplace.png)
+    Subaccounts can enable different environements such as Cloud Foundry or Kyma.
+    
+    ![](images/cloud-foundry.png)
 
-6. The SAP BTP platform has a set of users and roles that provides access to the platform.  
-<br>![](/exercises/sap_bpt/images/users.png)
-<br>Details of the currently logged in user can be seen via the toolbar.
-<br>![](/exercises/sap_bpt/images/current-user.png)
+    Additional details on environments can be found at [Environments](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/15547f7e7ecd47ee9fa052b0e18c7b0a.html).
 
+    Once you have navigated to a space, details about any SAP HANA Cloud databases or data lake instances can be seen and a link is provided to open SAP HANA Cloud Central which is used to create and manage database instances.
+
+    ![](images/cloud-foundry-space.png)
 
 
-7. The SAP HANA Cloud service provides a tab which can be used to see the created  SAP HANA Cloud databases.
-<br>![](/exercises/sap_bpt/images/service-marketplace.png)
+3. The SAP BTP platform provides a set of services that can be used to build SAP business applications.  One of the services is the SAP HANA Cloud database and another is the SAP Business Application Studio.
+
+    ![](images/service-marketplace.png)
+
+4. The SAP BTP platform and the services running within it are available on multiple platforms in multiple regions.  The available options can be seen within the service catalog of the [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/sap-hana-cloud?region=all&tab=service_plan&commercialModel=payg).
+<br>![](images/availability.png)
+Notice above that the Free tier offering of the SAP HANA service is available on Amazon AWS and Microsoft Azure in multiple data centers.
+
+5. Additional details on the available free tier, trial, and paid service plans such as Cloud Platform Enterprise Agreement (CPEA), Pay-As-You-Go, or Subscription can be found at [Trial Accounts and Free Tier](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/046f127f2a614438b616ccfc575fdb16.html) and [Commercial Models](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/263d40009a5a4237a62e8f5c05ee641e.html).
+
+    ![](images/account-types.png)
+
+
+6. A space within the SAP BTP platform has a set of users and roles that provides access to the platform.  
+
+    ![](images/users.png)
+
+    Details of the currently logged in user can be seen via the drop down menu shown below.
+  
+    ![](images/btp-user.png)
+
+    Additional details can be found at [User Roles](https://docs.cloudfoundry.org/concepts/roles.html#roles)
 
 ## Summary
 
-You now have 
+You now have TODO
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
