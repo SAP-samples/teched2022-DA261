@@ -1,10 +1,15 @@
 # Exercise 1 - SAP Business Technology Platform (SAP BTP) Overview
 
-This exercise will provide a brief overview of the SAP BTP and demonstrate how to navigate to the SAP HANA Cloud tab.
+This exercise will provide a brief overview of the SAP BTP and demonstrate how to navigate to the SAP HANA Cloud tab.  
 
-1. Brief overview with screenshot.  Mention the areas we will be using/focusing on.
+1. The SAP BTP offers four functionality areas as shown below.  We will be focusing on SAP HANA Cloud and the SAP Business Application Studio from the data and analytics and app dev areas.
+
+    ![](images/BTP.png)
+
 
 2. The SAP BTP platform is organized by a global account, one or more subaccounts, if Cloud Foundry is enabled, a Cloud Foundry organization and one or more spaces.  
+
+    ![](images/btp-structure.png)
 
     Subaccounts are created in a specific data center such as the one shown below.
 
@@ -20,7 +25,6 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
     ![](images/cloud-foundry-space.png)
 
-
 3. The SAP BTP platform provides a set of services that can be used to build SAP business applications.  One of the services is the SAP HANA Cloud database and another is the SAP Business Application Studio.
 
     ![](images/service-marketplace.png)
@@ -32,7 +36,6 @@ Notice above that the Free tier offering of the SAP HANA service is available on
 5. Additional details on the available free tier, trial, and paid service plans such as Cloud Platform Enterprise Agreement (CPEA), Pay-As-You-Go, or Subscription can be found at [Trial Accounts and Free Tier](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/046f127f2a614438b616ccfc575fdb16.html) and [Commercial Models](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/263d40009a5a4237a62e8f5c05ee641e.html).
 
     ![](images/account-types.png)
-
 
 6. A space within the SAP BTP platform has a set of users and roles that provides access to the platform.  
 
@@ -46,7 +49,7 @@ Notice above that the Free tier offering of the SAP HANA service is available on
 
 ## Summary
 
-You now have TODO
+You now have an overview of the SAP BTP and are ready to start using it with the SAP HANA Cloud database.  Further details ca be found in the learning journey ![Discover SAP Business Technology Platform](https://learning.sap.com/learning-journey/discover-sap-business-technology-platform).
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 

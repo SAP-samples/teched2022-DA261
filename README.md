@@ -28,7 +28,7 @@ A new SAP HANA Cloud instance will be created and this process will take approx.
 # Part 1: Introduction to the Tools and Initial Project Deployment
 
 ## SAP Business Techology Platform (SAP BTP)
-Overview
+SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment enabling you to develop the exact application you need – without investing in on-premise infrastructure.
 
 ### SAP Business Technology Platform Exercises
 
@@ -67,11 +67,14 @@ The SAP HANA database explorer is a web-based tool for browsing and working with
 
 ## SAP Business Application Studio
 
-The SAP Business Application Studio is a web-based tool that can be used to build and deploy native SAP HANA database artifacts such as tables and calculation views.  
+SAP Business Application Studio is a SAP BTP service that offers a modern development environment tailored for business application development.
+
+With the enablement of the SAP HANA tool extensions are added, it can be used to build and deploy native SAP HANA database artifacts such as tables and calculation views.  
+
 
 ### SAP Business Application Studio Exercises
 
-- [Exercise 1 - Launch the SAP Business Application Studio](exercises/business_app_studio/ex1/)
+- [Exercise 1 - Create a Development Workspace](exercises/business_app_studio/ex1/)
 - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](exercises/business_app_studio/ex2/)
 
 
