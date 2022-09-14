@@ -15,41 +15,39 @@ To complete this workshop, you need access to an SAP BTP account. You can access
 
 In your SAP HANA Cloud account (trial or non-trial), perform the following steps:
 
-1.	Enter the **"trial"** subaccount
-2.	Enter the **"dev"** space
-3.	Click **"SAP HANA Cloud"** from the left navigation bar
-4.	Click the button **"Create Instance"** in the top right to invoke the Create Instance wizard
-5.	Enter **"DEMO_HANA_DB"** for the instance name
+1.	Enter the trial subaccount
+2.	Enter the dev space
+3.	Click SAP HANA Cloud from the left navigation bar
+4.	Click the button Create Instance in the top right to invoke the Create Instance wizard
+5.	Enter DEMO_HANA_DB for the instance name
 6.	Enter and confirm your administrator password – ***PLEASE REMEMBER IT!***
-7.	Click the button **"Create Instance"** at the bottom
+7.	Click the button Create Instance at the bottom
 
 A new SAP HANA Cloud instance will be created and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").
 
 # Part 1: Introduction to the Tools and Initial Project Deployment
 
 ## SAP Business Techology Platform (SAP BTP)
-SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment enabling you to develop the exact application you need – without investing in on-premise infrastructure.
+The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
 ### SAP Business Technology Platform Exercises
 
-- [Exercise 1 - SAP Business Technology Platform Overview](exercises/sap_btp/ex1/)
+- [Exercise 1 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex1/)
 
 ## SAP HANA Cloud Central
 
-The SAP HANA Cloud Central tool provides database administrators (DBAs) with a simple and centralized overview of their SAP HANA Cloud databases and SAP HANA Cloud data lake instances. You can also perform management tasks such as creating new instances, checking their status, reviewing any notifications and alerts that might have been raised, examining memory and storage consumption, and start/stop/edit/delete your instances. This section of the workshop will introduce you to the SAP HANA Cloud Central tool and how you can use it to perform different operations.
-
-To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigated to the "SAP HANA Cloud" page.
+The SAP HANA Cloud Central tool provides database administrators (DBAs) with a simple and centralized overview of their SAP HANA Cloud databases and SAP HANA Cloud data lake instances. 
 
 ### SAP HANA Cloud Central Exercises
 
-- [Exercise 1 - Launch SAP HANA Cloud Central](exercises/hana_cloud_central/ex1/)
+- [Exercise 1 - Overview of SAP HANA Cloud Central](exercises/hana_cloud_central/ex1/)
 - [Exercise 2 - Create Instances](exercises/hana_cloud_central/ex2/)
 - [Exercise 3 - Edit Instances](exercises/hana_cloud_central/ex3/)
 - [Exercise 4 - Start, Stop, Upgrade Instances, and Other Actions](exercises/hana_cloud_central/ex4/)
 
 ## SAP HANA Cockpit
 
-The SAP HANA cockpit tool provides administration and monitoring of individual SAP HANA Cloud database instances. With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, SAP HANA services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also administer backups, configuration parameters, table distribution, smart data access (SDA) and smart data integration (SDI). Finally, you can perform security tasks such as user & role management, data encryption, auditing, data anonymization and trust configuration. This workshop guides you through the basic operations to manage SAP HANA Cloud databases.
+The SAP HANA cockpit tool provides administration and monitoring of individual SAP HANA Cloud database instances. 
 
 ### SAP HANA Cockpit Exercises
 
@@ -59,7 +57,7 @@ The SAP HANA cockpit tool provides administration and monitoring of individual S
 
 ## SAP HANA Database Explorer
 
-The SAP HANA database explorer is a web-based tool for browsing and working with SAP HANA database objects such as tables, views, functions, stored procedures, executing SQL statements, importing and exporting data, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  As of March 2021, it also offers support for Data Lake IQ connections.
+The SAP HANA database explorer is a web-based tool for browsing and working with  database schema objects such as tables, views, and stored procedures and executing SQL.
 
 ### SAP HANA Database Explorer Exercises
 
@@ -68,9 +66,6 @@ The SAP HANA database explorer is a web-based tool for browsing and working with
 ## SAP Business Application Studio
 
 SAP Business Application Studio is a SAP BTP service that offers a modern development environment tailored for business application development.
-
-With the enablement of the SAP HANA tool extensions are added, it can be used to build and deploy native SAP HANA database artifacts such as tables and calculation views.  
-
 
 ### SAP Business Application Studio Exercises
 

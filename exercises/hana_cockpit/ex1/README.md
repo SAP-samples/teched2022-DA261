@@ -1,5 +1,7 @@
 # Exercise 1: The Database Overview Page
 
+With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, SAP HANA services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also administer backups, configuration parameters, table distribution, smart data access (SDA) and smart data integration (SDI). Finally, you can perform security tasks such as user & role management, data encryption, auditing, data anonymization and trust configuration. 
+
 The Database Overview page displays health metrics for an individual SAP HANA Cloud database.
 
 Through the Database Overview page, you can view key health indicators for this specific database, such as database status, alerts, and resource utilization. You also have access to tools that allow you to perform database administrations tasks, such as performance analysis, and executing SQL statements. Different parts of a single card can link to different views or applications. This way, you can see various components in a single view and make the decision whether to further examine issues by drilling down.

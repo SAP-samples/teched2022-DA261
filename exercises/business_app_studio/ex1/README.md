@@ -1,6 +1,6 @@
 # Exercise 1 - Create a Development Workspace
 
-This exercise will demonstrate how to open the SAP Business Application Studio (app studio) and create your first workspace for native SAP HANA development.
+This exercise will demonstrate how to open the SAP Business Application Studio (app studio) and create your first workspace for native SAP HANA development.  When the SAP HANA tool extensions are added, it can be used to build and deploy native SAP HANA database artifacts such as tables and calculation views.  
 
 1. Open the SAP Business Application Studio
     
@@ -41,5 +41,5 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
 You now have TODO
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](../ex2/README.md)
 
