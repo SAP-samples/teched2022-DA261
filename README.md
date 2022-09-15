@@ -23,11 +23,11 @@ In your SAP HANA Cloud account (trial or non-trial), perform the following steps
 6.	Enter and confirm your administrator password – ***PLEASE REMEMBER IT!***
 7.	Click the button Create Instance at the bottom
 
-A new SAP HANA Cloud instance will be created and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").
+A new SAP HANA Cloud instance will be created, and this process will take approx. 25 minutes.  You may need to refresh the page to see the instance as "Running" (as opposed to "Creating").
 
 # Part 1: Introduction to the Tools and Initial Project Deployment
 
-## SAP Business Techology Platform (SAP BTP)
+## SAP Business Technology Platform (SAP BTP)
 The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
 ### SAP Business Technology Platform Exercises

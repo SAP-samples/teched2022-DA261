@@ -15,7 +15,7 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
     ![](images/subaccount.png)
 
-    Subaccounts can enable different environements such as Cloud Foundry or Kyma.
+    Subaccounts can enable different environments such as Cloud Foundry or Kyma.
     
     ![](images/cloud-foundry.png)
 
@@ -43,15 +43,15 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
     ![](images/users.png)
 
-    Details of the currently logged in user can be seen via the drop down menu shown below.
+    Details of the currently logged in user can be seen via the drop-down menu shown below.
   
     ![](images/btp-user.png)
 
-    This users is separate from the database user such as DBADMIN that is used to make a database connection to an SAP HANA database.  Additional details can be found at [User Roles](https://docs.cloudfoundry.org/concepts/roles.html#roles).
+    This user is separate from the database user such as DBADMIN that is used to make a database connection to an SAP HANA database.  Additional details can be found at [User Roles](https://docs.cloudfoundry.org/concepts/roles.html#roles).
 
 ## Summary
 
-You now have an overview of the SAP BTP and are ready to start using it with the SAP HANA Cloud database.  Further details ca be found in the learning journey ![Discover SAP Business Technology Platform](https://learning.sap.com/learning-journey/discover-sap-business-technology-platform).
+You now have an overview of the SAP BTP and are ready to start using it with the SAP HANA Cloud database.  Further details can be found in the learning journey [Discover SAP Business Technology Platform](https://learning.sap.com/learning-journey/discover-sap-business-technology-platform).
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
