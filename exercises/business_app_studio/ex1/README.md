@@ -16,30 +16,34 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/started.png)
 
-4. Select the File, Preferences menu item and set the workspace preference as indicated below.
+4. The SAP Business Application Studio will open and display the Welcome page that contains various helpful links along the bottom including the documentation and a Guided Development wizard that will be used in the next exercise.
+
+    ![](images/Welcome.png)
+
+    Should you wish to re-open the Welcome page, it can be opened via a command palette command.  To open the command palette select View, Find Command and then search for Welcome.
+
+5. SAP Business Application Studio is very similar to Microsoft Visual Studio.  It is browser based so there is no need to intall or update software.  You can continue to work on your project from any computer.  
+
+6. The preferences can be view or set via File, Preferences or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
 
     ![](images/preferences.png)
 
-5. Select the View, Find Command menu (or Fn F1) to open the command pallette and search for SAP HANA and select the option shown below.
+7. A theme can be set using File, Preferences, Color Theme.
 
-    ![](images/getting-started.png)
+8. SAP Business Application Studio has been configured with a selected set of extensions.  These can be seen by selecting the extensions icon.  
 
-6. Select the option indicated below and follow the prompts to create SAP HANA native database artifacts.
+    ![](images/extensions.png)
 
-    ![](images/guided-development.png)
+    Some of the extensions such as Source Control can have their UI be shown by clicking on their icon.
 
-    Press Next multiple times to accept the defaults.
+9. A terminal can be opened by selecting Terminal, New Terminal.
 
-    When asked for provide your Cloud Foundry user id and password and select login.
-
-    ![](images/log-in.png)
-
-    ![](images/output.png)
+    ![](images/terminal.png)
 
 
 ## Summary
 
-You now have TODO
+You now have now created a development space that is configured for use with SAP HANA native artifact development.
 
 Continue to - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](../ex2/README.md)
 

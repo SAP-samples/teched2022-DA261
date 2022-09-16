@@ -2,13 +2,27 @@
 
 This exercise will demonstrate how to create a project containing tables and calculation views using the Getting Started wizard.  
 
-## Exercise 2.1 Create a New SAP HANA Database Project from a Template
+## Exercise 2.1 Creating Database Objects with HDI vs SQL
 
-1. In the SAP Business Application Studio, select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option shown below.
+Explain the benefits of HDI and when to use HDI vs native SQL.
+HDI deployment is all or nothing.  (same for SQL with the right automcommit setting?)
+Calc View modeler.
+Multiple developers working with the same objects can each have their own isolated deployment.
+?
+
+TODO Volker
+
+The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
+
+
+## Exercise 2.2 Create a New SAP HANA Database Project from a Template
+
+1. In the SAP Business Application Studio, start the Guided Development Wizard by selecting it from the bottom of the Welcome screen, or select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option shown below.
 
     ![](images/getting-started.png)
 
-    It may take a moment or two for the contents to load.
+    It may take a moment or two for the contents of the Guided Develpment Wizard to appear.
+    TODO Volker, sometimes I have to do this step multiple times before content is shown.
 
 2. Select Get Started with SAP HANA Cloud.
 
@@ -24,15 +38,33 @@ This exercise will demonstrate how to create a project containing tables and cal
 
     ![](images/log-in.png)
 
+    Select the option to Open the Output View when asked.
+
+    ![](images/open-output.png)
+
+    The bottom panel can also be shown (or hidden) by selecting View, Toggle Bottom Panel or by the icon in the bottom right.
+
     ![](images/output.png)
 
-3. TODO by Volker?, explain what has just happened, HDI container created, service keys etc.  Maybe some content on what an HDI container is?
+3. TODO Volker, explain what has just happened, HDI container created, service keys etc.  Maybe some content on what an HDI container is?
 
 4. In the project explorer, open the generated project.
 
     ![](images/open-project.png)
 
-## Exercise 2.2 Add Database Artifacts
+5. Examine the created project.
+
+    ![](images/project.png)
+
+    TODO Volker 
+
+## Exercise 2.3 Initialize the Git Reprository
+
+1. The Git repository will be initialized now so that after subsequent steps it can be easily seen what changes have been made to the project.
+
+    ![](images/git-init.png)
+
+## Exercise 2.4 Add Database Artifacts
 
 1.  In the Getting Started wizard, select Add Database Artifacts.
 
@@ -42,7 +74,7 @@ This exercise will demonstrate how to create a project containing tables and cal
 
     ![](images/tables-in-dbx.png)
 
-## Exercise 2.3 Load Data into your SAP HANA Cloud Application's Database Tables
+## Exercise 2.5 Load Data into your SAP HANA Cloud Application's Database Tables
 
 1.  In the Getting Started wizard, select Load Data into your SAP HANA Cloud Application's Database Tables.
 
@@ -50,7 +82,7 @@ This exercise will demonstrate how to create a project containing tables and cal
 
     ![](images/data-in-tables.png)
 
-## Exercise 2.4 Create a Calculation View for your Application
+## Exercise 2.6 Create a Calculation View for your Application
 
 1.  In the Getting Started wizard, select Create a Calculation View for your Application.
 
@@ -58,19 +90,19 @@ This exercise will demonstrate how to create a project containing tables and cal
 
     ![](images/calc-view.png)
 
-## Exercise 2.5 Create Analytic Privileges for your Calculation View
+## Exercise 2.7 Create Analytic Privileges for your Calculation View
 
 1.  In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
 
-2. TODO @Volker, why does it suggest opening dbx here?  
+2. TODO Volker, why does it suggest opening dbx here?  
 
-## Exercise 2.6 Create a Database Role for the Analytic Privilege
+## Exercise 2.8 Create a Database Role for the Analytic Privilege
 
 1.  In the Getting Started wizard, select Create a Database Role for the Analytic Privilege and complete the steps.
 
-2. TODO @Volker, what would be interesting to show when viewing the data of the calculation view?
+2. TODO Volker, what would be interesting to show when viewing the data of the calculation view?
 
-## Exercise 2.7 Create a Database Role for the Analytic Privilege
+## Exercise 2.9 Create a Database Role for the Analytic Privilege
 
 1.  In the Getting Started wizard, select Create a Database Procedure File and complete the steps.
 

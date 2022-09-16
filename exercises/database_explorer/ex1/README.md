@@ -66,7 +66,9 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     A database can be quickly found using the filter as shown below.
     
     ![](images/Filter.png)
-    
+
+6. Create some objects from the HOTEL schema.  Explain how this is created directly in the database.  Used later to contrast with native development and HDI.
+
 This concludes the exercise on launching and exploring database connections in the SAP HANA database explorer.
 
 Continue to - [Exercise 2 - Using the SQL Console](../ex2/README.md)
