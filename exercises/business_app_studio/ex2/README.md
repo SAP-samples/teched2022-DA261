@@ -13,23 +13,26 @@ How does this differ from the upcoming (internal only) HANA Cloud multi-tenancy?
 Schema less development.
 
 TODO Volker
-### Why HDI
- - HDI stands for SAP HANA Deployment Infrastructure
- - HDI is integral part of SAP HANA and SAP HANA Cloud
- - HDI is a scalable design-time \ runtime environment
- - Supports most standard database artifacts like tables, procedures, views, virtual tables, roles
- - Support for advanced SAP HANA artifacts like calculation views, flowgraphs, replication tasks…
- - Determines correct deployment order
- - <B>Evolves the runtime objects</B>
- - Re-deployment of dependent artifacts
- - Transactional all-or-nothing principle
- - Can be generated from higher-level language like CAP CDS
- - Simplifies the need for the developer to write DDL and DML to get schema evolution
- - Eases deployment in a multi-tenant environments
+HELP for Guided Development
+https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US
 
+
+### Why HDI
+
+- HDI stands for SAP HANA Deployment Infrastructure
+- HDI is integral part of SAP HANA and SAP HANA Cloud
+- HDI is a scalable design-time \ runtime environment
+- Supports most standard database artifacts like tables, procedures, views, virtual tables, roles
+- Support for advanced SAP HANA artifacts like calculation views, flowgraphs, replication tasks…
+- Determines correct deployment order
+- <B>Evolves the runtime objects</B>
+- Re-deployment of dependent artifacts
+- Transactional all-or-nothing principle
+- Can be generated from higher-level language like CAP CDS
+- Simplifies the need for the developer to write DDL and DML to get schema evolution
+- Eases deployment in a multi-tenant environments
 
 The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
-
 
 ## Exercise 2.2 Create a New SAP HANA Database Project from a Template
 
@@ -72,8 +75,17 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
     ![](images/project.png)
 
     TODO Volker, explain what has just happened, HDI container created, service keys etc.  Maybe some content on what an HDI container is?
-    An HDI container is construct one can also describe as a glorified set of schemas. 
-    
+
+    An HDI container is construct one can also describe as a glorified set of schemas.
+
+    ![](images/HDI-Schemas.png)
+
+    - "HDI-container"  is the schema for the "RUN TIME" data,
+    - "#DI" is the "DESIGN TIME" schema and 
+    - "#OO" is a technical schema for the "Object Owner"
+    For each DT and RT user there will additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
+    The DI schema contains also some views that contain information about the design time objects incl their source and with m_jobs also information about the previous deployments. HDI does have an SQL interface and also a node.js and JAVA api that developers can use.
+
 
 ## Exercise 2.3 Initialize the Git Reprository
 
@@ -87,7 +99,7 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
 
 ## Exercise 2.4 Add Database Artifacts
 
-1.  In the Getting Started wizard, select Add Database Artifacts.
+1. In the Getting Started wizard, select Add Database Artifacts.
 
     ![](images/add-tables.png)
 
@@ -109,7 +121,7 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
 
 ## Exercise 2.5 Load Data into your SAP HANA Cloud Application's Database Tables
 
-1.  In the Getting Started wizard, select Load Data into your SAP HANA Cloud Application's Database Tables.
+1. In the Getting Started wizard, select Load Data into your SAP HANA Cloud Application's Database Tables.
 
 2. Complete all the steps to load data into the two previously created tables and to view the deployed data in the SAP HANA database explorer.
 
@@ -119,21 +131,27 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
 
 Calculation views allow the developers to express their intent instead of defining with SQL code how the data should be processed.
 
-1.  In the Getting Started wizard, select Create a Calculation View for your Application.
+1. In the Getting Started wizard, select Create a Calculation View for your Application.
 
-2. Complete all the steps to create and deploy a calculation view and view its properties in the SAP HANA database explorer.  It may take a moment or two for the calculation view editor to load after its creation.  Note that the permissions to view its data will be granted in the next step. 
+2. Complete all the steps to create and deploy a calculation view and view its properties in the SAP HANA database explorer.  It may take a moment or two for the calculation view editor to load after its creation.  Note that the permissions to view its data will be granted in the next step.
 
     ![](images/calc-view.png)
 
 ## Exercise 2.7 Create Analytic Privileges for your Calculation View
 
-1.  In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
+1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
 
 2. TODO Volker, why does it suggest opening dbx here?  
+There are various ways to open the Calculation View:
+ -  1. Directly within the editor on the projection level
+ -  2. Using DBX as a "Column View"
+
+
+
 
 ## Exercise 2.8 Create a Database Role for the Analytic Privilege
 
-1.  In the Getting Started wizard, select Create a Database Role for the Analytic Privilege and complete the steps.
+1. In the Getting Started wizard, select Create a Database Role for the Analytic Privilege and complete the steps.
 
 2. I get a insufficient privilege: Detailed info for this error can be found with guid 'D00DD9BE37D9B749B81DCBB1C1B0990A'
  when I try to view the data for the calculation view.  TODO Volker, what are some debugging/tips to help ensure that everything was created properly.
@@ -142,13 +160,13 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Exercise 2.9 Create a Database Procedure File
 
-1.  In the Getting Started wizard, select Create a Database Procedure File and complete the steps.
+1. In the Getting Started wizard, select Create a Database Procedure File and complete the steps.
 
-2.  In the SAP HANA database explorer, call the stored procedure.
+2. In the SAP HANA database explorer, call the stored procedure.
 
     ![](images/call-stored-procedure.png)
 
-3.  In the SAP HANA database explorer, attempt to debug the stored procedure by selecting Open for Debugging, placing a breakpoint on the last line of the stored procedure, and then call the stored procedure again.
+3. In the SAP HANA database explorer, attempt to debug the stored procedure by selecting Open for Debugging, placing a breakpoint on the last line of the stored procedure, and then call the stored procedure again.
 
     ![](images/debug-stored-procedure.png)
 
@@ -157,4 +175,3 @@ Calculation views allow the developers to express their intent instead of defini
 You now have now created native SAP HANA database artifacts and deployed them into an HDI container.
 
 Continue to - [Exercise 3 - Exercise 3 Description](../ex3/README.md)
-
