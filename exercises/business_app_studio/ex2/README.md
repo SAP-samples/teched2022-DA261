@@ -13,6 +13,20 @@ How does this differ from the upcoming (internal only) HANA Cloud multi-tenancy?
 Schema less development.
 
 TODO Volker
+### Why HDI
+ - HDI stands for SAP HANA Deployment Infrastructure
+ - HDI is integral part of SAP HANA and SAP HANA Cloud
+ - HDI is a scalable design-time \ runtime environment
+ - Supports most standard database artifacts like tables, procedures, views, virtual tables, roles
+ - Support for advanced SAP HANA artifacts like calculation views, flowgraphs, replication tasks…
+ - Determines correct deployment order
+ - <B>Evolves the runtime objects</B>
+ - Re-deployment of dependent artifacts
+ - Transactional all-or-nothing principle
+ - Can be generated from higher-level language like CAP CDS
+ - Simplifies the need for the developer to write DDL and DML to get schema evolution
+ - Eases deployment in a multi-tenant environments
+
 
 The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
 
@@ -25,6 +39,7 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
 
     It may take a moment or two for the contents of the Guided Develpment Wizard to appear.  If it does not appear, try reloading the page.
     TODO Volker ... is this a known issue?
+    The wizzard is a quite large piece of code and may take a while to show up. It contains all the source code and of course the yeoman part as well.
 
 2. Select Get Started with SAP HANA Cloud.
 
@@ -57,6 +72,7 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
     ![](images/project.png)
 
     TODO Volker, explain what has just happened, HDI container created, service keys etc.  Maybe some content on what an HDI container is?
+    An HDI container is construct one can also describe as a glorified set of schemas. 
     
 
 ## Exercise 2.3 Initialize the Git Reprository
