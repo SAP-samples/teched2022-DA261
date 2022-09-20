@@ -19,7 +19,7 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
     
     ![](images/cloud-foundry.png)
 
-    Environments constitute the actual platform-as-a-service offering of SAP BTP that allows for the development and administration of business applications.  We will be working withing the Cloud Foundry environment in this workshop.  Additional details on environments can be found at [Environments](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/15547f7e7ecd47ee9fa052b0e18c7b0a.html).
+    Environments constitute the actual platform-as-a-service offering of SAP BTP that allows for the development and administration of business applications.  We will be working within the Cloud Foundry environment in this workshop.  Additional details on environments can be found at [Environments](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/15547f7e7ecd47ee9fa052b0e18c7b0a.html).
 
     Once you have navigated to a space, details about any SAP HANA Cloud databases or data lake instances can be seen and a link is provided to open SAP HANA Cloud Central which is used to create and manage database instances.
 
@@ -33,7 +33,7 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
      ![](images/availability.png)
 
-    Notice above that the Free tier offering of the SAP HANA service is available on Amazon AWS and Microsoft Azure in multiple data centers.
+    Notice above that the free tier offering of the SAP HANA service is available on Amazon AWS and Microsoft Azure in multiple data centers.
 
 5. Additional details on the available free tier, trial, and paid service plans such as Cloud Platform Enterprise Agreement (CPEA), Pay-As-You-Go, or Subscription can be found at [Trial Accounts and Free Tier](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/046f127f2a614438b616ccfc575fdb16.html) and [Commercial Models](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/263d40009a5a4237a62e8f5c05ee641e.html).
 
