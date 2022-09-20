@@ -75,10 +75,6 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 
 # Part 2: Administration and Monitoring
 
-### SAP Business Technology Exercises
-
-- [Exercise 2 - Services and keys](exercises/sap_btp/ex2/)
-
 ### SAP HANA Database Explorer Exercises
 
 - [Exercise 2 - Using the SQL Console](exercises/database_explorer/ex2/)

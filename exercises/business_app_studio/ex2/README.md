@@ -32,7 +32,7 @@ https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f
 - Simplifies the need for the developer to write DDL and DML to get schema evolution
 - Eases deployment in a multi-tenant environments
 
-The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
+Alternatively, database objects can also be created directly in the database using SQL as shown in the last step [](../database_explorer/README.md).
 
 ## Exercise 2.2 Create a New SAP HANA Database Project from a Template
 
@@ -54,7 +54,7 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
 
     Press Next multiple times to accept the defaults.
 
-    When asked for provide your Cloud Foundry user id and password and select login.
+    When asked to, provide your Cloud Foundry user id and password and select login.
 
     ![](images/log-in.png)
 
@@ -74,7 +74,19 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
 
     ![](images/project.png)
 
-    TODO Volker, explain what has just happened, HDI container created, service keys etc.  Maybe some content on what an HDI container is?
+    The panes in the explorer can be expanded and resized.
+
+    At this point an HDI Container has been created and can be seen in both the SAP BTP Cockpit and within the add database dialog of the SAP HANA database explorer.
+
+    ![](images/hdi-container.png)
+
+    A service key has been added to the service.  It contains details such as the parameters needed to connect to the HDI container as well as credentials for a _DT or design time user and _RT or runtime user. 
+
+    ![](images/service-key.png)
+
+    The SAP HANA database explorer is able to look up the service key and use the information to connect and browser the HDI container.
+
+    ![](images/add-database.png)
 
     An HDI container is construct one can also describe as a glorified set of schemas.
 
@@ -84,8 +96,7 @@ The last step of Ex1 of DBX demonstrating creating a few objects with SQL.
     - "#DI" is the "DESIGN TIME" schema and 
     - "#OO" is a technical schema for the "Object Owner"
     For each DT and RT user there will additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
-    The DI schema contains also some views that contain information about the design time objects incl their source and with m_jobs also information about the previous deployments. HDI does have an SQL interface and also a node.js and JAVA api that developers can use.
-
+    The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a SQL interface and also a Node.js and Java API that developers can use.
 
 ## Exercise 2.3 Initialize the Git Reprository
 
@@ -166,9 +177,41 @@ There are various ways to open the Calculation View:
 
     ![](images/call-stored-procedure.png)
 
-3. In the SAP HANA database explorer, attempt to debug the stored procedure by selecting Open for Debugging, placing a breakpoint on the last line of the stored procedure, and then call the stored procedure again.
+## Exercise 2.10 Debug a Database Procedure File
+
+1.  In the SAP HANA database explorer, attempt to debug the stored procedure by selecting Open for Debugging, placing a breakpoint on the last line of the stored procedure, and then call the stored procedure again.
 
     ![](images/debug-stored-procedure.png)
+
+## Exercise 2.11 Opening a SQL Conole as Admin
+
+1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
+
+    ```SQL
+    SELECT CURRENT_USER FROM DUMMY;
+    ```
+    
+    Notice that the user is the _RT or runtime user.
+
+2.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container with ADMIN.  Execute the following SQL.
+
+    ```SQL
+    SELECT CURRENT_USER FROM DUMMY;
+    ```
+
+    Notice that the user is the _DT or design time user.
+    
+    ![](images/open-admin.png)
+
+3.  The design time user has some additoinal privileges.  TODO Volker
+
+    One example is the ability to view #_jobs.
+
+    select * from #_jobs
+
+## Exercise 2.12 Examining the Contents of the HDI Container
+
+1.  In the SAP HANA database explorer, open the parent database of the HDI container.  Notice that you can see the schema and objects but do not have privileges to query them.
 
 ## Summary
 
