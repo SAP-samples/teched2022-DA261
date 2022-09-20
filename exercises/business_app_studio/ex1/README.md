@@ -3,10 +3,10 @@
 This exercise will demonstrate how to open the SAP Business Application Studio (app studio) and create your first workspace for native SAP HANA development.  When the SAP HANA tool extensions are added, it can be used to build and deploy native SAP HANA database artifacts such as tables and calculation views.  
 
 1. In the BTP Cockpit:
-   * Select the *trial* subaccount
-   * Expand *Services* and select *Service Marketplace" in the left nav bar
+   * Select the **trial** subaccount
+   * Expand **Services** and select **Service Marketplace** in the left nav bar
    * Search for SAP Business Application Studio
-   * Launch SAP Business Application Studio by selecting *Go to Application* from the horizontal three-dot menu.  If you see a privacy statement, click OK to continue.
+   * Launch SAP Business Application Studio by selecting **Go to Application** from the horizontal three-dot menu.  If you see a privacy statement, click OK to continue.
     
     ![](images/create-or-open.png)
 
