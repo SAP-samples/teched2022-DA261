@@ -2,13 +2,17 @@
 
 This exercise will demonstrate how to open the SAP Business Application Studio (app studio) and create your first workspace for native SAP HANA development.  When the SAP HANA tool extensions are added, it can be used to build and deploy native SAP HANA database artifacts such as tables and calculation views.  
 
-1. Open the SAP Business Application Studio
+1. In the BTP Cockpit:
+   * Select the *trial* subaccount
+   * Expand *Services* and select *Service Marketplace" in the left nav bar
+   * Search for SAP Business Application Studio
+   * Launch SAP Business Application Studio by selecting *Go to Application* from the horizontal three-dot menu.  If you see a privacy statement, click OK to continue.
     
     ![](images/create-or-open.png)
 
-    TODO, role collections may need to be added.
+    TODO, role collections may need to be added. [JOSE - I didn't need to do this, did anyone?]
 
-2. Create a development workspace that is configured with the SAP HANA native application development extensions.
+2. Click the button Create Dev Space and then create a development workspace that is configured with the *SAP HANA Native Application* development extensions.  Make sure to name this new dev space "TechEd2022" (in top left).
 
     ![](images/workspace.png)
 
@@ -22,7 +26,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     Should you wish to re-open the Welcome page, it can be opened via a command palette command.  To open the command palette select View, Find Command and then search for Welcome.
 
-5. SAP Business Application Studio is very similar to Microsoft Visual Studio.  It is browser based so there is no need to intall or update software.  You can continue to work on your project from any computer.  
+5. SAP Business Application Studio is a browser-based application, so there is no need to intall or update software.  You can continue to work on your project from any computer.
 
 6. The preferences can be view or set via File, Preferences or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
 
