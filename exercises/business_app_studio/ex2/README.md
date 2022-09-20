@@ -47,7 +47,7 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/create_and_next.png)
 
-    When asked to, provide your Cloud Foundry user id and password and select login.
+    When asked to, provide your Cloud Foundry user id and password and select login. [JOSE: where do you get these from?]
 
     ![](images/log-in.png)
 
