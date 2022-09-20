@@ -53,5 +53,5 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
 You now have an overview of the SAP BTP and are ready to start using it with the SAP HANA Cloud database.  Further details can be found in the learning journey [Discover SAP Business Technology Platform](https://learning.sap.com/learning-journey/discover-sap-business-technology-platform).
 
-Continue to - [Exercise 1 - Overview of SAP HANA Cloud Central](../hana_cloud_central/ex1/README.md)
+Continue to - [Exercise 1 - Overview of SAP HANA Cloud Central](../../hana_cloud_central/ex1/README.md)
 
