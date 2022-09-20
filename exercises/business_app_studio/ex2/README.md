@@ -1,21 +1,10 @@
 # Exercise 2 - Create and deploy a project containing database artifacts using the SAP HANA Getting Started Wizard
 
-This exercise will demonstrate how to create a project containing tables and calculation views using the Getting Started wizard.  
+This exercise will demonstrate how to create a project containing tables and a calculation view using the Getting Started wizard.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications ](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
 
 ## Exercise 2.1 Creating Database Objects with HDI vs SQL
 
-Explain the benefits of HDI and when to use HDI vs native SQL.
-HDI deployment is all or nothing.  (same for SQL with the right automcommit setting?)
-Calc View modeler.
-Multiple developers working with the same objects can each have their own isolated deployment.
-Is it a way to provide isolatation while using one HANA database?
-How does this differ from the upcoming (internal only) HANA Cloud multi-tenancy?
-Schema less development.
-
-TODO Volker
-HELP for Guided Development
-https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US
-
+Multiple developers working with the same objects can each have their own isolated deployment.  How does this differ from the upcoming (internal only) HANA Cloud multi-tenancy?  Schema less development.
 
 ### Why HDI
 
@@ -23,26 +12,28 @@ https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f
 - HDI is integral part of SAP HANA and SAP HANA Cloud
 - HDI is a scalable design-time \ runtime environment
 - Supports most standard database artifacts like tables, procedures, views, virtual tables, roles
-- Support for advanced SAP HANA artifacts like calculation views, flowgraphs, replication tasks…
+- Provides support for advanced SAP HANA artifacts like calculation views, flowgraphs, and replication tasks
 - Determines correct deployment order
-- <B>Evolves the runtime objects</B>
-- Re-deployment of dependent artifacts
 - Transactional all-or-nothing principle
-- Can be generated from higher-level language like CAP CDS
+- <B>Evolves the runtime objects</B>
 - Simplifies the need for the developer to write DDL and DML to get schema evolution
+- Re-deployment of dependent artifacts
+- Can be generated from higher-level language like CAP CDS
 - Eases deployment in a multi-tenant environments
 
 Alternatively, database objects can also be created directly in the database using SQL as shown in the last step [](../database_explorer/README.md).
 
 ## Exercise 2.2 Create a New SAP HANA Database Project from a Template
 
-1. In the SAP Business Application Studio, start the Guided Development Wizard by selecting it from the bottom of the Welcome screen, or select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option shown below.
+1. In the SAP Business Application Studio, start the Guided Development Wizard by selecting it from the bottom of the Welcome screen, or select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option SAP HANA: Getting Started.
+
+    ![](images/welcome.png)
+
+    or
 
     ![](images/getting-started.png)
 
     It may take a moment or two for the contents of the Guided Develpment Wizard to appear.  If it does not appear, try reloading the page.
-    TODO Volker ... is this a known issue?
-    The wizzard is a quite large piece of code and may take a while to show up. It contains all the source code and of course the yeoman part as well.
 
 2. Select Get Started with SAP HANA Cloud.
 
@@ -52,7 +43,9 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/create-project.png)
 
-    Press Next multiple times to accept the defaults.
+    Press the create button to open the project creation wizard and then press next multiple times to accept the defaults.
+
+    ![](images/create_and_next.png)
 
     When asked to, provide your Cloud Foundry user id and password and select login.
 
@@ -74,16 +67,30 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/project.png)
 
-    The panes in the explorer can be expanded and resized.
+    The panes in the explorer can be expanded and resized.  Optionally right click on OPEN EDITOR and choose hide.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
     At this point an HDI Container has been created and can be seen in both the SAP BTP Cockpit and within the add database dialog of the SAP HANA database explorer.
 
     ![](images/hdi-container.png)
 
-    A service key has been added to the service.  It contains details such as the parameters needed to connect to the HDI container as well as credentials for a _DT or design time user and _RT or runtime user. 
+    A service key has been added to the service.  
 
     ![](images/service-key.png)
 
+    It contains details such as the parameters needed to connect to the HDI container as well as credentials for a _DT or design time user and _RT or runtime user. 
+
+    ![](images/service-key-details.png)
+
+    These details could be also be used to connect to the HDI container from an application using one of the many SAP HANA client drivers (Java, ODBC, Node.js, Python, Go, .NET etc.) or the command line SQL tool HDBSQL.
+
+    An example is shown below.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).
+
+    ![](images/HDBSQL.png)
+
+    TODO Dan, maybe demonstrate connecting with the DT user and show the different schemas that user is able to see or show both in DBX?  Note that the OO and DT schemas are not shown in the above example.
+
+    TODO at some point another service key is created for the HDI container.  What triggers that?
+  
     The SAP HANA database explorer is able to look up the service key and use the information to connect and browser the HDI container.
 
     ![](images/add-database.png)
@@ -95,6 +102,7 @@ Alternatively, database objects can also be created directly in the database usi
     - "HDI-container"  is the schema for the "RUN TIME" data,
     - "#DI" is the "DESIGN TIME" schema and 
     - "#OO" is a technical schema for the "Object Owner"
+
     For each DT and RT user there will additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
     The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a SQL interface and also a Node.js and Java API that developers can use.
 
@@ -148,17 +156,16 @@ Calculation views allow the developers to express their intent instead of defini
 
     ![](images/calc-view.png)
 
+    There are various ways to open the Calculation View:
+    
+     -  1. Directly within the editor on the projection level
+     -  2. Using DBX as a "Column View"
+
 ## Exercise 2.7 Create Analytic Privileges for your Calculation View
 
 1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
 
-2. TODO Volker, why does it suggest opening dbx here?  
-There are various ways to open the Calculation View:
- -  1. Directly within the editor on the projection level
- -  2. Using DBX as a "Column View"
-
-
-
+2. TODO Volker, why does it suggest opening dbx here?  Unless I am mistaken, nothing can be seen in DBX related to the privileges and the calculation view can not yet preview the data.
 
 ## Exercise 2.8 Create a Database Role for the Analytic Privilege
 
@@ -167,7 +174,7 @@ There are various ways to open the Calculation View:
 2. I get a insufficient privilege: Detailed info for this error can be found with guid 'D00DD9BE37D9B749B81DCBB1C1B0990A'
  when I try to view the data for the calculation view.  TODO Volker, what are some debugging/tips to help ensure that everything was created properly.
 
-2. Show the data preview functionality in DBX when viewing the data of the calculation view.  Perhaps show count passenger ID by airline.
+2. Show the data preview functionality in DBX when viewing the data of the calculation view.  Perhaps show count passenger ID by airline.  Seems odd though as it only shows one airline.  Perhaps this is by design in the calcuation view?  TODO Volker.
 
 ## Exercise 2.9 Create a Database Procedure File
 
@@ -188,10 +195,15 @@ There are various ways to open the Calculation View:
 1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
 
     ```SQL
-    SELECT CURRENT_USER FROM DUMMY;
+    SELECT * FROM USERS WHERE USER_NAME LIKE '%FLIGHT%';
+    SELECT * FROM SCHEMAS;
+    SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
+    SELECT * FROM FLIGHTRESERVATION_HDI_DB_1#DI.JOBS_;  --Fails 
     ```
     
-    Notice that the user is the _RT or runtime user.
+    Notice that the user is the _DT or design time user as opposed to the runtime user.
+
+    TODO Volker.  How does one query the JOBS_.  How does one connect as OO?
 
 2.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container with ADMIN.  Execute the following SQL.
 
@@ -203,11 +215,7 @@ There are various ways to open the Calculation View:
     
     ![](images/open-admin.png)
 
-3.  The design time user has some additoinal privileges.  TODO Volker
-
-    One example is the ability to view #_jobs.
-
-    select * from #_jobs
+3.  The design time user has some additoinal privileges.  TODO Volker what can b shown here?
 
 ## Exercise 2.12 Examining the Contents of the HDI Container
 
