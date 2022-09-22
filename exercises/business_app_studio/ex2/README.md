@@ -202,8 +202,18 @@ Calculation views allow the developers to express their intent instead of defini
     ```
     
     Notice that the user is the _DT or design time user as opposed to the runtime user.
+    If you want to access the DT view you have to use the "ADMIN" container access in Database Explorer.
 
-    TODO Volker.  How does one query the JOBS_.  How does one connect as OO?
+    ![](images/DBX_ADMIN.png)
+
+    ```SQL
+    SELECT * from M_JOBS
+    ```
+Here is a blog on this topic:
+https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
+
+
+
 
 2.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container with ADMIN.  Execute the following SQL.
 
@@ -215,7 +225,8 @@ Calculation views allow the developers to express their intent instead of defini
     
     ![](images/open-admin.png)
 
-3.  The design time user has some additoinal privileges.  TODO Volker what can b shown here?
+3.  The design time user has some additoinal privileges.  
+TODO Volker what can b shown here?
 
 ## Exercise 2.12 Examining the Contents of the HDI Container
 
