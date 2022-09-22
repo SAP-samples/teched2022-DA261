@@ -16,7 +16,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/workspace.png)
 
-3. Once the development space status has changed to running, it can be opened by clicking on name of the development space.
+3. Once the development space status has changed to running, it can be opened by clicking on the name of the development space.
 
     ![](images/started.png)
 
@@ -26,9 +26,9 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     Should you wish to re-open the Welcome page, it can be opened via a command palette command.  To open the command palette select View, Find Command and then search for Welcome.
 
-5. SAP Business Application Studio is a browser-based application, so there is no need to intall or update software.  You can continue to work on your project from any computer.
+5. SAP Business Application Studio is a browser-based application, so there is no need to install or update software.  You can continue to work on your project from any computer.
 
-6. The preferences can be view or set via File, Preferences or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
+6. The preferences can be viewed or set via File, Preferences or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
 
     ![](images/preferences.png)
 
@@ -47,7 +47,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
 ## Summary
 
-You now have now created a development space that is configured for use with SAP HANA native artifact development.
+You have now created a development space that is configured for use with SAP HANA native artifact development.
 
 Continue to - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](../ex2/README.md)
 

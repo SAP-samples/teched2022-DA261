@@ -1,6 +1,6 @@
 # Exercise 2 - Create and deploy a project containing database artifacts using the SAP HANA Getting Started Wizard
 
-This exercise will demonstrate how to create a project containing tables and a calculation view using the Getting Started wizard.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications ](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
+This exercise will demonstrate how to create a project containing tables and a calculation view using the Getting Started wizard.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
 
 ## Exercise 2.1 Creating Database Objects with HDI vs SQL
 
@@ -9,7 +9,7 @@ Multiple developers working with the same objects can each have their own isolat
 ### Why HDI
 
 - HDI stands for SAP HANA Deployment Infrastructure
-- HDI is integral part of SAP HANA and SAP HANA Cloud
+- HDI is an integral part of SAP HANA and SAP HANA Cloud
 - HDI is a scalable design-time \ runtime environment
 - Supports most standard database artifacts like tables, procedures, views, virtual tables, roles
 - Provides support for advanced SAP HANA artifacts like calculation views, flowgraphs, and replication tasks
@@ -19,9 +19,9 @@ Multiple developers working with the same objects can each have their own isolat
 - Simplifies the need for the developer to write DDL and DML to get schema evolution
 - Re-deployment of dependent artifacts
 - Can be generated from higher-level language like CAP CDS
-- Eases deployment in a multi-tenant environments
+- Eases deployment in multi-tenant environments
 
-Alternatively, database objects can also be created directly in the database using SQL as shown in the last step [](../database_explorer/README.md).
+Alternatively, database objects can also be created directly in the database using SQL as shown in the last step[](../database_explorer/README.md).
 
 ## Exercise 2.2 Create a New SAP HANA Database Project from a Template
 
@@ -103,10 +103,10 @@ Alternatively, database objects can also be created directly in the database usi
     - "#DI" is the "DESIGN TIME" schema and 
     - "#OO" is a technical schema for the "Object Owner"
 
-    For each DT and RT user there will additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
+    For each DT and RT user there will be additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
     The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a SQL interface and also a Node.js and Java API that developers can use.
 
-## Exercise 2.3 Initialize the Git Reprository
+## Exercise 2.3 Initialize the Git Repository
 
 1. The Git repository will be initialized now so that after subsequent steps it can be easily seen what changes have been made to the project.
 
