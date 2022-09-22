@@ -91,7 +91,7 @@ Alternatively, database objects can also be created directly in the database usi
 
     TODO at some point another service key is created for the HDI container.  What triggers that?
   
-    The SAP HANA database explorer is able to look up the service key and use the information to connect and browser the HDI container.
+    The SAP HANA database explorer is able to look up the service key and use the information to connect and browse the HDI container.
 
     ![](images/add-database.png)
 
@@ -190,7 +190,7 @@ Calculation views allow the developers to express their intent instead of defini
 
     ![](images/debug-stored-procedure.png)
 
-## Exercise 2.11 Opening a SQL Conole as Admin
+## Exercise 2.11 Opening a SQL Console as Admin
 
 1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
 
