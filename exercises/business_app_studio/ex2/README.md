@@ -1,12 +1,8 @@
 # Exercise 2 - Create and deploy a project containing database artifacts using the SAP HANA Getting Started Wizard
 
-This exercise will demonstrate how to create a project containing tables and a calculation view using the Getting Started wizard.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
+This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the Getting Started wizard.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
 
-## Exercise 2.1 Creating Database Objects with HDI vs SQL
-
-Multiple developers working with the same objects can each have their own isolated deployment.  How does this differ from the upcoming (internal only) HANA Cloud multi-tenancy?  Schema less development.
-
-### Why HDI
+## Exercise 2.1 Why HDI?
 
 - HDI stands for SAP HANA Deployment Infrastructure
 - HDI is an integral part of SAP HANA and SAP HANA Cloud
@@ -15,9 +11,11 @@ Multiple developers working with the same objects can each have their own isolat
 - Provides support for advanced SAP HANA artifacts like calculation views, flowgraphs, and replication tasks
 - Determines correct deployment order
 - Transactional all-or-nothing principle
-- <B>Evolves the runtime objects</B>
+- Evolves the runtime objects
 - Simplifies the need for the developer to write DDL and DML to get schema evolution
 - Re-deployment of dependent artifacts
+- Schema less development
+- Multiple developers can each have their own isolated deployments
 - Can be generated from higher-level language like CAP CDS
 - Eases deployment in multi-tenant environments
 
@@ -25,7 +23,7 @@ Alternatively, database objects can also be created directly in the database usi
 
 ## Exercise 2.2 Create a New SAP HANA Database Project from a Template
 
-1. In the SAP Business Application Studio, start the Guided Development Wizard by selecting it from the bottom of the Welcome screen, or select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option SAP HANA: Getting Started.
+1. In the SAP Business Application Studio, start the Guided Development wizard by selecting it from the bottom of the Welcome screen, or select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option SAP HANA: Getting Started.
 
     ![](images/welcome.png)
 
@@ -33,7 +31,7 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/getting-started.png)
 
-    It may take a moment or two for the contents of the Guided Develpment Wizard to appear.  If it does not appear, try reloading the page.
+    It may take a moment or two for the contents of the Guided Develpment wizard to appear.  If it does not appear, try reloading the page.
 
 2. Select Get Started with SAP HANA Cloud.
 

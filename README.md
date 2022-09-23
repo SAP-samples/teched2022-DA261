@@ -11,16 +11,18 @@ This session introduces attendees to the operations required for end-to-end admi
 
 ## Requirements
 
-To complete this workshop, you need access to an SAP BTP account. You can access SAP HANA Cloud from within SAP BTP and you can use a trial, free tier,  or productive version of SAP HANA Cloud.  **This workshop assumes that you already have a SAP BTP account and SAP HANA Cloud database.**  If not, you can register for free at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html.
+To complete this workshop, you need access to an SAP BTP account. You can access SAP HANA Cloud from within SAP BTP and you can use a trial, free tier,  or productive version of SAP HANA Cloud.  **This workshop assumes that you already have a SAP BTP account and a SAP HANA Cloud database.**  If not, you can register for free at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html.  The exercises make use of a trial account, but a [free tier](https://developers.sap.com/tutorials/btp-free-tier-account.html) account could also be used.  A benefit of using free tier is that the account can be upgraded to a paid service plan without having to re-create the account. 
 
-In your SAP HANA Cloud account (trial or non-trial), perform the following steps:
+In your SAP HANA Cloud account, perform the following steps:
 
 1.  Open the [welcome page](https://account.hanatrial.ondemand.com/trial/#/home/trial) and go to your trial account.
     ![](images/go-to-trial.png)
 2.	Enter the subaccount and then select the dev space
 3.	Click SAP HANA Cloud from the left navigation bar
 4.	Click the button Create Instance in the top right and select SAP HANA 
-Database to invoke the Create Instance wizard
+Database to invoke the Create Instance wizard.  
+    > Only one instance of a HANA Cloud database can be created in trial or  tier accounts.  If you already have a SAP HANA Cloud database instance created, it can be used.
+    
     ![](images/create-hana-instance.png)
 5.  Choose SAP HANA Cloud, SAP HANA Database and click the button Next Step
 6.	Enter DEMO_HANA_DB for the instance name
@@ -79,6 +81,7 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 
 - [Exercise 1 - Create a Development Workspace](exercises/business_app_studio/ex1/)
 - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](exercises/business_app_studio/ex2/)
+- [Exercise 3 - HDI Containers](exercises/business_app_studio/ex3/)
 
 
 # Part 2: Administration and Monitoring
@@ -97,7 +100,7 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 
 ### SAP Business Application Studio Exercises
 
-- [Exercise 4 - Analyze Performance with PlanViz](exercises/business_app_studio/ex3/)
+- [Exercise 4 - Analyze Performance with PlanViz](exercises/business_app_studio/ex4/)
 
 
 ## How to obtain support
