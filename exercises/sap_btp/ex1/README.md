@@ -35,7 +35,7 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
      ![](images/availability.png)
 
-    Notice above that the free tier offering of the SAP HANA Cloud service is available on Amazon AWS and Microsoft Azure in multiple data centers.
+    Notice above that the HANA serice is available on Amazon AWS, Microsoft Azure, and Google Cloud in multiple data centers.
 
 5. Additional details on the available free tier, trial, and paid service plans such as Cloud Platform Enterprise Agreement (CPEA), Pay-As-You-Go, or Subscription can be found at [Trial Accounts and Free Tier](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/046f127f2a614438b616ccfc575fdb16.html) and [Commercial Models](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/263d40009a5a4237a62e8f5c05ee641e.html).
 

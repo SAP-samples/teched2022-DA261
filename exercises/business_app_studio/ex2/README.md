@@ -19,57 +19,65 @@ This exercise will demonstrate how to create a project containing tables, a calc
 - Can be generated from higher-level language like CAP CDS
 - Eases deployment in multi-tenant environments
 
-Alternatively, database objects can also be created directly in the database using SQL as shown in the last step[](../database_explorer/README.md).
+Alternatively, database objects can also be created directly in the database using SQL as shown in the last step of [SAP HANA database explorer exercise 1](../database_explorer/README.md).
 
 ## Exercise 2.2 Create a New SAP HANA Database Project from a Template
 
-1. In the SAP Business Application Studio, start the Guided Development wizard by selecting it from the bottom of the Welcome screen, or select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option SAP HANA: Getting Started.
+1. In the SAP Business Application Studio, start the Guided Development wizard by selecting it from the bottom of the Welcome screen.
 
     ![](images/welcome.png)
 
-    or
-
-    ![](images/getting-started.png)
+    > Alternatively, select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option SAP HANA: Getting Started.
+    >
+    >![](images/getting-started.png)
 
     It may take a moment or two for the contents of the Guided Develpment wizard to appear.  If it does not appear, try reloading the page.
 
-2. Select Get Started with SAP HANA Cloud.
+2. Select **Get Started with SAP HANA Cloud**.
 
     ![](images/guided-development.png)
 
-    Select the first sub option Create a New SAP HANA Database Project from a Template.
+    Select the first sub option **Create a New SAP HANA Database Project from a Template**.
 
     ![](images/create-project.png)
 
-    Press the create button to open the project creation wizard and then press next multiple times to accept the defaults.
+    Press the **Create SAP HANA Database Project** button to open the project creation wizard and then press **Next** multiple times to accept the defaults.
 
     ![](images/create_and_next.png)
 
-    When asked to, provide your Cloud Foundry user id and password and select login. [JOSE: where do you get these from?]
+    When asked to, provide your Cloud Foundry API endpoint, user id and password and select login.  The API endpoint value can be obtained from the BTP Cockpit subaccount page.
 
     ![](images/log-in.png)
+
+    >In the example below, notice that the API endpoint is slightly different (us10 instead of us10-001) and would need to be updated in the wizard.  
+    >
+    >![](images/API-endpoint.png)
 
     Select the option to Open the Output View when asked.
 
     ![](images/open-output.png)
 
-    The bottom panel can also be shown (or hidden) by selecting View, Toggle Bottom Panel or by the icon in the bottom right.
-
-    ![](images/output.png)
+    >The bottom panel can also be shown (or hidden) by selecting View, Toggle Bottom Panel or by the icon in the bottom right.
+    >
+    >![](images/output.png)
 
 3. In the project explorer, open the generated project.
 
     ![](images/open-project.png)
 
-4. Examine the created project.
+4. Examine the created project and result of the deployment.
 
     ![](images/project.png)
 
-    The panes in the explorer can be expanded and resized.  Optionally right click on OPEN EDITOR and choose hide.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
+    The panes in the explorer can be expanded and resized.  
+    
+    >Optionally right click on OPEN EDITOR and choose hide.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
     At this point an HDI Container has been created and can be seen in both the SAP BTP Cockpit and within the add database dialog of the SAP HANA database explorer.
 
     ![](images/hdi-container.png)
+
+    ![](images/add-HDI-in-dbx.png)
 
     A service key has been added to the service.  
 
@@ -81,19 +89,28 @@ Alternatively, database objects can also be created directly in the database usi
 
     These details could be also be used to connect to the HDI container from an application using one of the many SAP HANA client drivers (Java, ODBC, Node.js, Python, Go, .NET etc.) or the command line SQL tool HDBSQL.
 
-    An example is shown below.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).
+    >An example is shown below of connecting with both the RT and DT users.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client.
+    >
+    > ```SQL
+    > \al
+    > SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
+    > SELECT SCHEMA_NAME, SCHEMA_OWNER FROM SCHEMAS;
+    > ```
+    >
+    >![](images/HDI-Schemas_RT.png)
+    >
+    >![](images/HDI-Schemas_DT.png)
 
-    ![](images/HDBSQL.png)
 
-    TODO Dan, maybe demonstrate connecting with the DT user and show the different schemas that user is able to see or show both in DBX?  Note that the OO and DT schemas are not shown in the above example.
+    TODO Volker ... the #OO schema is not shown above.
 
-    TODO at some point another service key is created for the HDI container.  What triggers that?
+    TODO Volker ... at some point another service key is created for the HDI container.  What triggers that?  Seems to be when the HDI container is added to DBX.  Why do two sets of service keys get created?
   
-    The SAP HANA database explorer is able to look up the service key and use the information to connect and browse the HDI container.
+    The SAP HANA database explorer is able to look up the service key and use the information contained in the service key to connect and browse the HDI container.
 
-    ![](images/add-database.png)
+    An HDI container is construct can also be described as a glorified set of schemas. 
 
-    An HDI container is construct one can also describe as a glorified set of schemas.
+    TODO Volker, the sreenshot below does not seem to correspond to the previous screenshots.
 
     ![](images/HDI-Schemas.png)
 
@@ -152,12 +169,16 @@ Calculation views allow the developers to express their intent instead of defini
 
 2. Complete all the steps to create and deploy a calculation view and view its properties in the SAP HANA database explorer.  It may take a moment or two for the calculation view editor to load after its creation.  Note that the permissions to view its data will be granted in the next step.
 
-    ![](images/calc-view.png)
-
     There are various ways to open the Calculation View:
     
-     -  1. Directly within the editor on the projection level
-     -  2. Using DBX as a "Column View"
+     -  Directly within the editor on the projection level
+
+         ![](images/open-calc-view-in-editor.png)
+         TODO Volker 
+
+     -  Using the catalog browser in the SAP HANA database explorer
+
+         ![](images/calc-view.png)
 
 ## Exercise 2.7 Create Analytic Privileges for your Calculation View
 
@@ -184,51 +205,12 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Exercise 2.10 Debug a Database Procedure File
 
+TODO Dan/Gurvick move this step to separate DBX exercise.
+
 1.  In the SAP HANA database explorer, attempt to debug the stored procedure by selecting Open for Debugging, placing a breakpoint on the last line of the stored procedure, and then call the stored procedure again.
 
     ![](images/debug-stored-procedure.png)
 
-## Exercise 2.11 Opening a SQL Console as Admin
-
-1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
-
-    ```SQL
-    SELECT * FROM USERS WHERE USER_NAME LIKE '%FLIGHT%';
-    SELECT * FROM SCHEMAS;
-    SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
-    SELECT * FROM FLIGHTRESERVATION_HDI_DB_1#DI.JOBS_;  --Fails 
-    ```
-    
-    Notice that the user is the _DT or design time user as opposed to the runtime user.
-    If you want to access the DT view you have to use the "ADMIN" container access in Database Explorer.
-
-    ![](images/DBX_ADMIN.png)
-
-    ```SQL
-    SELECT * from M_JOBS
-    ```
-Here is a blog on this topic:
-https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
-
-
-
-
-2.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container with ADMIN.  Execute the following SQL.
-
-    ```SQL
-    SELECT CURRENT_USER FROM DUMMY;
-    ```
-
-    Notice that the user is the _DT or design time user.
-    
-    ![](images/open-admin.png)
-
-3.  The design time user has some additoinal privileges.  
-TODO Volker what can b shown here?
-
-## Exercise 2.12 Examining the Contents of the HDI Container
-
-1.  In the SAP HANA database explorer, open the parent database of the HDI container.  Notice that you can see the schema and objects but do not have privileges to query them.
 
 ## Summary
 

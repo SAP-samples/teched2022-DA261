@@ -27,8 +27,8 @@ Database to invoke the Create Instance wizard.
 5.  Choose SAP HANA Cloud, SAP HANA Database and click the button Next Step
 6.	Enter DEMO_HANA_DB for the instance name
 7.	Enter and confirm your administrator password – ***PLEASE REMEMBER IT AND/OR WRITE IT DOWN!***
-8.	Click the button Create Now at the bottom right
-9.  Click the button Create Instance at the bottom right
+8.  For trial systems, consider changing the allowed connections option to **Allow all connections**.  The rest of the values can be left as a default.
+9.	Complete the wizard
 
     A new SAP HANA Cloud instance will be created, and this process may take  approx. 10 minutes.  The frequency of updates to the page can be set using the auto-refresh feature in the top right.  Once the instance has been created, its status will change to RUNNING.
 
