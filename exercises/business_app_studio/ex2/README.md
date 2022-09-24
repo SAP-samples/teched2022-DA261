@@ -223,10 +223,13 @@ https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
 
     Notice that the user is the _DT or design time user.
     
+
+
+3.  The design time user has some additional privileges.  
+TODO Volker what can b shown here?
+
     ![](images/open-admin.png)
 
-3.  The design time user has some additoinal privileges.  
-TODO Volker what can b shown here?
 
 ## Exercise 2.12 Examining the Contents of the HDI Container
 
