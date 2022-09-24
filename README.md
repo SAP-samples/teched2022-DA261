@@ -6,7 +6,10 @@ This repository contains the material for the SAP TechEd 2022 session called DA2
 
 ## Overview
 
-This session introduces attendees to the operations required for end-to-end administration and development of SAP HANA Cloud database instances using the tools offered in the SAP Business Technology Platform (SAP BTP).  Attendees will learn how to accomplish administration tasks such as instance monitoring and security management, as well as development tasks such as creating native SAP HANA artifacts and analyzing their performance.  Part 1 will introduce the tools and deploy some sample tables and calculation views.  Part 2 will demonstrate how to further administer these deployed artifacts.
+This session introduces attendees to the operations required for end-to-end administration and development of SAP HANA Cloud database instances using the tools offered in the SAP Business Technology Platform (SAP BTP).  Attendees will learn how to accomplish administration tasks such as instance monitoring and security management, as well as development tasks such as creating native SAP HANA artifacts and analyzing their performance.  Part 1 will introduce the tools and deploy some sample tables and calculation views.  Part 2 will demonstrate how to further administer these deployed artifacts.  
+
+Optional content can be skipped and will have (Optional) in its title.  
+>Content appearing in this format is for additional information and does not need to be followed.
 
 
 ## Requirements
@@ -21,7 +24,7 @@ In your SAP HANA Cloud account, perform the following steps:
 3.	Click SAP HANA Cloud from the left navigation bar
 4.	Click the button Create Instance in the top right and select SAP HANA 
 Database to invoke the Create Instance wizard.  
-    > Only one instance of a HANA Cloud database can be created in trial or  tier accounts.  If you already have a SAP HANA Cloud database instance created, it can be used.
+    > Only one instance of a HANA Cloud database can be created in trial or free tier accounts.  If you already have a SAP HANA Cloud database instance created, it can be used.
     
     ![](images/create-hana-instance.png)
 5.  Choose SAP HANA Cloud, SAP HANA Database and click the button Next Step
@@ -81,8 +84,7 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 
 - [Exercise 1 - Create a Development Workspace](exercises/business_app_studio/ex1/)
 - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](exercises/business_app_studio/ex2/)
-- [Exercise 3 - HDI Containers](exercises/business_app_studio/ex3/)
-
+- [Exercise 3 - Additional HDI Container Details (Optional)](exercises/business_app_studio/ex3/)
 
 # Part 2: Administration and Monitoring
 
