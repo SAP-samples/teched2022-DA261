@@ -1,4 +1,4 @@
-# Exercise 1 - Launch and Connect with the SAP HANA Database Explorer
+# Exercise 1 - Launch the SAP HANA Database Explorer
 
   In addition to browsing schema objects and executing SQL, the SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.
 
@@ -69,6 +69,6 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
 6. Create some objects from the HOTEL schema.  Explain how this is created directly in the database.  Used later to contrast with native development and HDI.
 
-This concludes the exercise on launching and exploring database connections in the SAP HANA database explorer.  In the next exercise, the SAP Business Application Studio will be opened with and a development workspace for native SAP HANA development.
+This concludes the exercise on launching and exploring database connections in the SAP HANA database explorer.  In the next exercise, the SAP Business Application Studio will be opened with a development workspace for native SAP HANA development.
 
-Continue to - [Exercise 1 - Create a Development Workspace](../business_app_studio/ex1/README.md)
+Continue to - [Exercise 1 - Create a Development Workspace](../../business_app_studio/ex1/README.md)
