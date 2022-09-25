@@ -163,17 +163,25 @@ Calculation views allow the developers to express their intent instead of defini
      -  Directly within the editor on the projection level
 
          ![Calculation Data Preview](images/cv_dataPreview.png)
-        (saw an error here, maybe a bug)
+        
+        with this result:
+        ![Calculation Data Preview](images/cv_dataPreview_Result.png)
 
      -  Using the catalog browser in the SAP HANA database explorer
 
          ![](images/calc-view.png)
+
+         with the same result
+
+        ![Calculation Data Preview in DBX](images/cv_dataPreview_Result.png)
+
 
 ## Exercise 2.6 Create Analytic Privileges for your Calculation View
 
 1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
 
 2. TODO Volker, why does it suggest opening dbx here?  Unless I am mistaken, nothing can be seen in DBX related to the privileges and the calculation view can not yet preview the data.
+You should see only the LH flights but there seems to be an error in the generator. I have different and errorrous results in EU10/EU20 ???
 
 ## Exercise 2.7 Create a Database Role for the Analytic Privilege
 
@@ -181,6 +189,7 @@ Calculation views allow the developers to express their intent instead of defini
 
 2. TODO Volker, what are some debugging/tips to help ensure that everything was created properly.
 Also need to be able to better describe what the roles and privileges did.  Should we simplify this?
+YES
 
 2. Show the data preview functionality in DBX when viewing the data of the calculation view.  Perhaps show count passenger ID by airline.  Seems odd though as it only shows one airline.  Perhaps this is by design in the calcuation view?  TODO Volker.
 
