@@ -162,8 +162,8 @@ Calculation views allow the developers to express their intent instead of defini
     
      -  Directly within the editor on the projection level
 
-         ![](images/open-calc-view-in-editor.png)
-         TODO Volker 
+         ![Calculation Data Preview](images/cv_dataPreview.png)
+        (saw an error here, maybe a bug)
 
      -  Using the catalog browser in the SAP HANA database explorer
 
