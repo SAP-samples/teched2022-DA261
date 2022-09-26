@@ -108,7 +108,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     - "#OO" is a technical schema for the "Object Owner"
 
     For each DT and RT user there will be additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
-    The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a SQL interface and also a Node.js and Java API that developers can use.
+    The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a SQL interface and also a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) and Java API (sap-java-hdi TODO where does one find this API?)that developers can use.
 
 ## Exercise 2.2 Initialize the Git Repository
 

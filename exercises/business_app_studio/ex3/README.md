@@ -49,6 +49,19 @@ TODO Volker what can be shown here?
 
     TODO, demonstrate this
 
+## Exercise 3.4 HDI Monitoring Views
+
+1. These can be viewed in the main? database in the schema _SYS_DI.  The M_ indicates that these are monitoring views.  A few example queries follow that can be run.
+
+    ```SQL
+    SET SCHEMA _SYS_DI;
+    SELECT * FROM M_ALL_CONTAINERS;  --Shows the list of HDI containers in the database
+    SELECT * FROM M_ALL_JOBS;  --Shows deployment HDI jobs
+    ```
+
+    For additional details consult [_SYS_DI Monitoring Views](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/78e1657f43f04741b9c2b161632e4fe5.html) in the Database Deployment Infrastructure (HDI) Reference.
+
+
 ## Summary
 
 You have now have a better understanding of some of the HDI concepts.
