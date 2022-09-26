@@ -162,18 +162,29 @@ Calculation views allow the developers to express their intent instead of defini
     
      -  Directly within the editor on the projection level
 
-         ![](images/open-calc-view-in-editor.png)
-         TODO Volker 
+         ![Calculation Data Preview](images/cv_dataPreview.png)
+        
+        with this result:
+        ![Calculation Data Preview](images/cv_dataPreview_Result.png)
 
-     -  Using the catalog browser in the SAP HANA database explorer
-
-         ![](images/calc-view.png)
+     -  Using the catalog browser in the SAP HANA database explorer as following
 
 ## Exercise 2.6 Create Analytic Privileges for your Calculation View
 
-1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
+ - 1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
+ Deploy
 
-2. TODO Volker, why does it suggest opening dbx here?  Unless I am mistaken, nothing can be seen in DBX related to the privileges and the calculation view can not yet preview the data.
+
+         ![](images/calc-view.png)
+         
+         with a filtered result. 
+
+
+         ![AX privileg](images/ax_rights.png)
+        If you now change the rule tp "SQ", deploy and review the calculation view:
+
+        ![Calculation Data Preview "SQ" in DBX](images/cv_dataPreview_Result_dbx.png)
+
 
 ## Exercise 2.7 Create a Database Role for the Analytic Privilege
 
@@ -181,6 +192,7 @@ Calculation views allow the developers to express their intent instead of defini
 
 2. TODO Volker, what are some debugging/tips to help ensure that everything was created properly.
 Also need to be able to better describe what the roles and privileges did.  Should we simplify this?
+YES
 
 2. Show the data preview functionality in DBX when viewing the data of the calculation view.  Perhaps show count passenger ID by airline.  Seems odd though as it only shows one airline.  Perhaps this is by design in the calcuation view?  TODO Volker.
 
