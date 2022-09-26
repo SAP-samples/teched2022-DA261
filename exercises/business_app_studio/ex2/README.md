@@ -212,53 +212,6 @@ TODO Dan/Gurvick move this step to separate DBX exercise.
 
     ![](images/debug-stored-procedure.png)
 
-<<<<<<< HEAD
-## Exercise 2.11 Opening a SQL Conole as Admin
-
-1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
-
-    ```SQL
-    SELECT * FROM USERS WHERE USER_NAME LIKE '%FLIGHT%';
-    SELECT * FROM SCHEMAS;
-    SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
-    SELECT * FROM FLIGHTRESERVATION_HDI_DB_1#DI.JOBS_;  --Fails 
-    ```
-    
-    Notice that the user is the _DT or design time user as opposed to the runtime user.
-    If you want to access the DT view you have to use the "ADMIN" container access in Database Explorer.
-
-    ![](images/DBX_ADMIN.png)
-
-    ```SQL
-    SELECT * from M_JOBS
-    ```
-Here is a blog on this topic:
-https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
-
-
-
-
-2.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container with ADMIN.  Execute the following SQL.
-
-    ```SQL
-    SELECT CURRENT_USER FROM DUMMY;
-    ```
-
-    Notice that the user is the _DT or design time user.
-    
-
-
-3.  The design time user has some additional privileges.  
-TODO Volker what can b shown here?
-
-    ![](images/open-admin.png)
-
-
-## Exercise 2.12 Examining the Contents of the HDI Container
-
-1.  In the SAP HANA database explorer, open the parent database of the HDI container.  Notice that you can see the schema and objects but do not have privileges to query them.
-=======
->>>>>>> cac1abdddaecf530aa68f5f055279a5c647becdb
 
 ## Summary
 

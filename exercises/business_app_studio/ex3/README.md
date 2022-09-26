@@ -40,7 +40,7 @@ Alternatively, database objects can also be created directly in the database usi
     Here is a blog on this topic:
     https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
 
-2.  The design time user has some additoinal privileges.  
+2.  The design time user has some additional privileges.  
 TODO Volker what can be shown here?
 
 ## Exercise 3.3 Examining the Contents of the HDI Container
