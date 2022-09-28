@@ -8,7 +8,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/welcome.png)
 
-    > Alternatively, select the View, Find Command menu (or Fn F1) to open the command palette and search for SAP HANA and select the option SAP HANA: Getting Started.
+    > Alternatively, select the menu **View**, **Find Command** (or Fn F1) to open the command palette and search for **SAP HANA** and select the option **SAP HANA: Getting Started**.
     >
     >![](images/getting-started.png)
 
@@ -47,12 +47,14 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >The bottom panel can also be shown (or hidden) by selecting View, Toggle Bottom Panel or by the icon in the bottom right.
     >
     >![](images/output.png)
+    >
+    >*Above, notice that the HDI container and a service key has been created and that the container has been bound to the SAP HANA Cloud instance.*
 
 3. In the project explorer, open the generated project.
 
     ![](images/open-project.png)
 
-4. Examine the created project and result of the deployment.
+4. Examine the created project.
 
     ![](images/project.png)
 
@@ -60,7 +62,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     
     >Optionally right click on OPEN EDITOR and choose hide.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
-    At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.  Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database.  TODO Volker benefits (is it cost savings, better utilization, much quicker to deploy) 
+    At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.  Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.  TODO Volker benefits (is it cost savings, better utilization, much quicker to deploy) 
     
     The HDI container can be seen in both the SAP BTP Cockpit and within the add database dialog of the SAP HANA database explorer.
 
@@ -104,7 +106,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     ![](images/HDI-Schemas.png)
 
     - "HDI-container"  is the schema for the "RUN TIME" data,
-    - "#DI" is the "DESIGN TIME" schema and 
+    - "#DI" is the "DESIGN TIME" schema (or maybe Deployment Infrastructure? TODO Volker) and 
     - "#OO" is a technical schema for the "Object Owner"
 
     For each DT and RT user there will be additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
@@ -116,17 +118,19 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/git-init.png)
 
-2. Commit the contents of the project and provide a commit message such as initial commit.  The green U stands for unstaged.
+2. Commit the contents of the project and provide a commit message such as initial commit.  Optionally select **Always** to the question "Would you like to stage all your changes and commit them directly?" to simplify the check in process. 
 
     ![](images/commit.png)
 
+    *The green U stands for unstaged or files that have not yet been added to the repository.*
+
 ## Exercise 2.3 Add Database Artifacts
 
-1. In the Getting Started wizard, select Add Database Artifacts.
+1. In the Getting Started wizard, select **Add Database Artifacts**.
 
     ![](images/add-tables.png)
 
-2. Complete all the steps to create two tables (PASSENGERS and FLIGHTRESERVATION), deploy these into tables, and to open the SAP HANA database explorer to view the deployed tables.
+2. Complete all the steps to create two tables, deploy them, and to open the SAP HANA database explorer to view the deployed tables.
 
     ![](images/tables-in-dbx.png)
 
@@ -144,21 +148,26 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.4 Load Data into your SAP HANA Cloud Application's Database Tables
 
-1. In the Getting Started wizard, select Load Data into your SAP HANA Cloud Application's Database Tables.
+1. In the Getting Started wizard, select **Load Data into your SAP HANA Cloud Application's Database Tables**.
 
 2. Complete all the steps to load data into the two previously created tables and to view the deployed data in the SAP HANA database explorer.
 
     ![](images/data-in-tables.png)
 
-## Exercise 2.5 Create a Calculation View for your Application
+    Notice also that the metadata of a table can be viewed by selecting Open.
+
+    ![](images/dbx-table-metadata.png)
+
+
+## Exercise 2.5 Create a Calculation View
 
 Calculation views allow the developers to express their intent instead of defining with SQL code how the data should be processed.
 
-1. In the Getting Started wizard, select Create a Calculation View for your Application.
+1. In the Getting Started wizard, select **Create a Calculation View for your Application**.
 
-2. Complete all the steps to create and deploy a calculation view and view its properties in the SAP HANA database explorer.  It may take a moment or two for the calculation view editor to load after its creation.  Note that the permissions to view its data will be granted in the next step.  Additional details on calculation views can be found at [Developing Data Models with SAP HANA Cloud](https://learning.sap.com/learning-journey/developing-applications-running-on-sap-btp-using-sap-hana-cloud/developing-data-models-with-sap-hana-cloud).
+2. Complete all the steps to create and deploy a calculation view and view its properties in the SAP HANA database explorer.  It may take a moment or two for the calculation view editor to load after its creation.  Note that the permissions to view its data will be granted in a subsequent step.  Additional details on calculation views can be found at [Developing Data Models with SAP HANA Cloud](https://learning.sap.com/learning-journey/developing-applications-running-on-sap-btp-using-sap-hana-cloud/developing-data-models-with-sap-hana-cloud).
 
-    There are various ways to open the Calculation View:
+    Once the calculation view has been deployed, there are various ways to view the data:
     
      -  Directly within the editor on the projection level
 
@@ -171,7 +180,7 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Exercise 2.6 Create Analytic Privileges for your Calculation View
 
- - 1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
+ 1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
  Deploy
 
 

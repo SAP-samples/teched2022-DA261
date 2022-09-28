@@ -30,13 +30,13 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
     >
     >![](images/re-open-welcome.png)
 
-    The SAP Business Application Studio is a browser-based application, so there is no need to install or update software.  You can continue to work on your project from any computer.
+    The SAP Business Application Studio is a browser-based application, so there is no need to install or update software.  You can continue to work on your project later from any computer.
 
-6. The preferences can be viewed or set via File, Preferences or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
+6. The preferences can be viewed or set via **File**, **Preferences** or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
 
     ![](images/preferences.png)
 
-7. A color theme can be set using File, Preferences, Color Theme.
+7. Your color theme of choice can be set using **File**, **Preferences**, **Color Theme**.
 
     ![](images/color-theme.png)
 
@@ -48,7 +48,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/git-panel.png)
 
-9. A terminal can be opened by selecting Terminal, New Terminal.
+9. A terminal can be opened by selecting **Terminal**, **New Terminal**.
 
     ![](images/terminal.png)
 
