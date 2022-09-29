@@ -3,6 +3,7 @@
 As a prerequisite, we have already created SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Trial account allows creation of only one database instance. If you've already created the instance from SAP BTP Cockpit, you may not be able to create one more database instance in this exercise. However, if you are a non-trial user, please proceed with the following steps. Make sure you provide a different instance name as the application does not allow creation of instances with same names. 
 
 If you are a trial user and you've already created one instance, click [here](../ex_8/README.md) to find more details about how to add an SAP HANA Cloud, Data Lake instance to your SAP HANA Cloud, SAP HANA Database instance before you proceed to the next exercise. 
+TO-DO - Should we include the Data Lake instance in the appendix?
 
 Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances directly from SAP HANA Cloud Central Overview page. 
 
@@ -16,25 +17,24 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/23.png)
     </kbd>
     
-2. Below are the details on the fields that you see on this Create Instance screen, what are the values they take and the details on steps to successfully create an SAP HANA Cloud instance.
+2. Below are the field details that you see on this Create Instance screen, the values they take and the steps to successfully create an SAP HANA Cloud instance.
 
-    Organization - The Cloud Foundry organization in which the instance is created.
-    Space - The Cloud Foundry space in which the instance is created.
-    Instance Name - The name of the instance. The name must start and end with an alphanumeric character. The name can include the underscore character _.
-    Description - A description of the instance.
-    Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
+    Organization - The Cloud Foundry organization in which the instance is created.  
+    Space - The Cloud Foundry space in which the instance is created.  
+    Instance Name - The name of the instance. The name must start and end with an alphanumeric character. The name can include the underscore character _.  
+    Description - A description of the instance.  
+    Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.  
 
-    Click on Next Step once all the fields are rightly filled. 
+    Click on Next Step once all the fields filled correctly. 
     <kbd>
     ![](./images/3.png)
     </kbd>
     
-3. You can navigate to the SAP HANA Database Documentation by clicking on the hyperlink.
+3. Details of the fields that you see on this screen:  
 
-    Details of the fields that you see on this screen:
-    Memory - The size of your (compressed) in-memory data in your SAP HANA database.
+    Memory - The size of your (compressed) in-memory data in your SAP HANA database.  
     Compute - The number of vCPUs of your SAP HANA database.
-    The number of vCPUs is allocated according to the size of memory of your instance.
+    The number of vCPUs is allocated according to the size of memory of your instance.  
     Storage - The disk storage space of your SAP HANA database.
     The disk storage space is allocated according to the memory size of your SAP HANA database.
 
@@ -46,12 +46,13 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/21.png)
     </kbd>
     
-4. Click on Next Step button, once the memory and storage configurations are done. In this step, you have an option to choose availability zones. You cannot change the availability zone of an instance once it is created. If you want to change the availability zone for an instance, delete the instance and re-create it with the preferred availability zone.
+
+4. Click on the Next Step button once the memory and storage configurations are completed. In this step, you have an option to choose availability zones. You cannot change the availability zone of an instance once it is created. If you want to change the availability zone for an instance, delete the instance and re-create it with the preferred availability zone.
     <kbd>
     ![](./images/5.png)
     </kbd>
     
-5. Click on Next Step button. Here, you have an option to make configurations related to allowed connections like IP address settings. Then there is an Additional Features sections to make configurations on Script Server and Document Store capabilities.
+5. Click on Next Step button. There is an Additional Features section to make configurations on Script Server and Document Store capabilities. Then you have an option to make configurations related to allowed connections like IP address settings. Select Allow all IP addresses.
     <kbd>
     ![](./images/6.png)
     </kbd>
@@ -81,7 +82,9 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/11.png)
     </kbd>
     
-10. Click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just initiated to create.
+TO-DO - Update all remaining images (I have a free trial so I cannot create an instance)
+
+10. Click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created.
     <kbd>
     ![](./images/12.png)
     </kbd>
@@ -94,7 +97,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/14.png)
     </kbd>
     
-12. By clicking on this status (hyperlink) we get details on when the instance creation was initiated. Once the instance is created, status will be changed to Running.
+12. By clicking on this status (hyperlink) we get details on when the instance creation was initiated. Once the instance is created, the status will be changed to Running.
     <kbd>
     ![](./images/19.png)
     </kbd>
@@ -102,4 +105,4 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/20.png)
     </kbd>
     
-Continue to - [Exercise 2 - Apply Filters](../ex3/README.md)
+Continue to - [Exercise 3 - Apply Filters](../ex3/README.md)
