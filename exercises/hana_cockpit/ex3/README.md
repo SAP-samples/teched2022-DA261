@@ -1,4 +1,4 @@
-# Exercise 4: Managing Alerts
+# Exercise 3: Managing Alerts
 
 As an administrator, you actively monitor the status of the system, its services, and the consumption of system resources. However, you are also alerted of critical situations, for example: memory utilization is reaching a critical level, or a server has stopped.
 
@@ -38,4 +38,8 @@ In this exercise, you'll examine the Alerts card, drill-down to obtain more info
 
 9. Click the **Back** button at the top left to return to the Database Overview page.
 
-Continue to [Exercise 4: Monitoring Memory Usage](../ex4)
+## Summary
+
+You now have ...  The next exercise provides an overview of the SAP HANA database explorer.
+
+Continue to [Exercise 1: Launch the SAP HANA Database Explorer](../../database_explorer/ex1/README.md)
