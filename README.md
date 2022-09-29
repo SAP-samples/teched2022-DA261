@@ -83,7 +83,7 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 ### SAP Business Application Studio Exercises
 
 - [Exercise 1 - Create a Development Workspace](exercises/business_app_studio/ex1/)
-- [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](exercises/business_app_studio/ex2/)
+- [Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development](exercises/business_app_studio/ex2/)
 - [Exercise 3 - Additional HDI Container Details (Optional)](exercises/business_app_studio/ex3/)
 
 # Part 2: Administration and Monitoring

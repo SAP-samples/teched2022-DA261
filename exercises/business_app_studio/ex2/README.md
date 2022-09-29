@@ -1,10 +1,10 @@
-# Exercise 2 - Create and deploy a project containing database artifacts using the SAP HANA Getting Started Wizard
+# Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development
 
-This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the Getting Started wizard.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
+This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the guided development tool.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
 
 ## Exercise 2.1 Create a New SAP HANA Database Project from a Template
 
-1. In the SAP Business Application Studio, start the **Guided Development** wizard by selecting it from the bottom of the Welcome screen.
+1. In the SAP Business Application Studio, start the **Guided Development** tool by selecting it from the bottom of the Welcome screen.
 
     ![](images/welcome.png)
 
@@ -12,7 +12,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >
     >![](images/getting-started.png)
 
-    It may take a moment or two for the contents of the Guided Develpment wizard to appear.  If it does not appear, try reloading the page.
+    It may take a moment or two for the contents of the Guided Development wizard to appear.  If it does not appear, try reloading the page.
 
 2. Select **Get Started with SAP HANA Cloud**.
 
@@ -36,7 +36,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >
     >---
     > 
-    > The Cloud Foundry environment can aslo be interacted with the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/getting-started.html) as shown below.
+    > The Cloud Foundry environment can also be interacted with the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/getting-started.html) as shown below.
     >
     >![](images/cf-cli.png)
 
@@ -101,7 +101,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     An HDI container construct can also be described as a glorified set of schemas. 
 
-    TODO Volker, the sreenshot below does not seem to correspond to the previous screenshots.
+    TODO Volker, the screenshot below does not seem to correspond to the previous screenshots.
 
     ![](images/HDI-Schemas.png)
 
@@ -126,7 +126,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.3 Add Database Artifacts
 
-1. In the Getting Started wizard, select **Add Database Artifacts**.
+1. In the guided development tool, select **Add Database Artifacts**.
 
     ![](images/add-tables.png)
 
@@ -138,9 +138,9 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/git-integration.png)
 
-    Commit the changes and continue to do so afer subsequent steps.
+    Commit the changes and continue to do so after subsequent steps.
 
-    Note that in this way you will have a record of the changes from each step that can be viewed or the project can be restored to the state of a previous commit.
+    Note that in this way you will have a record of the changes from each step that can be viewed, or the project can be restored to the state of a previous commit.
 
     ![](images/git-history.png)
 
@@ -148,7 +148,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.4 Load Data into your SAP HANA Cloud Application's Database Tables
 
-1. In the Getting Started wizard, select **Load Data into your SAP HANA Cloud Application's Database Tables**.
+1. In the guided development tool, select **Load Data into your SAP HANA Cloud Application's Database Tables**.
 
 2. Complete all the steps to load data into the two previously created tables and to view the deployed data in the SAP HANA database explorer.
 
@@ -161,59 +161,46 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.5 Create a Calculation View
 
-Calculation views allow the developers to express their intent instead of defining with SQL code how the data should be processed.
+Calculation views allow the developers to express their intent instead of defining with SQL code how the data should be processed.  Additional details on calculation views can be found at [Developing Data Models with SAP HANA Cloud](https://learning.sap.com/learning-journey/developing-applications-running-on-sap-btp-using-sap-hana-cloud/developing-data-models-with-sap-hana-cloud) and [Working with Calculation Views in SAP HANA Cloud](https://open.sap.com/courses/hana9).
 
-1. In the Getting Started wizard, select **Create a Calculation View for your Application**.
+1. In the guided development tool, select **Create a Calculation View for your Application**.
 
-2. Complete all the steps to create and deploy a calculation view and view its properties in the SAP HANA database explorer.  It may take a moment or two for the calculation view editor to load after its creation.  Note that the permissions to view its data will be granted in a subsequent step.  Additional details on calculation views can be found at [Developing Data Models with SAP HANA Cloud](https://learning.sap.com/learning-journey/developing-applications-running-on-sap-btp-using-sap-hana-cloud/developing-data-models-with-sap-hana-cloud).
+2. Complete all the steps to create and deploy a calculation view and view its properties in the SAP HANA database explorer.  It may take a moment or two for the calculation view editor to load after its creation.  Note that the permissions to view its data will be granted in a subsequent step.  
 
-    Once the calculation view has been deployed, there are various ways to view the data:
+    Within the SAP HANA database explorer, the deployed calculation view can be seen as well as its metadata.
+
+    ![](images/cv-in-dbx-metadata.png)
+
+    Note that the data cannot yet be viewed from the SAP HANA database explorer as this calculation view is configured to use analytic privileges which have not yet been created.  
     
-     -  Directly within the editor on the projection level
+    ![](images/cv-privileges.png)
 
-         ![Calculation Data Preview](images/cv_dataPreview.png)
+    From the above drop down for Analytic Privileges, clear the option SQL Analytic Privileges.
+
+    ![](images/clear-privileges.png)
+
+    Once the calculation view has been re-deployed, its data can be viewed in the SAP HANA database explorer as shown below.  The data can be placed in a chart or in columnar form by selecting Raw Data. 
+
+    ![](images/cv-data-preview.png)
+    
+    *Notice that the Airline column has been added to the label axis and a count of the passenger ids has been added to the value axis.*
+
+    It is also possible to see a similar preview within the calculation view editor.
+
+    ![Calculation Data Preview](images/cv_dataPreview.png)
         
-        with this result:
-        ![Calculation Data Preview](images/cv_dataPreview_Result.png)
-
-     -  Using the catalog browser in the SAP HANA database explorer as following
-
-## Exercise 2.6 Create Analytic Privileges for your Calculation View
-
- 1. In the Getting Started wizard, select Create Analytic Privileges for your Calculation View and complete the steps.
- Deploy
+    ![Calculation Data Preview](images/cv_dataPreview_Result.png)
 
 
-         ![](images/calc-view.png)
-         
-         with a filtered result. 
+## Exercise 2.6 Create a Database Procedure File
 
-
-         ![AX privileg](images/ax_rights.png)
-        If you now change the rule tp "SQ", deploy and review the calculation view:
-
-        ![Calculation Data Preview "SQ" in DBX](images/cv_dataPreview_Result_dbx.png)
-
-
-## Exercise 2.7 Create a Database Role for the Analytic Privilege
-
-1. In the Getting Started wizard, select Create a Database Role for the Analytic Privilege and complete the steps.
-
-2. TODO Volker, what are some debugging/tips to help ensure that everything was created properly.
-Also need to be able to better describe what the roles and privileges did.  Should we simplify this?
-YES
-
-2. Show the data preview functionality in DBX when viewing the data of the calculation view.  Perhaps show count passenger ID by airline.  Seems odd though as it only shows one airline.  Perhaps this is by design in the calcuation view?  TODO Volker.
-
-## Exercise 2.8 Create a Database Procedure File
-
-1. In the Getting Started wizard, select Create a Database Procedure File and complete the steps.
+1. In the guided development tool, select **Create a Database Procedure File** and complete the steps.
 
 2. In the SAP HANA database explorer, call the stored procedure.
 
     ![](images/call-stored-procedure.png)
 
-## Exercise 2.9 Debug a Database Procedure File
+## Exercise 2.7 Debug a Database Procedure File
 
 TODO Dan/Gurvick move this step to separate DBX exercise.
 
