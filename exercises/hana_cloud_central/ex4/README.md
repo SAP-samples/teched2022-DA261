@@ -1,4 +1,4 @@
-# Exercise 5 - Start, Stop, Upgrade Instances, and Other Actions
+# Exercise 4 - Start, Stop, Upgrade Instances, and Other Actions
 
 In this section we will discuss about how to start, stop, and upgrade instances from the SAP HANA Cloud Central application.
 
