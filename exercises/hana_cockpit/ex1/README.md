@@ -44,4 +44,4 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     ![Manage Cards](./images/1-07_ManageCards.png)
 
-Continue to [Exercise 2: Configuring Database Properties](../ex2)
+Continue to [SAP HANA Database Explorer - Exercise 1](../../database_explorer/ex1/README.md)

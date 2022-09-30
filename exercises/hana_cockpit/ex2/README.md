@@ -47,4 +47,4 @@ In this exercise, you will change a few properties using the "Database Configura
 
 6. Click the **Back** button at the top left to return to the Database Overview page.
 
-Continue to [SAP HANA Database Explorer - Exercise 1](../../database_explorer/ex1/README.md)
+Continue to [Exercise 3: Managing Alerts](../ex3/README.md)

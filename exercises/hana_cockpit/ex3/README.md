@@ -42,4 +42,4 @@ In this exercise, you'll examine the Alerts card, drill-down to obtain more info
 
 You now have ...  The next exercise provides an overview of the SAP HANA database explorer.
 
-Continue to [Exercise 1: Launch the SAP HANA Database Explorer](../../database_explorer/ex1/README.md)
+Continue to [Exercise 4: Security Basics](../ex4/README.md)
