@@ -20,9 +20,9 @@ In this exercise, you will change a few properties using the "Database Configura
     
     - Search globally for a configuration file, section, specific value or layer type
     - Add a section to a configuration file
+    - View your change history to keep track of your configuration edits
     - Compare parameters
     - Take a parameter snapshot with optional notes
-    - View your change history to keep track of your configuration edits
     - Add a parameter to a section
 
     ![Database Configuration App](./images/2-02_DBConfigApp.png)
@@ -47,4 +47,4 @@ In this exercise, you will change a few properties using the "Database Configura
 
 6. Click the **Back** button at the top left to return to the Database Overview page.
 
-Continue to [Exercise 3: Managing Alerts](../ex3)
+Continue to [SAP HANA Database Explorer - Exercise 1](../../database_explorer/ex1/README.md)

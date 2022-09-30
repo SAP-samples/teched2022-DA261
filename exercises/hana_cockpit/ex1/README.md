@@ -1,10 +1,10 @@
 # Exercise 1: The Database Overview Page
 
-With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, SAP HANA services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also administer backups, configuration parameters, table distribution, smart data access (SDA) and smart data integration (SDI). Finally, you can perform security tasks such as user & role management, data encryption, auditing, data anonymization and trust configuration. 
+The SAP HANA cockpit is the main administration tool for SAP HANA. With the SAP HANA Cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, SAP HANA services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also administer backups, configuration parameters, table distribution, smart data access (SDA) and smart data integration (SDI). Finally, you can perform security tasks such as user & role management, data encryption, auditing, data anonymization and trust configuration. 
 
 The Database Overview page displays health metrics for an individual SAP HANA Cloud database.
 
-Through the Database Overview page, you can view key health indicators for this specific database, such as database status, alerts, and resource utilization. You also have access to tools that allow you to perform database administrations tasks, such as performance analysis, and executing SQL statements. Different parts of a single card can link to different views or applications. This way, you can see various components in a single view and make the decision whether to further examine issues by drilling down.
+Through the Database Overview page, you can view key health indicators for this specific database, such as database status, alerts, and resource utilization. You also have access to tools that allow you to perform database administrations tasks, such as performance analysis and executing SQL statements. Different parts of a single card can link to different views or applications. This way, you can see various components in a single view and make the decision whether to further examine issues by drilling down.
 
 This exercise will teach you the basics of navigating the Database Overview page and how to find the information you need as a database administrator.
 
@@ -14,7 +14,7 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     ![SAP BTP Cockpit](./images/1-01_BTPCockpit.png)
 
-2. At the top of the Database Overview page, you'll find the toolbar. The top left displays the name of the currently managed database "DEMO_HANA_DB" and the database username (DBADMIN) you're connecting as to that database. The top right contains the user button (for user-specific settings and options), the notifications button, the help button (for content-specific online help), the auto-refresh interval button (can be every 10/20/30 seconds or 1/5/10 minutes), the manual refresh button, and the switch databases button.
+2. At the top of the Database Overview page, you'll find the toolbar. The top left displays the name of the currently managed database "DEMO_HANA_DB" and the database username (DBADMIN) you're connecting as. The top right contains the user button (for user-specific settings and options), the notifications button, the help button (for content-specific online help), the auto-refresh interval button (can be every 10/20/30 seconds or 1/5/10 minutes), the manual refresh button, and the switch databases button.
 
     ![SAP HANA Cockpit Toolbar](./images/1-02_Toolbar.png)
 
@@ -24,7 +24,7 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     Click on **Close** to dismiss the pop up.
 
-4. Below the toolbar you see the cockpit's collapsible header, where you'll find the status of the database, the database user you're connecting as, the host name, and a search bar. From the header, you can also change the database user (via the Choose Authentication button), enable single sign-on (via the Enable JWT SSO button) and open the SQL Console. You also change or filter the cards that appear on this page and save that as a new view.
+4. Below the toolbar you see the cockpit's collapsible header, where you'll find the status of the database, the database user you're connecting as, the host name, and a search bar. From the header, you can also change the database user (via the Choose Authentication button), enable single sign-on (via the Enable JWT SSO button) and open the SQL Console. You can also change or filter the cards that appear on this page and save that as a new view.
 
     ![Header](./images/1-04_Header.png)
 
