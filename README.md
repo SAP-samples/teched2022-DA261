@@ -65,7 +65,6 @@ The SAP HANA cockpit tool provides administration and monitoring of individual S
 ### SAP HANA Cockpit Exercises
 
 - [Exercise 1 - The Database Overview Page](exercises/hana_cockpit/ex1/)
-- [Exercise 2 - Configuring Database Properties](exercises/hana_cockpit/ex2/)
 
 
 ## SAP HANA Database Explorer
@@ -97,9 +96,12 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 
 ### SAP HANA Cockpit Exercises
 
+- [Exercise 2 - Configuring Database Properties](exercises/hana_cockpit/ex2/)
 - [Exercise 3 - Managing Alerts](exercises/hana_cockpit/ex3/)
-- [Exercise 4 - Monitoring Memory Usage](exercises/hana_cockpit/ex4/)
-- [Exercise 5 - Security Basics](exercises/hana_cockpit/ex5/)
+- [Exercise 4 - Security Basics](exercises/hana_cockpit/ex4/)
+- [Exercise 5 - Database Backups](exercises/hana_cockpit/ex5/)
+- [Exercise 6 - HDI Administration](exercises/hana_cockpit/ex6/)
+- [Exercise 7 - Performance Management](exercises/hana_cockpit/ex7/)
 
 ### SAP Business Application Studio Exercises
 
