@@ -115,3 +115,10 @@ Support for the content in this repository is available during the actual time o
 
 ## License
 Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
+
+## Appendix
+Additional SAP HANA Cockpit Exercises:
+- [Exercise 8 - Monitoring Memory Usage](exercises/hana_cockpit/appendix_ex9/)
+- [Exercise 9 - Managing Services](exercises/hana_cockpit/appendix_ex10/)
+- [Exercise 10 - Managing Workload Classes](exercises/hana_cockpit/appendix_ex11/)
+- [Exercise 11 - Recent Activities and Frequently Used Apps](README.md)
