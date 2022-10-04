@@ -6,11 +6,11 @@ Database backups are crucial to ensuring data stays safe. In the SAP HANA Cloud 
 
     ![Database Backups Card](./images/8-01_BackupsCard.png)
 
-2. The backup catalog is presented. Switch the view from table to a horizontal stacked chart by clicking on the button **horizontal-stacked-chart** above the table and to the right. This chart displays all the backups stored in a statistical or pictorial format i.e. in form of graphical representation that is easy to interpret.
+2. The backup catalog is presented. Switch the view from table to a horizontal stacked chart by clicking on the button **horizontal-stacked-chart** above the table and to the right. This chart displays all the backups stored in a statistical or pictorial format i.e. in the form of graphical representation that is easy to interpret.
 
     ![Database Catalog in Horizontal Stacked Chart](./images/8-02_BackupCatalog-StackedChart.png)
 
-3. Click on the **horizontal bar for one of the backups** to get details on the disk space consumed by complete data backup and other backup types. Notice the amount occupied by Log and Catalog Backups. Click **Close** button to close the pop up.
+3. Click on the **horizontal bar for one of the backups** to see details on the backup start time and size, as well as disk space consumed by each data backup type. Click **Close** button to close the pop up.
 
     ![Bar Details](./images/8-03_BackupCatalog-BarDetails.png)
 

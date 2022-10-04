@@ -11,7 +11,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
     ![User & Role Management Card](./images/6-01_UserRoleMgmtCard.png)
 
-2. You can use user groups to group together users with similar roles and to enforce a specific password policy on the group. Click the **New User Group** button.
+2. User groups can group together users with similar roles and enforce a specific password policy on the group. Click the **New User Group** button.
 
     ![New Group Management](./images/6-02_UserGroupMgmt.png)
 
@@ -96,7 +96,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
     ![Object Privileges](./images/6-18_Role-ObjectPrivileges.png)
 
-19. Let's now assign the newly created *TECHNICAL_USER_ROLE* to our user *TECHNICAL_USER*. On the drop-down menu from the cockpit's toolbar (top left), click on **Role Management** and select **Assign Roles** from the menu to navigate to that app.
+19. Let's now assign the newly created *TECHNICAL_USER_ROLE* to our user *TECHNICAL_USER*. On the drop-down menu from the cockpit's toolbar (top left), click on **Role Management** and select **Role Assignment** from the menu to navigate to that app.
 
     ![Role Management App Lateral Navigation](./images/6-19_RoleMgmtLateralNavigation.png)
 

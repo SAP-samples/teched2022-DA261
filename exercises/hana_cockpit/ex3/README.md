@@ -1,10 +1,10 @@
 # Exercise 3: Managing Alerts
 
-As an administrator, you actively monitor the status of the system, its services, and the consumption of system resources. However, you are also alerted of critical situations, for example: memory utilization is reaching a critical level, or a server has stopped.
+As an administrator, you actively monitor the status of the system, its services, and the consumption of system resources. However, you are also alerted of critical situations through the Alerts application. For example: memory utilization is reaching a critical level, or a server has stopped.
 
 The internal monitoring infrastructure of the SAP HANA database is continuously collecting and evaluating information about status, performance, and resource usage from all components of the SAP HANA database. In addition, it performs regular checks on the data in system tables and views and when configurable threshold values are exceeded, issues alerts. In this way, you are warned of potential problems. The priority of the alert indicates the severity of the problem and depends on the nature of the check and configured threshold values.
 
-In this exercise, you'll examine the Alerts card, drill-down to obtain more information about raised alerts and configure alert thresholds.
+In this exercise, you'll examine the Alerts card, with a focus on obtaining more information about raised alerts and configuring alert thresholds.
 
 1. Locate the *Alerts* card. This card displays the number of high (in red colored font) and medium (in orange colored font) priority alerts in the database, classified into one of the 10 alert categories in SAP HANA. It allows you to quickly identify issues in the database and drill-down to the Alert Details app to analyze the situation. You can also choose to view alerts by the key performance areas of available, performance and capacity. Click on **Alert Definitions** in the Alerts card.
 
@@ -38,8 +38,5 @@ In this exercise, you'll examine the Alerts card, drill-down to obtain more info
 
 9. Click the **Back** button at the top left to return to the Database Overview page.
 
-## Summary
-
-You now have ...  The next exercise provides an overview of the SAP HANA database explorer.
 
 Continue to [Exercise 4: Security Basics](../ex4/README.md)

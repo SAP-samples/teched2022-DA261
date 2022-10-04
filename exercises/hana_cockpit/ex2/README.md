@@ -21,9 +21,10 @@ In this exercise, you will change a few properties using the "Database Configura
     - Search globally for a configuration file, section, specific value or layer type
     - Add a section to a configuration file
     - View your change history to keep track of your configuration edits
-    - Compare parameters
     - Take a parameter snapshot with optional notes
-    - Add a parameter to a section
+    - Add a parameter to a section    
+    - Compare configurations between multiple databases or between two snapshots
+    - Compare parameters
 
     ![Database Configuration App](./images/2-02_DBConfigApp.png)
 
