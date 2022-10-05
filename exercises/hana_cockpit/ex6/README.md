@@ -13,7 +13,7 @@ An HDI (SAP HANA Deployment Infrastrcture) administrator is responsible for conf
 
 Click the **Users and Roles** tab. You should see the two users that have already been created. 
 
-    ![Users and Roles](./images/users_and_role.png)
+![Users and Roles](./images/users_and_role.png)
 
 3. Click on the **Groups & Containers** tab. Select **_SYS_DI**. 
 
@@ -21,7 +21,7 @@ Click the **Users and Roles** tab. You should see the two users that have alread
 
 4. In the _Privileges_ tab, you can select the name of the user to whom you want to grant HDI Administration. Click **DBADMIN**.
 
-    ![Workload Class with No Mapping](./images/dm_admin.png)
+    ![Workload Class with No Mapping](./images/db_admin.png)
 
 5. In the _Privileges of Selected User_ tab, all selected privileges will be displayed.
 
@@ -56,7 +56,7 @@ An HDI container group can also be dropped by selecting the container group and 
 
 TO DO - add SnagIt content
 
-    ![Dropping](./images/create.png)
+![Dropping](./images/create.png)
 
 An HDI Container group can be moved to another container group, as follows:
 
