@@ -13,7 +13,7 @@ An HDI (SAP HANA Deployment Infrastrcture) administrator is responsible for conf
 
 Click the **Users and Roles** tab. You should see the two users that have already been created. 
 
-![Users and Roles](./images/users_and_role.png)
+![Users and Roles](./images/users_and_roles.png)
 
 3. Click on the **Groups & Containers** tab. Select **_SYS_DI**. 
 
