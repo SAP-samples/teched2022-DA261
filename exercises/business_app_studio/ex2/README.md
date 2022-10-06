@@ -39,6 +39,10 @@ This exercise will demonstrate how to create a project containing tables, a calc
     > The Cloud Foundry environment can also be interacted with the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/getting-started.html) as shown below.
     >
     >![](images/cf-cli.png)
+    >
+    >It should also be noted that if you are using a non-trial account, you may wish to specify which SAP HANA Cloud instance to deploy the HDI container to.
+    >
+    >![](images/select-instance.png)
 
     Select the option to Open the Output View when asked.
 
@@ -77,7 +81,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     It contains details such as the parameters needed to connect to the HDI container as well as credentials for a DT or design time user and RT or runtime user. 
 
     ![](images/service-key-details.png)
-
+    
     These details could be also be used to connect to the HDI container from an application using one of the many SAP HANA client drivers (Java, ODBC, Node.js, Python, Go, .NET etc.) or the command line SQL tool HDBSQL.
 
     >An example is shown below of connecting with both the RT and DT users.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client.
@@ -94,8 +98,6 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 
     TODO Volker ... in the above screenshot's which schema is the #OO?  
-
-    TODO Volker ... at some point another service key is created for the HDI container.  What triggers that?  Seems to be when the HDI container is added to DBX.  Why do two sets of service keys get created?
   
     The SAP HANA database explorer is able to look up the service key and use the information contained in the service key to connect and browse the HDI container.
 
@@ -110,7 +112,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     - "#OO" is a technical schema for the "Object Owner"
 
     For each DT and RT user there will be additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
-    The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a SQL interface and also a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) and Java API (sap-java-hdi TODO where does one find this API?)that developers can use.
+    The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a [SQL interface](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/035dbbe23ac14242b1f7d724dd102825.html), a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) interface, and Java API (sap-java-hdi TODO Volker where does one find this API?)that developers can use.
 
 ## Exercise 2.2 Initialize the Git Repository
 

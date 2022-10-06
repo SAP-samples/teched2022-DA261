@@ -6,7 +6,6 @@ This exercise will further examine the deployed HDI container.
 
 - HDI stands for SAP HANA Deployment Infrastructure
 - HDI is an integral part of SAP HANA and SAP HANA Cloud
-- HDI is a scalable design-time \ runtime environment
 - Supports most standard database artifacts like tables, procedures, views, virtual tables, roles
 - Provides support for advanced SAP HANA artifacts like calculation views, flowgraphs, and replication tasks
 - Determines correct deployment order
@@ -37,11 +36,11 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/open-admin.png)
 
+    Now rerun the previous code.  Notice that the select from M_JOBS now succeeds.
+
     Here is a blog on this topic:
     https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
 
-2.  The design time user has some additional privileges.  
-TODO Volker what can be shown here?
 
 ## Exercise 3.3 Examining the Contents of the HDI Container
 
