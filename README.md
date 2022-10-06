@@ -28,7 +28,7 @@ Database to invoke the Create Instance wizard.
     
     ![](images/create-hana-instance.png)
 5.  Choose SAP HANA Cloud, SAP HANA Database and click the button Next Step.
-6.	Enter DEMO_HANA_DB for the instance name.
+6.	Enter **DEMO_HANA_DB** for the instance name.
 7.	Enter and confirm your administrator password – ***PLEASE REMEMBER IT AND/OR WRITE IT DOWN!***.
 8.  For trial systems, consider changing the allowed connections option to **Allow all connections**.  The rest of the values can be left as a default.
 9.	Complete the wizard.
@@ -107,8 +107,6 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 ### SAP Business Application Studio Exercises
 
 - [Exercise 4 - Access a Table Outside of the HDI Container using a Synonym](exercises/business_app_studio/ex4/)
-- [Exercise 5 - Analyze Performance with PlanViz](exercises/business_app_studio/ex5/)
-
 
 ## How to obtain support
 

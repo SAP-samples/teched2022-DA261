@@ -30,7 +30,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/log-in.png)
 
-    >In the example below, notice that the API endpoint is slightly different (us10-001 instead of us10) and would need to be updated in the wizard.  
+    >In the example below, notice that the API endpoint is slightly different (us10-001 instead of us10) and hence the endpoint value in the above wizard would need to be updated to use the correct endpoint value.  Also make sure that there is not a space before or after the URL.
     >
     >![](images/API-endpoint.png)
     >
@@ -40,7 +40,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >
     >![](images/cf-cli.png)
     >
-    >It should also be noted that if you are using a non-trial account, you may wish to specify which SAP HANA Cloud instance to deploy the HDI container to.
+    >It should also be noted that if you are using a non-trial account (trial account limit the number of instances to one), you may wish to specify which SAP HANA Cloud instance to deploy the HDI container to.
     >
     >![](images/select-instance.png)
 
@@ -64,13 +64,17 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     The panes in the explorer can be expanded and resized.  
     
-    >Optionally right click on OPEN EDITOR and choose hide.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
+    >Optionally right click on OPEN EDITORS and choose hide or uncheck the item.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
     At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.  Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.  TODO Volker benefits (is it cost savings, better utilization, much quicker to deploy) 
     
-    The HDI container can be seen in both the SAP BTP Cockpit and within the add database dialog of the SAP HANA database explorer.
+    The HDI container can be seen in the SAP BTP Cockpit. 
 
     ![](images/hdi-container.png)
+
+    It is also visisble within the add database dialog of the SAP HANA database explorer.
+    
+    >The SAP HANA database explorer is able to connect to the HDI container without providing credentials as it is able to look up the service key mentioned below  to connect and browse the HDI container.
 
     ![](images/add-HDI-in-dbx.png)
 
@@ -84,7 +88,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     These details could also be used to connect to the HDI container from an application using one of the many SAP HANA client drivers (Java, ODBC, Node.js, Python, Go, .NET etc.) or the command line SQL tool HDBSQL.
 
-    >An example is shown below of connecting with both the RT and DT users.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client.
+    >An example is shown below of connecting with both the RT and DT users.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client and is shown for illustrative purposes only.
     >
     > ```SQL
     > \al
@@ -95,12 +99,11 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >![](images/HDI-Schemas_RT.png)
     >
     >![](images/HDI-Schemas_DT.png)
-
+    >
+    >The blog [How to recreate a HANA Cloud service key aka password rotation](https://blogs.sap.com/2022/10/05/how-to-recreate-a-hana-cloud-service-key-aka-password-rotation/) provides some additional details on how these service keys can be recreated or rotated.
 
     TODO Volker ... in the above screenshot's which schema is the #OO?  
   
-    The SAP HANA database explorer is able to look up the service key and use the information contained in the service key to connect and browse the HDI container.
-
     An HDI container construct can also be described as a glorified set of schemas. 
 
     TODO Volker, the screenshot below does not seem to correspond to the previous screenshots.
