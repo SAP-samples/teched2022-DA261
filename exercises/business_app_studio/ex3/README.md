@@ -1,69 +1,56 @@
-# Exercise 3 - Additional HDI Container Details (Optional)
+# Exercise 3 - Import and Deploy the Completed Project (Optional)
 
-This exercise will further examine the deployed HDI container.  
+This exercise demonstrates how a project could be imported and deployed into a workspace.  If you were successful with the previous step, please read through these steps or continue on to exercise 4.
 
-## Exercise 3.1 Why HDI?
+## Exercise 3.1 Open an empty workspace
 
-- HDI stands for SAP HANA Deployment Infrastructure
-- HDI is an integral part of SAP HANA and SAP HANA Cloud
-- Supports most standard database artifacts like tables, procedures, views, virtual tables, roles
-- Provides support for advanced SAP HANA artifacts like calculation views, flowgraphs, and replication tasks
-- Determines correct deployment order
-- Transactional all-or-nothing principle
-- Evolves the runtime objects
-- Simplifies the need for the developer to write DDL and DML to get schema evolution
-- Re-deployment of dependent artifacts
-- Schema less development
-- Multiple developers can each have their own isolated deployments
-- Can be generated from higher-level language like CAP CDS
-- Eases deployment in multi-tenant environments
+1. Select File, Open Workspace and browse to projects.
 
-Alternatively, database objects can also be created directly in the database using SQL as shown in the last step of [SAP HANA database explorer exercise 1](../database_explorer/README.md).
+    An empty workspace will open.  If a previous project exists with the same name it can be delted.
 
-## Exercise 3.2 Opening a SQL Console as Admin
+## Exercise 3.2 Import the FlightReservation Project
 
-1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
+1. Download the file [FlightReservation.tar](FlightReservation.tar).
 
-    ```SQL
-    SELECT * FROM USERS WHERE USER_NAME LIKE '%FLIGHT%';
-    SELECT * FROM SCHEMAS;
-    SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
-    SELECT * FROM M_JOBS;  --Fails 
+2. Right click on an empty space below PROJECTS and select **Import Project** and select the previously downloaded file.
+
+    ![](images/open.png)
+
+## Exercise 3.3 Install the Required Node Modules
+
+1. Open a terminal by selecting Terminal, New Terminal.  Change directories to the location where the Node.js modules are specified, view the required Node.js modules, and then install them.
+
     ```
-    
-    Notice that the user is the _RT or run time user as opposed to the design time user.
-    If you want to access the DT view you have to use the "ADMIN" container access in Database Explorer.
-
-    ![](images/open-admin.png)
-
-    Now rerun the previous code.  Notice that the select from M_JOBS now succeeds.
-
-    Here is a blog on this topic:
-    https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
-
-
-## Exercise 3.3 Examining the Contents of the HDI Container
-
-1.  In the SAP HANA database explorer, open the parent database of the HDI container.  Notice that you can see the schema and objects but do not have privileges to query them.
-
-    TODO, demonstrate this
-
-## Exercise 3.4 HDI Monitoring Views
-
-1. These can be viewed in the main? database in the schema _SYS_DI.  The M_ indicates that these are monitoring views.  A few example queries follow that can be run.
-
-    ```SQL
-    SET SCHEMA _SYS_DI;
-    SELECT * FROM M_ALL_CONTAINERS;  --Shows the list of HDI containers in the database
-    SELECT * FROM M_ALL_JOBS;  --Shows deployment HDI jobs
+    cd FlightReservation/db
+    cat package.json
+    npm install
     ```
 
-    For additional details consult [_SYS_DI Monitoring Views](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/78e1657f43f04741b9c2b161632e4fe5.html) in the Database Deployment Infrastructure (HDI) Reference.
+## Exercise 3.4 Bind to an HDI Container
 
+1. In the SAP HANA PROJECTS editor, choose to bind the hdi_db.  Select Bind to the default instance.  This will provide details of which SAP HANA Cloud database to create an HDI container in.  These values are saved in the .env file within the project.
+
+    ![](imagess/bind.png)
+
+## Exercise 3.5 Deploy the Project
+
+1. In SAP HANA PROJECTS, click on the deploy icon.
+
+    ![](images/deploy.png)
+
+## Exercise 3.6 Examine the Deployed Objects
+
+1. Open the SAP HANA database explorer.
+
+    ![](images/open-dbx.png)
+
+2. View the deployed objects.
+
+    ![](images/view.png)
 
 ## Summary
 
-You have now have a better understanding of some of the HDI concepts.
+You have now have imported a project, bound it to an HDI container, and deployed the project.
 
-Continue to - [Exercise ? - Description](../ex?/README.md)
+Continue to - [Exercise 4 - Additional HDI Container Details (Optional)](../ex4/README.md)
 

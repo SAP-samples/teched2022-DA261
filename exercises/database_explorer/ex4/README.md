@@ -9,11 +9,16 @@
 
 ## Exercise 4.1 Grant Container Admin
 
-1. Additional actions such as import/export and viewing the HDI containers belonging to a SAP HANA database can be enabled by granting additional privileges.  Execute the below SQL
+1. Additional actions such as import/export and viewing the HDI containers belonging to a SAP HANA database can be enabled by granting additional privileges.  Right click on DEMO_HANA_DB and choose **Export HDI Container**.  Notice the following message appears.
+
+    ![](images/permission.png)
+
+    Execute the below SQL to provide the required permissions.
 
     ```SQL
-    --View existing privileges for DBADMIN
-    CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.TT_API_PRIVILEGES;
+    SELECT * FROM _SYS_DI.M_ALL_CONTAINER_GROUPS;   --View the existing container groups
+    SELECT * FROM _SYS_DI.M_ALL_CONTAINERS;  --View the existing containers
+    CREATE LOCAL TEMPORARY COLUMN TABLE #PRIVILEGES LIKE _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES;
     INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME)  
         SELECT 'DBADMIN', PRIVILEGE_NAME, OBJECT_NAME 
             FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES;
@@ -23,7 +28,7 @@
     SELECT * FROM _SYS_DI#BROKER_CG.M_GRANTED_SCHEMA_PRIVILEGES;  
     ```
 
-    Notice that now the list of HDI containers appears.
+    Notice that now the list of HDI containers appears in the catalog browser under HDI Containers and the result shows the permissions granted.
 
     ![](images/granted-priv.png)
 
@@ -36,13 +41,27 @@
 
     ![](images/export.png)
 
-2. 
+    A message will appear indicating that the results of the export can be viewed in the background activities view.
+
+    ![](images/message.png)
+
+2. View the results of the download.
+
+    ![](images/view.png)
+
+    The HDI container can be downloaded.  The downloaded file FLIGHTRESERVATION_HDI_DB_1.tar.gz can be used in the import HDI wizard.
+
+    ![](images/download.png)
 
     The above demonstrates using the wizard.  The [Export an SAP HDI Container for Copy Purposes](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/c25ee286cee5496cb96fdf5875f444a2.html) provides details on executing the same action using SQL.
 
-## Exercise 4.3 Import an HDI Container
+## Exercise 4.3 Import an HDI Container 
 
-1.  TODO
+1.  Typically an HDI container would be imported into a different SAP HANA Cloud database.  As the trial and free tier have a one SAP HANA Cloud database instance limit, the HDI container is imported into the same trial instance.  
+
+    ![](images/import0.png)
+    
+    ![](images/import.png)
 
     The above demonstrates using the wizard.  The [Import an SAP HDI Container for Copy Purposes](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/54fa5466cdeb4e488b08d6c7da0244f2.html) provides details on executing the same action using SQL.
 

@@ -180,7 +180,7 @@ Calculation views allow the developers to express their intent instead of defini
     
     ![](images/cv-privileges.png)
 
-    From the above drop down for Analytic Privileges, clear the option SQL Analytic Privileges.
+    From the above drop down for **Analytic Privileges**, clear the option **SQL Analytic Privileges**.
 
     ![](images/clear-privileges.png)
 

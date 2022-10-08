@@ -1,16 +1,46 @@
-# Exercise 5 - Auditing HDI Containers
+# Exercise 5 - SAP HANA Database Explorer Extension
 
-  In this exercise, we will configure the audit service to record when certain actions occur in the HDI container.
+  In this exercise, we will examine how the SAP HANA database explorer extension can be used to browse schema and execute queries.  The extension has  a subset of the functionality available in the SAP HANA database explorer that has been shown previously.  The extension is automatically included when the development workspace is created as shown below.
 
-## Exercise 5.1 Enabing Auditing
+  ![](images/included-extensions.png)
 
-1. 
+## Exercise 5.1 Connections
 
-## Exercise 5.2 Viewing the Audit Log
+1. Select the SAP HANA database explorer extension.  The list of connections should appear.  This list is managed by the full SAP HANA database explorer web application and uses the currently connected cloud foundry user and org to retrieve the connection details.
 
-1.
+    ![](images/connections.png)
 
 
-This concludes the exercise on auditing.  In the next exercise ...
+## Exercise 5.2 Catalog Browser
 
-Continue to - [Exercise 3 - Cockpit TODO](../../hana_cockpit/ex3/README.md)
+1. Select **Tables** on the HDI Container and see that the list of deployed tables can be seen.
+
+    ![](images/tables.png)
+
+2. Select **Views** on the **DEMO_HANA_DB** connection.  Notice that no views are shown.  A filter is applied by default to only show views created by the connected user which is DBADMIN in this case.  
+
+    ![](images/views-empty.png)
+
+    Press F1 to open the command palette and choose **Select Schema**.  Select the schema **_SYS_DI**.  
+     
+    Now the views that belong to the schema _SYS_DI appear.
+
+    ![](images/views.png)
+
+## Exercise 5.3 SQL Console
+
+1. Select the HDI Container and open a SQL Console.
+
+    ![](images/sql-console.png)
+
+    ```SQL
+    SELECT NAME, CARRID, FLDATE, SEAT 
+        FROM FLIGHTRESERVATION, PASSENGERS 
+        WHERE PASSENGERS.PASSENGERID = 2 
+        AND FLIGHTRESERVATION.PASSENGERID = PASSENGERS.PASSENGERID;    
+    ```
+
+
+This concludes the SAP HANA Database Explorer extension.  Note that it is also available as a plugin for [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer&ssr=false#overview).    In the next exercise ...
+
+Continue to - [SAP HANA Cockpit - Exercise 2 - Configuring Database Properties](../../hana_cockpit/ex2/README.md)
