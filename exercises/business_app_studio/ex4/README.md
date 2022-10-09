@@ -31,7 +31,7 @@ Alternatively, database objects can also be created directly in the database usi
     SELECT * FROM M_JOBS;  --Fails 
     ```
     
-    Notice that the user is the _RT or run time user as opposed to the design time user.
+    Notice that the user is the _RT or run time user as opposed to the _DT or design time user.
     If you want to access the DT view you have to use the "ADMIN" container access in Database Explorer.
 
     ![](images/open-admin.png)
@@ -46,17 +46,19 @@ Alternatively, database objects can also be created directly in the database usi
 
 1.  In the SAP HANA database explorer, open the parent database of the HDI container.  Notice that you can see the schema and objects but do not have privileges to query them.
 
-    TODO, demonstrate this
+    ![](images/view-tables.png)
 
 ## Exercise 4.4 HDI Monitoring Views
 
-1. These can be viewed in the main? database in the schema _SYS_DI.  The M_ indicates that these are monitoring views.  A few example queries follow that can be run.
+1. These can be viewed when connecting to the **DEMO_HANA_DB** database in the schema **_SYS_DI**.  The M_ indicates that these are monitoring views.  A few example queries follow that can be run.
 
     ```SQL
     SET SCHEMA _SYS_DI;
     SELECT * FROM M_ALL_CONTAINERS;  --Shows the list of HDI containers in the database
     SELECT * FROM M_ALL_JOBS;  --Shows deployment HDI jobs
     ```
+
+    ![](images/monitoring-views.png)
 
     For additional details consult [_SYS_DI Monitoring Views](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/78e1657f43f04741b9c2b161632e4fe5.html) in the Database Deployment Infrastructure (HDI) Reference.
 

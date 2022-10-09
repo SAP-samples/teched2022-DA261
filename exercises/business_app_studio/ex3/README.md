@@ -32,6 +32,10 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
     ![](imagess/bind.png)
 
+    Select **Enable & do not ask again** to enable the undeployment of artifacts.
+
+    ![](images/auto-undeploy.png)
+
 ## Exercise 3.5 Deploy the Project
 
 1. In SAP HANA PROJECTS, click on the deploy icon.
