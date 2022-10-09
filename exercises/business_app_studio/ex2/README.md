@@ -1,6 +1,6 @@
 # Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development
 
-This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the guided development tool.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
+This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the guided development tool.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).  Exercise 3 is an optional exercise and walks through the process of importing a completed project.
 
 ## Exercise 2.1 Create a New SAP HANA Database Project from a Template
 
@@ -64,7 +64,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     The panes in the explorer can be expanded and resized.  
     
-    >Optionally right click on OPEN EDITORS and choose hide or uncheck the item.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
+    >Optionally right click on **OPEN EDITORS** and choose **Hide** or uncheck the item.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
     At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.  Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.  TODO Volker benefits (is it cost savings, better utilization, much quicker to deploy) 
     
@@ -72,9 +72,9 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/hdi-container.png)
 
-    It is also visisble within the add database dialog of the SAP HANA database explorer.
+    It is also visible within the add database dialog of the SAP HANA database explorer.
     
-    >The SAP HANA database explorer is able to connect to the HDI container without providing credentials as it is able to look up the service key mentioned below  to connect and browse the HDI container.
+    >The SAP HANA database explorer can connect to the HDI container without providing credentials as it is able to look up the service key mentioned below  to connect and browse the HDI container.
 
     ![](images/add-HDI-in-dbx.png)
 
@@ -115,7 +115,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     - "#OO" is a technical schema for the "Object Owner"
 
     For each DT and RT user there will be additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
-    The DI schema contains also some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a [SQL interface](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/035dbbe23ac14242b1f7d724dd102825.html), a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) interface, and Java API (sap-java-hdi TODO Volker where does one find this API?)that developers can use.
+    The DI schema also contains some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a [SQL interface](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/035dbbe23ac14242b1f7d724dd102825.html), a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) interface, and Java API (sap-java-hdi TODO Volker where does one find this API?)that developers can use.
 
 ## Exercise 2.2 Initialize the Git Repository
 
@@ -218,4 +218,4 @@ TODO Dan/Gurvick move this step to separate DBX exercise.
 
 You now have now created native SAP HANA database artifacts and deployed them into an HDI container.
 
-Continue to - [Exercise 3 - Additional HDI Container Details (Optional)](../ex3/README.md)
+Continue to - [Exercise 3 - Import and Deploy the Completed Project (Optional)](../ex3/README.md)

@@ -1,8 +1,8 @@
-# Exercise 3 - Additional HDI Container Details (Optional)
+# Exercise 4 - Additional HDI Container Details (Optional)
 
 This exercise will further examine the deployed HDI container.  
 
-## Exercise 3.1 Why HDI?
+## Exercise 4.1 Why HDI?
 
 - HDI stands for SAP HANA Deployment Infrastructure
 - HDI is an integral part of SAP HANA and SAP HANA Cloud
@@ -20,7 +20,7 @@ This exercise will further examine the deployed HDI container.
 
 Alternatively, database objects can also be created directly in the database using SQL as shown in the last step of [SAP HANA database explorer exercise 1](../database_explorer/README.md).
 
-## Exercise 3.2 Opening a SQL Console as Admin
+## Exercise 4.2 Opening a SQL Console as Admin
 
 1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
 
@@ -42,13 +42,13 @@ Alternatively, database objects can also be created directly in the database usi
     https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
 
 
-## Exercise 3.3 Examining the Contents of the HDI Container
+## Exercise 4.3 Examining the Contents of the HDI Container
 
 1.  In the SAP HANA database explorer, open the parent database of the HDI container.  Notice that you can see the schema and objects but do not have privileges to query them.
 
     TODO, demonstrate this
 
-## Exercise 3.4 HDI Monitoring Views
+## Exercise 4.4 HDI Monitoring Views
 
 1. These can be viewed in the main? database in the schema _SYS_DI.  The M_ indicates that these are monitoring views.  A few example queries follow that can be run.
 
@@ -63,7 +63,7 @@ Alternatively, database objects can also be created directly in the database usi
 
 ## Summary
 
-You have now have a better understanding of some of the HDI concepts.
+You have now have a better understanding of some of the HDI concepts.  In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
 
-Continue to - [Exercise ? - Description](../ex?/README.md)
+Continue to - [Exercise 2 - Description](../../database_explorer/ex2/README.md)
 

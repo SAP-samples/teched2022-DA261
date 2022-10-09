@@ -6,7 +6,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 1. Select File, Open Workspace and browse to projects.
 
-    An empty workspace will open.  If a previous project exists with the same name it can be delted.
+    An empty workspace will open.  If a previous project exists with the same name it can be deleted.
 
 ## Exercise 3.2 Import the FlightReservation Project
 
@@ -50,7 +50,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 ## Summary
 
-You have now have imported a project, bound it to an HDI container, and deployed the project.
+You now have imported a project, bound it to an HDI container, and deployed the project.
 
 Continue to - [Exercise 4 - Additional HDI Container Details (Optional)](../ex4/README.md)
 
