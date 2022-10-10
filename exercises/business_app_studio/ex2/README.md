@@ -205,15 +205,6 @@ Calculation views allow the developers to express their intent instead of defini
 
     ![](images/call-stored-procedure.png)
 
-## Exercise 2.7 Debug a Database Procedure File
-
-TODO Dan/Gurvick move this step to separate DBX exercise.
-
-1.  In the SAP HANA database explorer, attempt to debug the stored procedure by selecting Open for Debugging, placing a breakpoint on the last line of the stored procedure, and then call the stored procedure again.
-
-    ![](images/debug-stored-procedure.png)
-
-
 ## Summary
 
 You now have now created native SAP HANA database artifacts and deployed them into an HDI container.

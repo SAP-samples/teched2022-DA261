@@ -2,13 +2,13 @@
 
   In addition to browsing schema objects and executing SQL, the SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.
 
-In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to databases.
+In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to HANA bdatabase connections.
 
 1. From the SAP BTP Cockpit, you can choose to open the SAP HANA database explorer by clicking the **Actions** dropdown on your instance and selecting **Open in SAP HANA Database Explorer**.
 
     ![](images/BTPCockpit.png)
 
-    You may be prompted to enter database login credentials at this point. Enter the DBADMIN user credentials which were set during the SAP HANA instance creation process.
+    You may be prompted to enter database login credentials at this point. Enter **DBADMIN** for the user and the password that was specified in the SAP HANA instance creation wizard.
 
     >Note: Trial instances are shut down overnight. Instances can be restarted by clicking the **Manage SAP HANA Cloud** button and selecting **Start** on the dropdown menu for your instance.
 
@@ -26,7 +26,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     *In this example, the database is from a release in July 2021, week 30 of the year.*
 
-3. Click the arrow next to the database icon to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files).
+3. Click the arrow next to the database icon to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permisions, a list of HDI containers contained in the database.
 
     ![](images/Catalog.png)
 
@@ -37,7 +37,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
 4. Users may benefit from visual clues identifying  production databases. This next step will demonstrate how to label production databases, and how to remove the production label from a database. To enable this use SQL console to run the statements below and refresh your browser.
    
-    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left.  
+    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left afer selecting a connection.  
     
     >An instance of a SQL console is associated with the selected database.
 
@@ -59,7 +59,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
-5. Database connections can be organized by creating database groups. Use the folder icon at the top of your databases panel to create a new group and drag and drop the database into it. 
+5. Database connections can be organized by creating database groups. Use the folder icon at the top of your databases panel to create a new group and drag and drop the two connections into it. 
 
     ![](images/Groups.png)
 
