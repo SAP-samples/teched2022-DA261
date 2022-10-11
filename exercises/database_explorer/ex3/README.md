@@ -61,4 +61,4 @@ In this exercise, we will use SAP HANA database explorer's SQL console.
 
 This concludes the exercise on the using SQL console.
 
-Continue to - [Exercise 4 - Import and Export of HDI Containers](../ex3/README.md)
+Continue to - [Exercise 4 - Export and Import HDI Containers](../ex4/README.md)

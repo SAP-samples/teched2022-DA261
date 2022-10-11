@@ -1,11 +1,11 @@
-# Exercise 4 - Import and Export of HDI Containers
+# Exercise 4 - Export and Import HDI Containers
 
-  In this exercise, the HDI container will be exported and then imported.  This could occur if you wished to move an HDI container from one SAP HANA Cloud instance to another such as from DEV to QA.
+  In this exercise, the HDI container will be exported and then imported.  This could occur if you wished to move an HDI container from one SAP HANA Cloud instance to another such as from DEV to QA or PROD to Dev.  The export contains the data stored in the container so this is useful should you wish to do a system copy.  This process may also be useful if you wish to move an HDI container from a more heavily used databases instance to a less heavily used instance.
   
-  >It should be noted that there are additional methods that can be used to deploy an HDI container to a new SAP HANA Cloud instance.  A few are mentiond below.
+  >It should be noted that there are additional methods that can be used to deploy an HDI container to a new SAP HANA Cloud instance.  A few are mentioned below.
  > 
-  >* Right click on the yaml file and select **Build MTA Project**.  The resultant mtar file located in the mta_archives folder can then can be deployed using the tooling or with the SAP BTP CLI.
-  >* As demonstrated in the Business Application Studio exercies, when signing in to Cloud Foundry, an endpoint, organization and space can be specified.
+  >* Right click on the yaml file and select **Build MTA Project**.  The resultant mtar file located in the mta_archives folder can then be deployed using the tooling or with the SAP BTP CLI.
+  >* As demonstrated in the Business Application Studio exercies, when signing into Cloud Foundry, an endpoint, organization and space can be specified and the project can be bound to a database connection.
 
 ## Exercise 4.1 Grant Container Admin
 
@@ -22,6 +22,7 @@
     INSERT INTO #PRIVILEGES (PRINCIPAL_NAME, PRIVILEGE_NAME, OBJECT_NAME)  
         SELECT 'DBADMIN', PRIVILEGE_NAME, OBJECT_NAME 
             FROM _SYS_DI.T_DEFAULT_CONTAINER_GROUP_ADMIN_PRIVILEGES;
+    --Note that the privileges are being granted to the DBADMIN user
     CALL _SYS_DI.GRANT_CONTAINER_GROUP_API_PRIVILEGES('BROKER_CG', #PRIVILEGES, _SYS_DI.T_NO_PARAMETERS, ?, ?, ?);
     DROP TABLE #PRIVILEGES;
     SELECT * FROM _SYS_DI#BROKER_CG.M_GRANTED_SCHEMA_PRIVILEGES;  --View added privileges
@@ -31,7 +32,7 @@
 
     ![](images/granted-priv.png)
 
-    Addiional details on this topic can be found at [Create an SAP HDI Administrator](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/9a6bf8dc816e4b128ecec7580686236e.html).
+    Additional details on this topic can be found at [Create an SAP HDI Administrator](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/9a6bf8dc816e4b128ecec7580686236e.html).
     
 
 ## Exercise 4.2 Export an HDI Container
@@ -40,7 +41,7 @@
 
     ![](images/export.png)
 
-    A message will appear indicating that the results of the export can be viewed in the background activities view.
+    A message will appear indicating that the results of the export can be viewed in the background activity's view.
 
     ![](images/message.png)
 
@@ -56,7 +57,7 @@
 
 ## Exercise 4.3 Import an HDI Container 
 
-Typically an HDI container would be imported into a different SAP HANA Cloud database.  As the trial and free tier have a one SAP HANA Cloud database instance limit, the HDI container is imported into the same trial instance.  
+Typically, an HDI container would be imported into a different SAP HANA Cloud database.  As the trial and free tier have a one SAP HANA Cloud database instance limit, the HDI container is imported into the same trial instance.  
 
 1. Select **DEMO_HANA_DB** and choose **Import HDI Container**.
 
@@ -68,12 +69,12 @@ Typically an HDI container would be imported into a different SAP HANA Cloud dat
 
     *Specify a new name for the HDI Container such as FlightReservationQA and select the container group it will be part of.*
 
-    The above demonstrates using the wizard.  The [Import an SAP HDI Container for Copy Purposes](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/54fa5466cdeb4e488b08d6c7da0244f2.html) provides details on executing the same action using SQL.
+    The above demonstrates using the wizard.  The [Import an SAP HDI Container for Copy Purposes](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/54fa5466cdeb4e488b08d6c7da0244f2.html) provides details on executing the same action using SQL.  It is also possible to import and export to cloud storage providers.
 
-    TODO Volker, the container does not show up in the Add HDI Container dialog or shown in the list of services in the BTP Cockpit.  There were not error messages during the import.  Also unable to open the import wizard on an instance that does not have an HDI container deployed to it.
+    TODO the container does not show up in the Add HDI Container dialog or shown in the list of services in the BTP Cockpit.  May need to run a cf command to create a service.  Likley an enhancment to dbx wizard.  Also unable to open the import wizard on an instance that does not have an HDI container deployed to it.  This may be becuase the container group does not yet exist there.
 
 This concludes the exercise on import and export.  
 
-In the next exercise the SAP HANA database explorer extension will be demonstrted.
+In the next exercise the SAP HANA database explorer extension will be demonstrated.
 
 Continue to - [Exercise 5 - SAP HANA Database Explorer Extension](../../business_app_studio/ex5/README.md)
