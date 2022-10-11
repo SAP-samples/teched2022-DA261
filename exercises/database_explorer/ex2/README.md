@@ -2,7 +2,7 @@
 
 In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced in the exercise that created the tables, calculation view, and stored procedure in the SAP Business Application Studio.
 
-1. Database objects can be viewed in the catalog browser as shown below.
+1. Database objects can be viewed in the catalog browser as shown below after selecting the HDI container contection and then **Tables**.
 
     ![](images/tables.png)
 
@@ -10,9 +10,9 @@ In this exercise, we will explore some of the functionality that the catalog bro
     
     ![](images/TablesInCatalogBrowser.png)
 
-    Additional filters can be applied in this view by clicking on the column header and the list of columns displayed can specified.  
+    *Additional filters can be applied in this view by clicking on the column header and the list of columns displayed can specified.*
 
-2. A create, select, or insert statement for database objects such as a table or views can be generated as shown below.
+2. A create, select, or insert statement for can be generated as shown below.
 
     ![](images/GenerateInsert.png)
 
@@ -34,22 +34,25 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/Debugging.png)
 
-5. The source code for a specific stored procedure, for all stored procedures in a schema, or for all stored procedures in a database can also be analyzed.  This can provide suggestions for code quality, security, or performance 
+5. The source code for a specific stored procedure, for all stored procedures in a schema, or for all stored procedures in a database can also be analyzed.  This can provide suggestions for code quality, security, or performance.
 
     ![](images/AnalyzeSQLScriptCode.png)
 
-6. Database objects can also be found using the object search.  The below search looks for any objects that use FLIGHTRESERVATION in their definitions in the HDI connection. 
+    *To view more details, double click on a row.*
+
+    ![](images/AnalyzeSQLScriptCode2.png)
+    
+    *Note that the input parameter is not referenced.*
+
+6. Database objects can also be found using *Object Search*.  The below search looks for any objects that use FLIGHTRESERVATION in their definitions in the HDI connection. 
 
     ![](images/ObjectSearch.png)
 
-    An object can be double clicked on to open its properties page.
+    A found object can be double clicked on to open its properties page.
 
     ![](images/OpenInDatabaseBrowser.png)
 
-7. Statement Library
-    TODO, add content.  Perhaps it is enough to highlight system vs user.  Add a user statement relevant to the tables and point to additional content of the mini checks.  Consider adding the TechE2021 mini check example to the DBX tutorial.
-
-8. Database diagnostic files can also be viewed or downloaded. 
+7. Database diagnostic files can also be viewed or downloaded. 
 
     ![](images/DiagnosticFiles.png)
 
