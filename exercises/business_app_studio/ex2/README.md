@@ -88,7 +88,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     These details could also be used to connect to the HDI container from an application using one of the many SAP HANA client drivers (Java, ODBC, Node.js, Python, Go, .NET etc.) or the command line SQL tool HDBSQL.
 
-    >An example is shown below of connecting with both the RT and DT users.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client and is shown for illustrative purposes only.
+    >An example is shown below of connecting with both the RT user.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client (which is not on the TechEd laptops) and is shown for illustrative purposes only.
     >
     > ```SQL
     > \al
@@ -98,24 +98,8 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >
     >![](images/HDI-Schemas_RT.png)
     >
-    >![](images/HDI-Schemas_DT.png)
     >
     >The blog [How to recreate a HANA Cloud service key aka password rotation](https://blogs.sap.com/2022/10/05/how-to-recreate-a-hana-cloud-service-key-aka-password-rotation/) provides some additional details on how these service keys can be recreated or rotated.
-
-    TODO Volker ... in the above screenshot's which schema is the #OO?  
-  
-    An HDI container construct can also be described as a glorified set of schemas. 
-
-    TODO Volker, the screenshot below does not seem to correspond to the previous screenshots.
-
-    ![](images/HDI-Schemas.png)
-
-    - "HDI-container"  is the schema for the "RUN TIME" data,
-    - "#DI" is the "DESIGN TIME" schema (or maybe Deployment Infrastructure? TODO Volker) and 
-    - "#OO" is a technical schema for the "Object Owner"
-
-    For each DT and RT user there will be additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
-    The DI schema also contains some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a [SQL interface](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/035dbbe23ac14242b1f7d724dd102825.html), a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) interface, and Java API (sap-java-hdi TODO Volker where does one find this API?)that developers can use.
 
 ## Exercise 2.2 Initialize the Git Repository
 

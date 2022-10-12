@@ -5,6 +5,8 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/OpenSQLConsole.png)
 
+    Execute the following SQL after pasting it into a newly opened SQL Console that is connected to the FlightReservation HDI container and press the **Run** button.
+
     ```SQL
     SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
     SELECT * FROM PUBLIC.M_CONNECTIONS WHERE CONNECTION_ID = CURRENT_CONNECTION;
@@ -14,7 +16,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/ChangeConnection.png)
 
-2. The SQL Console has the ability to auto-copmlete statements.  Enter the statement below into the SQL Console, position the cursor on the C and press Ctrl + space.
+2. The SQL Console has the ability to auto-complete statements.  Enter the statement below into the SQL Console, position the cursor on the C and press Ctrl + space.
 
     ```SQL
     SELECT 	NAME, ADDRESS, C, FLDATE, SEAT
@@ -32,6 +34,12 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/StatementLibrary.png)
 
+    Statements added to the statement library can viewed and opened by selecting **Show Statement Library**.  
+    
+    ![](images/StatementLibraryShow.png)
+
+    In this dialog it is also possible to import statements from a zip file such as the 
+    diagnostic SQL statements downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).
 
 4. The SQL Console has an optional statement help panel that shows additional details SQL statement that currently has focus.  
 
@@ -49,7 +57,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     
     *Links are provided to the SAP Help documentation as well as metadata about the tables being used.* 
     
-5. Resource consumption metrics of the executed SQL statement is availalbe in the **Messages** tab.
+5. Resource consumption metrics of the executed SQL statement is available in the **Messages** tab.
 
     ![](images/Messages.png)
 
@@ -57,9 +65,19 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/History.png)
 
-    The results, messages, and history contents are not preserved following a browser reload while the SQL statements are preserved by default.
+    >The results, messages, and history contents are not preserved following a browser reload while the SQL statements are preserved by default.
 
-7. Show how to go full screen by double tapping the tab, how to rename the tab, and how to reveal in tree.
+7. Examine the SQL Console preferences.  Navigate to the database explorer preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
+
+    A few notable settings are:
+    * Byte limit for the size of a returned value
+    * Max number of rows to display
+    * Indicate potential SQL errors can be used to disable the syntax parser
+    * Auto-save contents of SQL consoles
+   
+   ![](images/DBX_Settings.png)
+
+   >If changes are made to this screen, the Save button must be pressed.
 
 8.  A list of keyboard shortcuts can be found by right-clicking and selecting **Keyboard Shortcuts** within the SQL console window.
 
@@ -82,17 +100,100 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-9. Examine the SQL Console preferences.  Navigate to the database explorer preferences icon on the left of your screen, and select **SQL Console**. Notice that a byte limit is provided for the size of a returned value, the number of rows that are returned, and that the SQL statements in a console will be saved.  If changes are made to this screen, the Save button must be pressed.
-   
-   ![](images/DBX_Settings.png)
+9. The SQL Console can enter full screen mode by double tapping on its tab.  
 
-10. Demonstrate running a statement in the background.
+    ![](images/FullScreen.png)
 
-11. Show that a result can be downloaded.  Link to further content on import/export.
+10. A context menu is available on SQL Console tabs.
 
-12. Show the additional viewers (spatial, json, xml)
+    ![](images/SQLConsoleContextMenu.png)
 
+11. Statements that may take a while to execute can be optionally run in the background.
 
+    ```SQL
+    DO BEGIN
+    -- Wait for a few seconds
+    USING SQLSCRIPT_SYNC AS SYNCLIB;
+    CALL SYNCLIB:SLEEP_SECONDS( 5 );  --wait 5 secs
+    -- Now execute a query
+    SELECT * FROM PASSENGERS;
+    END;
+    ```
+
+    ![](images/RunInBackground.png)
+
+    A benefit of running a statement in the background is that the result can be examined later even from another laptop.
+
+    ![](images/ViewBackgroundResults.png)
+    
+    *Once the status has changed to Finished, the results can be viewed*
+    
+    >Optionally press the refresh button to update the status sooner.
+
+    >Notice that the original SQL Console and the one opened to view the results are both in a disconnected state and would need to be re-connected before executing another statement.
+
+    ![](images/ViewBackgroundResults2.png)
+
+    The results can also be downloaded.  This can be helpful if the SQL statement was run against multiple databases as the results are combined into one results file as shown below.
+
+    ```SQL
+    SELECT CURRENT_USER FROM DUMMY;
+    ```
+
+    ![](images/RunOnMultipleDatabases.png)
+
+    ![](images/RunOnMultipleDatabases2.png)
+
+    ![](images/RunOnMultipleDatabases4.png)
+
+    ![](images/RunOnMultipleDatabases3.png)
+
+    *Notice that the results of the query are displayed in one JSON file for the results of the query against each database connection.
+
+12. The results of a SQL query can be saved as a CSV file as shown below.  
+
+    ![](images/Download.png)
+
+    ![](images/Download2.png.png)
+
+    Wizards are also provided that can be used to export the data from table or view or multiple objects including their schema and data using (catalog).
+
+    ![](images/ExportandImportWizards.png)
+
+    Further details on how to configure the SAP HANA database explorer to be used with cloud storage providers can be found at [Export and Import Data and Schema with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-export-import.html).
+
+13. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and Spatial.  
+
+    ```SQL
+    SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", car2":"BMW", car3":"Fiat" }}'
+        AS JSON_EXAMPLE FROM DUMMY;
+    
+    SELECT '<?xml version="1.0" encoding="UTF-8"?>
+        <breakfast_menu>
+            <food>
+                <name>Belgian Waffles</name>
+                <price>$5.95</price>
+                <description>
+            Two of our famous Belgian Waffles with plenty of real maple syrup
+            </description>
+                <calories>650</calories>
+            </food>
+            <food>
+                <name>French Toast</name>
+                <price>$4.50</price>
+                <description>
+                Thick slices made from our homemade sourdough bread
+                </description>
+                <calories>600</calories>
+            </food>
+        </breakfast_menu>' XML_EXAMPLE FROM DUMMY;
+
+    SELECT NEW ST_Point('POINT (-80.55100416451384 43.48025646678657)', 4326) FROM DUMMY;
+    ```
+
+    TODO.
+
+    Further details on how the SAP HANA database explorer can be used with multi-model features including graph, JSON, and spatial can be found at [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
 This concludes the exercise on the using SQL console.
 
