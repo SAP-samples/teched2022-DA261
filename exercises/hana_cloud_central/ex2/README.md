@@ -51,9 +51,8 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
 4. Click on the Next Step button once the memory and storage configurations are completed. In this step, you have an option to choose availability zones. Basically, it specifies where the database instances are placed. You can also deploy replicas of your SAP HANA database instance. Important notes:
     * Availability zones and replicas are not available in  SAP HANA Cloud trial instances.
     * You cannot change the availability zone of an instance once it is created. If you want to change the availability zone for an instance, delete the instance and re-create it with the preferred availability zone.
-<kbd>
-![](./images/5.png)
-</kbd>
+
+    <kbd>![](./images/5.png)</kbd>
     
 5. Click on Next Step button. There is an Additional Features section to make configurations on Script Server (to execute application function libraries) and Document Store (for native operations on JSON documents) capabilities. Then you have an option to make configurations related to allowed connections like IP address settings. Select Allow all IP addresses.
     <kbd>
