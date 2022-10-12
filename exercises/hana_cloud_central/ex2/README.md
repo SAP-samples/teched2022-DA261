@@ -88,7 +88,7 @@ TO-DO - Update all remaining images (I have a free trial so I cannot create an i
 
 [@Abbey: please add a step here for the "Copy Configuration" button]
 
-10. If you are using the SAP HANA Cloud trial and already have a database instance, click the Cancel button and then the Leave button to return to the All Instances view in SAP HANA Cloud Central (recall that you can only have 1 database instance in SAP HANA Cloud trial, so you cannot create second one). Otherwise, click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created.
+10. **If you are using the SAP HANA Cloud trial and already have a database instance, click the *Cancel* button and then the *Leave* button to return to the All Instances view in SAP HANA Cloud Central (recall that you can only have 1 database instance in SAP HANA Cloud trial, so you cannot create second one).** Otherwise, click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created.
     <kbd>
     ![](./images/12.png)
     </kbd>
