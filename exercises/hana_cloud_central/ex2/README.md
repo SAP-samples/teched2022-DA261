@@ -3,7 +3,7 @@
 As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. If you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process. If you are a non-trial user, you'll be able to create another instance, but be sure you provide a different instance name as SAP HANA Cloud does not allow creation of instances with same names. 
 
 TO-DO - Should we include the Data Lake instance in the appendix?
-[@Abbey: Yes please]
+[@Abbey: What do you mean, moving it out of this section and into the appendix?]
 
 Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances directly from the SAP HANA Cloud Central Overview page. 
 
