@@ -40,12 +40,10 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     The disk storage space is allocated according to the memory size of your SAP HANA database.
     * Compute - The number of vCPUs of your SAP HANA database.
     The number of vCPUs is allocated according to the size of memory of your instance.
-    <kbd>
-    ![](./images/4.png)
-    </kbd>
-    <kbd>
-    ![](./images/21.png)
-    </kbd>
+
+    <kbd>![](./images/4.png)</kbd>
+    <kbd>![](./images/21.png)</kbd>
+
     [JOSE: I'm going to remove this last screenshot (capacity Unit Estimator) because navigating out of HCC will confuse users]
 
     Optional: You can also use the SAP HANA Cloud Capacity Unit Estimator on the right side to estimate the number of Capacity Units (CU) required for your particular use case.
