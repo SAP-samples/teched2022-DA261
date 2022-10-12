@@ -45,8 +45,8 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     </kbd>
     <kbd>
     ![](./images/21.png)
-    [JOSE: I'm going to remove this screenshot (capacity Unit Estimator) because navigating out of HCC will confuse users]
     </kbd>
+    [JOSE: I'm going to remove this last screenshot (capacity Unit Estimator) because navigating out of HCC will confuse users]
 
     Optional: You can also use the SAP HANA Cloud Capacity Unit Estimator on the right side to estimate the number of Capacity Units (CU) required for your particular use case.
 
