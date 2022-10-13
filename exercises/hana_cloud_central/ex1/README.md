@@ -9,14 +9,14 @@ To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigate
     ![](./images/4.png)
     </kbd>
 
-2. SAP HANA Cloud Central is launched in a new tab.
+2. SAP HANA Cloud Central is launched in a new tab. **Note:** You may see a banner displaying "Multi-Environment SAP HANA Cloud Tools Now Available". We will not be using multi-environment in this workshop, so you can ignore and/or close the banner.
     <kbd>
     ![](./images/3.png)
     </kbd>
     
 The SAP HANA Cloud Central tool is divided into several sections:
 
- * The left navigation bar allows navigation between your SAP HANA Cloud instances and the Migrations application used to migrate SAP HANA Service databases to SAP HANA Cloud
+ * The left panel allows navigation between your SAP HANA Cloud instances and the Migrations application used to migrate SAP HANA Service databases to SAP HANA Cloud
  * The top panel offers different views and filters you can use to customize how your instances list is displayed, as well as providing search capability
  * The bottom panel displays all your instances, with the option to group the list by instances and personalize the view
 

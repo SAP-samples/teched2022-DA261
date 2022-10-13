@@ -39,24 +39,19 @@ In this section, we will discuss about how to start, stop, and upgrade instances
 
    Starting the instance will take a few minutes.
 
-6. We also have another option that allows us to Upgrade the SAP HANA instance. We can find this option under the Actions list. Once the instance is running, click on Upgrade button under Actions column if to see if there is any upgrade available. If an upgrade is not available, that menu item will be disabled.
+6. We also have another option that allows us to Upgrade the SAP HANA Cloud instance. We can find this option under the Actions list. Once the instance is running again, click the (...) button under the Actions column to see if there is any upgrade available. If an upgrade is not available, that menu item will be disabled.
     <kbd>
     ![](./images/28.png)
     </kbd>
-    
-    You can also click on the notification icon to check for any upgrades.
+      
+7. Clicking on the Upgrade menu item opens the Upgrade dialog. If you choose to upgrade, a pop up appears saying that a new revision for the instance is available and if we want to continue with the Upgrade process. For this workshop, we will not perform an upgrade, so click the Cancel button.
     <kbd>
     ![](./images/30.png)
     </kbd>
-      
-7. If you choose to upgrade, a pop up appears saying that a new revision for the instance is available and if we want to continue with the Update process. If you would like an update now, click on Update button else click on Cancel to quit from the pop up. Click on Cancel for now.
-    <kbd>
-    ![](./images/31.png)
-    </kbd>
 
-    A similar procedure is available if you want to apply a patch to your SAP HANA Cloud instance.
+    Note that a similar procedure is available if you want to apply a patch to your SAP HANA Cloud instance.
      
-8. Now let us talk about the other Actions available for each of the instances. Click on the (...) button under the Actions column for the DEMO_HANA_DB instance. Click on Open in SAP HANA Cockpit option in the Actions list. We can directly open the SAP HANA Cockpit to administer the SAP HANA instance from the SAP HANA Cloud Central page.
+8. Now let us talk about the other Actions available for each of the instances. Click on the (...) button under the Actions column for the DEMO_HANA_DB instance. Click on Open in SAP HANA Cockpit menu item in the Actions list. We can directly open the SAP HANA Cockpit to administer the SAP HANA instance from the SAP HANA Cloud Central page.
     <kbd>
     ![](./images/32.png)
     </kbd>
@@ -66,7 +61,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/13_b.png)
     </kbd>
       
-10. We can also open the SAP HANA Database Explorer to create SQL scripts, run them and also administer the SAP HANA Cloud instance directly from the SAP HANA Cloud Central page. Switch to tab with SAP HANA Cloud Central and click on Open in SAP HANA Database Explorer option in the Actions list for the DEMO_HANA_DB instance. SAP HANA Database Explorer opens in an adjacent new tab.
+10. We can also open the SAP HANA Database Explorer to create SQL scripts, run them and also administer the SAP HANA Cloud instance directly from the SAP HANA Cloud Central page. Switch to tab with SAP HANA Cloud Central and click on Open in SAP HANA Database Explorer menu item in the Actions list for the DEMO_HANA_DB instance. SAP HANA Database Explorer opens in an adjacent new tab.
     <kbd>
     ![](./images/33.png)
     </kbd>
@@ -74,7 +69,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/14_b.png)
     </kbd>
     
-11. Return to SAP HANA Cloud Central and click the Actions list for the DEMO_HANA_DB instance again. Now click on Open SQL Console option. SAP HANA Database Explorer opens up in a new tab, but this time with a SQL Console already opened.
+11. Return to SAP HANA Cloud Central and click the Actions list for the DEMO_HANA_DB instance again. Now click on Open SQL Console menu item. SAP HANA Database Explorer opens up in a new tab, but this time with a SQL Console already opened.
     <kbd>
     ![](./images/34.png)
     </kbd>
@@ -82,7 +77,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/15_b.png)
     </kbd>
 
-12. Return to SAP HANA Cloud Central. Let us now explore the actions for a Data lake instance. Click the (...) button under the Actions column corresponding to the DEMO_HANA_HDL data lake instance. First is the Manage Configurations. Click on it. Similarly to an SAP HANA database instance, you can edit the configuration.
+12. Return to SAP HANA Cloud Central. Let us now explore the actions for a data lake instance. Click the (...) button under the Actions column corresponding to the **DEMO_HANA_HDL** data lake instance. First is the Manage Configurations. Click on it. Similarly to an SAP HANA database instance, you can edit the configuration.
     <kbd>
     ![](./images/16.png)
     </kbd>
@@ -101,7 +96,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     <kbd>
     ![](./images/20.png)
     </kbd>
-
+    SQL Endpoints are useful when you want to connect to your SAP HANA Cloud instance from other applications or if you want to access it from the command line.
 14. Next is the Copy Instance ID option. This will help us copy the instance ID to the clipboard. This function is similar to the previous copy option we discussed. On clicking Copy Instance ID option, we get a success message.
     <kbd>
     ![](./images/21.png)
@@ -109,7 +104,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     <kbd>
     ![](./images/22.png)
     </kbd>
-
+    The instance ID is required when connceting to data lake Relational Engine using Interactive SQL.
 15. Click on Copy Configuration. A popup opens with options to copy configuration to clipboard or download it as a JSON file. Depending on how often you will use your instance configuration, either copy or save the JSON-compliant string.
     <kbd>
     ![](./images/23.png)
@@ -125,8 +120,8 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     <kbd>
     ![](./images/26.png)
     </kbd>
-      
-17. Other Copy options help with directly copying the Landscape ID, Port ID, Coordinator Endpoint and Worker. You can find these options in the Actions list for a Data Lake instance. All the IDs are directly copied to the clipboard.
+    Use this endpoint to connect to data lake files using a REST client, the hdlfscli utility, or SAP HANA database explorer.
+17. Other Copy options help with directly copying the Landscape ID, Port ID, Coordinator Endpoint and Worker. You can find these options in the Actions list for a data lake instance. All the IDs are directly copied to the clipboard.
     <kbd>
     ![](./images/27.png)
     </kbd>

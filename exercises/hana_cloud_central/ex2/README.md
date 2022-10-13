@@ -1,15 +1,15 @@
 # Exercise 2 - Creating Instances
 
-As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. If you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process. If you are a non-trial user, you'll be able to create another instance, but be sure to provide a different instance name as SAP HANA Cloud does not allow creation of instances with same names. 
+As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. If you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process. If you are a non-trial user, you'll be able to create another instance, but be sure to provide a different instance name as SAP HANA Cloud does not allow creation of instances with same names. Note that creating a new SAP HANA Cloud instance takes approx. 10 mins.
 
 Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances directly from the SAP HANA Cloud Central Overview page. 
 
-1. Click the Create button in the top right. This will navigate you to the create instance page.
+1. Click the Create button in the top right. This will navigate you to the create instance wizard.
     <kbd>
     ![](./images/22.png)
     </kbd>
     
-    In this page, you can see options to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances. You can choose the type of instance you would like to create and click on 'Next Step'. In this exercise, let us focus on creating an SAP HANA Cloud, SAP HANA Database instance. Select that option and click on Next Step.
+    In this page, you can see options to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances. You can choose the type of instance you would like to create and click on 'Next Step'. Let's create an SAP HANA Cloud, SAP HANA Database instance. Select that option and click on Next Step.
     <kbd>
     ![](./images/23.png)
     </kbd>
@@ -23,7 +23,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     * Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
     * Version - The new instance you create can be of a specific supported version. By default, the latest version is used when creating a new SAP HANA Cloud instance
 
-    Notice that certain field controls display helpful tips on what constitutes a valid entry (e.g. instance name, administrator password). You can also open the Help dialog by clicking its button on the toolbar in the top right. The contents of the Help are dynamic, meaning that they change depending on the dialog you're working on. In this case, you see additional information on the different fields of this page.
+    Notice that certain fields display helpful tips on what constitutes a valid entry (e.g. instance name, administrator password). You can also open the Help dialog by clicking its button on the toolbar in the top right. The contents of the Help are dynamic, meaning that they change depending on the dialog you're working on. In this case, you see additional information on the different fields of this page.
 
     Click on Next Step once you complete all the fields. 
     <kbd>
@@ -82,7 +82,7 @@ TO-DO - Update all remaining images (I have a free trial so I cannot create an i
 
 [@Abbey: please add a step here for the "Copy Configuration" button and mention why this is useful]
 
-10. **If you are using the SAP HANA Cloud trial and already have a database instance, click the *Cancel* button and then the *Leave* button to return to the All Instances view in SAP HANA Cloud Central (recall that you can only have 1 database instance in SAP HANA Cloud trial, so you cannot create second one).** Otherwise, click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created.
+10. **If you are using the SAP HANA Cloud trial and already have a database instance, click the *Cancel* button and then the *Leave* button to return to the All Instances view in SAP HANA Cloud Central (recall that you can only have 1 database instance in SAP HANA Cloud trial, so you cannot create a second one).** Otherwise, click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created. **Note:** Creating a new instance takes approx. 10 mins.
     <kbd>
     ![](./images/12.png)
     </kbd>
