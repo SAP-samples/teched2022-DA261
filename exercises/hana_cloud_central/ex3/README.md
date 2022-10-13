@@ -25,7 +25,6 @@ An Edit instance dialog opens and you can see all the relevant fields that can b
     <kbd>
     ![](./images_new/4.png)
     </kbd>
-    @Abbey: please update this screenshot to reflect the change in the connections - i.e. show the new connection setting.
 
 5. Go back to the SAP HANA Cloud Central instances page by clicking the Back arrow to the left of the SAP logo at the top. You'll see that the status of the recently edited instance will change from 'Applying Changes' to 'Starting' to 'Running' (use the Refresh or Auto-Refresh button in the toolbar to update the screen). The edited instance restarts to adapt itself to the recently made changes.
     <kbd>

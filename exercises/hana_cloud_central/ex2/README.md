@@ -16,7 +16,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     <kbd>
     ![](./images/23.png)
     </kbd>
-    @Abbey: Please change this screenshot: use the same screen but click on SAP HANA Database, so that you see the description in the right panel.
+    
 2. Below are the field details that you see on this Create Instance screen, the values they take and the steps to successfully create an SAP HANA Cloud instance.
 
     * Organization - The Cloud Foundry organization in which the instance is created.  
