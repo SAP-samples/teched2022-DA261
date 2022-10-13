@@ -44,4 +44,6 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     ![Manage Cards](./images/1-07_ManageCards.png)
 
+We will continue to examine the SAP HANA cockpit in part 2 of this workshop.
+
 Continue to [SAP HANA Database Explorer - Exercise 1](../../database_explorer/ex1/README.md)
