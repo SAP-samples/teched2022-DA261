@@ -126,4 +126,6 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/27.png)
     </kbd>
 
-This concludes the exercises for SAP HANA Cloud Central. Continue to - [SAP HANA Cockpit - Exercise 1](../../hana_cockpit/ex1/README.md)
+This concludes the exercises for SAP HANA Cloud Central. If you haven't done so already, you may close the browser tabs for the SAP HANA cockpit and the SAP HANA database explorer. Those tools are discussed in the next sections.
+
+Continue to - [SAP HANA Cockpit - Exercise 1](../../hana_cockpit/ex1/README.md)
