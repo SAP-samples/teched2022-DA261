@@ -1,14 +1,14 @@
-# Exercise 9: Managing Services
+# Managing Services
 
 To monitor the health of your SAP HANA database in more detail, for example to troubleshoot performance bottlenecks, you can analyze the status and memory usage of individual database services. The Memory Analysis application is helpful here as it provides a more detailed breakdown of memory usage. It enables you to visualize and explore the memory allocation of every service of a selected host during a specified time range. If you notice an increase in overall memory usage, you can investigate whether it's due to a particular component, subcomponent, or table.
 
-In this exercise, you review the information displayed in the Services card, examine the different database service management operations you have access to, and perform a basic analysis of memory usage.
+In this exercise, you will review the information displayed in the Services card, examine the different database service management operations you have access to, and perform a basic analysis of memory usage.
 
 1. Locate the *Services* card. It displays metrics regarding the operational status of the SAP HANA database. Here you see the status of the database, "Running" in this case. Other possible values include "Running with issues", "Stopped", "Error" or "No SQL Access". Click the button **Manage Services**.
 
     ![Services Card](./images/3-01_ServicesCard.png)
 
-2. The Manage Services app enables you to monitor the health of your SAP HANA database in more detail, for example, to troubleshoot performance bottlenecks, you can analyze the status and resource usage of individual database services. If necessary, you can perform follow-up operations, such as stopping a service, or killing a service. You can also reset memory statistics and navigate to Alerts application. Other operations available here include:
+2. The Manage Services app enables you to monitor the health of your SAP HANA database in more detail. For example, you can troubleshoot performance bottlenecks, or analyze the status and resource usage of individual database services. If necessary, you can perform follow-up operations, such as stopping or killing a service. You can also reset memory statistics and navigate to Alerts application. Other operations available here include:
 
     - View detailed service information
     - View CPU usage of the service. Clicking on the mini bar chart redirects you to the Performance Monitor to see more details
@@ -37,7 +37,7 @@ In this exercise, you review the information displayed in the Services card, exa
     - Examine the used memory by the top consumers, components, allocators and tables
     - Examine out of memory events
     - Examine our of buffer events (when using SAP HANA native storage extensions)
-    - The upper time chart visualizes the memory statistics. In addition to the total used memory by SAP HANA, you also see the allocation limits for the service and the host
+    - The upper time chart visualizes the memory statistics. In addition to the total used memory by SAP HANA, you also see the allocation limits for the host and the service
 
     ![Memory Analysis App](./images/3-07_MemoryAnalysisApp.png)
 
@@ -45,7 +45,7 @@ In this exercise, you review the information displayed in the Services card, exa
 
     ![Components](./images/3-08_MemoryAnalysisApp-Components.png)
 
-9. Let's investigate a couple of components in more detail. Check the components **System** and **Statement Execution & Intermediate Results**.  Scroll to the bottom of the page and click the arrow to expand the **used memory history** chart. The history chart shows the memory usage over time for the components you selected.
+9. Let's investigate a couple of components in more detail. Check the components **System** and **Statement Execution & Intermediate Results**.  Scroll to the bottom of the page and click the arrow to expand the **Used memory history** chart. The history chart shows the memory usage over time for the components you selected.
 
     ![Used Memory by Components](./images/3-09_MemoryAnalysisApp-ComponentsUsedMemory.png)
 
@@ -57,4 +57,4 @@ In this exercise, you review the information displayed in the Services card, exa
 
     ![Lateral Navigation](./images/3-11_MemoryAnalysisApp-LateralNavigation.png)
 
-Continue to [Exercise 10: Managing Workload Classes](../appendix_ex10)
+Continue to [Appendix 3: Managing Workload Classes](../appendix_ex10)

@@ -1,12 +1,12 @@
-# Exercise 10: Managing Workload Classes
+# Managing Workload Classes
 
-We manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session. You can classify workloads based on user and application context information and apply configured resource limitations (for example, a statement memory limit). Workload classes allow SAP HANA to influence dynamic resource consumption on the session or statement level. In this exercise you will learn on how to create Workload classes and how to monitor them.
+We manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session. You can classify workloads based on user and application context information and apply configured resource limitations (for example, a statement memory limit). Workload classes allow SAP HANA to influence dynamic resource consumption on the session or statement level. In this exercise you will learn how to create workload classes and how to monitor them.
 
-1. Locate the **Data Administration** card on the Database Overview page and click **Manage workload classes**.
+1. Locate the **Database Administration** card on the Database Overview page and click **Manage workload classes**.
 
     ![Manage Workload Classes](./images/10-01_ManageWorkloadClasses.png)
 
-2. The *Workload Classes* application displays the parameters for every workload class in the system and this is where can create a new workload class. Click the **Create** button.
+2. The *Workload Classes* application displays the parameters for every workload class in the system and this is where you can create a new workload class. Click the **Create** button.
 
     ![Workload Classes](./images/10-02_WorkloadClasses.png)
 
@@ -14,13 +14,13 @@ We manage workload in SAP HANA by creating workload classes and workload class m
 
     - Workload Class Name: SampleWorkload
     - Is Parent: Yes
-    - Statement Memory Limit: 1 GB
+    - Total Statement Memory Limit: 1 GB
 
     We're defining a workload class named "SampleWorkload" as a parent workload, meaning that it can have child workloads that inherit its limits (i.e. SAP HANA supports hierarichal workload classes). The statement memory limit for this workload class is 1 GB. Click the **Create** button.
 
     ![Create Workload Class](./images/10-03_CreateWorkloadClass.png)
 
-4. The newly created workload class appears in the table. Notice a notification appears under the *Mappings* columns, indicating that you need to assign a mapping. The assignment can be done when the workload class is created, or by clicking on the right arrow button at the end of the workload class row. Click on the **right arrow** to assign a mapping.
+4. The newly created workload class appears in the table. Notice a notification appears under the *Mappings* column, indicating that you need to assign a mapping. The assignment can be done when the workload class is created, or by clicking on the right arrow button at the end of the workload class row. Click on the **right arrow** to assign a mapping.
 
     ![Workload Class with No Mapping](./images/10-04_WorkloadClassNoMapping.png)
 
@@ -46,6 +46,5 @@ We manage workload in SAP HANA by creating workload classes and workload class m
 
 8. On the drop-down menu from the cockpit's toolbar (top left), click on **Workload Classes** and select **Database Overview** from the menu to return to the Database Overview page.
 
-Congratulations! You have completed the exercises for the SAP HANA cockpit and you are now able to monitor and manage individual SAP HANA databases.
 
-Continue to [Exercise 11: Recent Activities and Frequently Used Apps](../appendix_ex11)
+Continue to [Appendix 4: Recent Activities and Frequently Used Apps](../appendix_ex11)

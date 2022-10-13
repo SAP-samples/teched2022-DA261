@@ -117,7 +117,7 @@ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This
 
 ## Appendix
 Additional SAP HANA Cockpit Exercises:
-- [Exercise 8 - Monitoring Memory Usage](exercises/hana_cockpit/appendix_ex8/)
-- [Exercise 9 - Managing Services](exercises/hana_cockpit/appendix_ex9/)
-- [Exercise 10 - Managing Workload Classes](exercises/hana_cockpit/appendix_ex10/)
-- [Exercise 11 - Recent Activities and Frequently Used Apps](exercises/hana_cockpit/appendix_ex10/)
+- [Appendix 1 - Monitoring Memory Usage](exercises/hana_cockpit/appendix_ex8/)
+- [Appendix 2 - Managing Services](exercises/hana_cockpit/appendix_ex9/)
+- [Appendix 3 - Managing Workload Classes](exercises/hana_cockpit/appendix_ex10/)
+- [Appendix 4 - Recent Activities and Frequently Used Apps](exercises/hana_cockpit/appendix_ex10/)
