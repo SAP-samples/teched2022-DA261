@@ -1,9 +1,6 @@
 # Exercise 2 - Creating Instances
 
-As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. If you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process. If you are a non-trial user, you'll be able to create another instance, but be sure you provide a different instance name as SAP HANA Cloud does not allow creation of instances with same names. 
-
-TO-DO - Should we include the Data Lake instance in the appendix?
-[@Abbey: What do you mean, moving it out of this section and into the appendix?]
+As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. If you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process. If you are a non-trial user, you'll be able to create another instance, but be sure to provide a different instance name as SAP HANA Cloud does not allow creation of instances with same names. 
 
 Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances directly from the SAP HANA Cloud Central Overview page. 
 
@@ -42,9 +39,6 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     The number of vCPUs is allocated according to the size of memory of your instance.
 
     <kbd>![](./images/4.png)</kbd>
-    <kbd>![](./images/21.png)</kbd>
-
-    [JOSE: I'm going to remove this last screenshot (capacity Unit Estimator) because navigating out of HCC will confuse users]
 
     Optional: You can also use the SAP HANA Cloud Capacity Unit Estimator on the right side to estimate the number of Capacity Units (CU) required for your particular use case.
 
