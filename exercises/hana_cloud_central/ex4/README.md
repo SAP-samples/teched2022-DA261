@@ -1,19 +1,19 @@
 # Exercise 4 - Start, Stop, Upgrade Instances, and Other Actions
 
-In this section we will discuss about how to start, stop, and upgrade instances from the SAP HANA Cloud Central application.
+In this section, we will discuss about how to start, stop, and upgrade instances from the SAP HANA Cloud Central application.
 
 
-1. Click on "..." button.
+1. Click on "..." button (under Actions menu) for the DEMO_HANA_DB database.
     <kbd>
     ![](./images/1.png)
     </kbd>
     
-2. Click on Stop. A pop up shows up, confirming that you want to continue with stopping the instance. **Note: Please do not stop the instance now so that we can proceed with other actions. Click on Cancel.**
+2. Click on Stop. A pop up shows up, confirming that you want to continue with stopping the instance. **Note: Please do not stop the instance now so that we can proceed with other actions. Click on Cancel.** @Abbey: why not? It doesn't take long to stop/start an instance?
     <kbd>
     ![](./images/2.png)
     </kbd>
       
-3. If you confirm to stop the instance, you see the status getting changed to 'Stopping' and you can see more details by clicking on the hyperlink.
+3. If you were to confirm to stop the instance, you'd see the status changing to 'Stopping' and see more details by clicking on the instance name.
     <kbd>
     ![](./images/3.png)
     </kbd>
@@ -139,4 +139,4 @@ TO DO - Add in an updated picture to replace the one below (I already have an as
     ![](./images/27.png)
     </kbd>
 
-Continue to - [SAP HANA Cockpit - Exercise 1](../../hana_cockpit/ex1/README.md)
+This concludes the exercises for SAP HANA Cloud Central. Continue to - [SAP HANA Cockpit - Exercise 1](../../hana_cockpit/ex1/README.md)
