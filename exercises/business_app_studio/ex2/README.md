@@ -88,7 +88,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     These details could also be used to connect to the HDI container from an application using one of the many SAP HANA client drivers (Java, ODBC, Node.js, Python, Go, .NET etc.) or the command line SQL tool HDBSQL.
 
-    >An example is shown below of connecting with both the RT user.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client (which is not on the TechEd laptops) and is shown for illustrative purposes only.
+    >An example is shown below of connecting with the RT user.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client (which is not on the TechEd laptops) and is shown for illustrative purposes only.
     >
     > ```SQL
     > \al
@@ -185,7 +185,15 @@ Calculation views allow the developers to express their intent instead of defini
 
 1. In the guided development tool, select **Create a Database Procedure File** and complete the steps.
 
-2. In the SAP HANA database explorer, call the stored procedure.
+2. Notice that the changed artifact, the procedure is identified as needing to be deployed.
+
+    ![](images/deployment-project-explorer.png)
+
+    The output view provides details on what was deployed.
+
+    ![](images/DeploymentTask.png)
+
+3. In the SAP HANA database explorer, call the stored procedure.
 
     ![](images/call-stored-procedure.png)
 

@@ -18,52 +18,47 @@ This exercise will further examine the deployed HDI container.
 - Can be generated from higher-level language like CAP CDS
 - Eases deployment in multi-tenant environments
 
-Alternatively, database objects can also be created directly in the database using SQL as shown in the last step of [SAP HANA database explorer exercise 1](../database_explorer/README.md).
+Alternatively, database objects can also be created directly in the database using SQL as shown in the tutorial [Create Database Objects with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-create-schema.html).
 
 ## Exercise 4.2 HDI Schemas
 
-TODO, 
+1. In the SAP HANA database explorer, in the **DEMO_HANA_DB** connection, select **Show Schemas**.
 
-FLIGHTRESERVATION_HDI_DB_1 deployed objects
+    ![](images/HDI-Schemas.png)
+    
+    >Notice that the DBADMIN does not have privileges on these schemas. 
 
-#DI procedures used by deployment
+    - "FLIGHTRESERVATION_HDI_DB_1 contains the runtime objects (tables, calculation view, stored procedure)
+    - FLIGHTRESERVATION_HDI_DB_1#DI is the design time schema and contains procedures used by the deployment infrastructure 
+    - FLIGHTRESERVATION_HDI_DB_1#OO is a technical schema for the object owner
+    - FLIGHTRESERVATION_HDI_DB_1_GUID_DT is a schema for the design-time user
+    - FLIGHTRESERVATION_HDI_DB_1_GUID_RT is a schema for the runtime or application user
 
-#OO object owner
+    A RT and DT user and schema is created when a new service key is created.  
 
-_RT is the application user or runtime user
-
-_DT 
-
-An HDI container construct can also be described as a glorified set of schemas. 
-
-TODO try to better explain with a concrete example the different schemas.
-
-![](images/HDI-Schemas.png)
-
-- "HDI-container"  is the schema for the "RUN TIME" data,
-- "#DI" is the "DESIGN TIME" schema (or maybe Deployment Infrastructure? TODO Volker) and 
-- "#OO" is a technical schema for the "Object Owner"
-
-For each DT and RT user there will be additional schema that only belong to this container context. RT/DT users are created by building a new service or adding an additional "shared key".
-The DI schema also contains some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments. HDI does have a [SQL interface](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/035dbbe23ac14242b1f7d724dd102825.html), a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) interface, and Java API (sap-java-hdi TODO where does one find this API?)that developers can use.
+    TODO add screenshots showing the dbx catalog browser showing some of the objects in each schema.
 
 ## Exercise 4.3 Opening a SQL Console as Admin
 
 1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
 
     ```SQL
-    SELECT * FROM USERS WHERE USER_NAME LIKE '%FLIGHT%';
-    SELECT * FROM SCHEMAS;
     SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
-    SELECT * FROM M_JOBS;  --Fails 
+    SELECT * FROM USERS WHERE USER_NAME LIKE '%FLIGHT%';
+    SELECT SCHEMA_NAME, HAS_PRIVILEGES FROM SCHEMAS WHERE SCHEMA_NAME LIKE '%FLIGHT%';
+    SELECT * FROM FLIGHTRESERVATION_HDI_DB_1#DI.M_JOBS;  --Fails
+    SELECT * FROM FLIGHTRESERVATION_HDI_DB_1#DI.M_OBJECTS; --Fails
     ```
     
     Notice that the user is the _RT or run time user as opposed to the _DT or design time user.
+
     If you want to access the DT view you have to use the "ADMIN" container access in Database Explorer.
 
     ![](images/open-admin.png)
 
     Now rerun the previous code.  Notice that the select from M_JOBS now succeeds.
+
+    The DI schema also contains some views that contain information about the design time objects including their source and with m_jobs also information about the previous deployments.
 
     Here is a blog on this topic:
     https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
@@ -92,7 +87,9 @@ The DI schema also contains some views that contain information about the design
 
 ## Summary
 
-You have now have a better understanding of some of the HDI concepts.  In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
+You have now have a better understanding of some of the HDI concepts.  Additionally, HDI has a [SQL interface](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/035dbbe23ac14242b1f7d724dd102825.html) and a Node.js ([@sap/hdi](https://www.npmjs.com/package/@sap/hdi)) interface.
+
+In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
 
 Continue to - [Exercise 2 - Description](../../database_explorer/ex2/README.md)
 
