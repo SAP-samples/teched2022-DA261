@@ -92,7 +92,7 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 
 - [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
 - [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
-- [Exercise 4 - Export and Import HDI Containers](exercises/database_explorer/ex4/)
+- [Exercise 4 - Import and Export of HDI Containers](exercises/database_explorer/ex4/)
 - [Exercise 5 - SAP HANA Database Explorer Extension](exercises/database_explorer/ex6/)
 
 ### SAP HANA Cockpit Exercises
@@ -117,7 +117,7 @@ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This
 
 ## Appendix
 Additional SAP HANA Cockpit Exercises:
-- [Exercise 8 - Monitoring Memory Usage](exercises/hana_cockpit/appendix_ex9/)
-- [Exercise 9 - Managing Services](exercises/hana_cockpit/appendix_ex10/)
-- [Exercise 10 - Managing Workload Classes](exercises/hana_cockpit/appendix_ex11/)
-- [Exercise 11 - Recent Activities and Frequently Used Apps](README.md)
+- [Exercise 8 - Monitoring Memory Usage](exercises/hana_cockpit/appendix_ex8/)
+- [Exercise 9 - Managing Services](exercises/hana_cockpit/appendix_ex9/)
+- [Exercise 10 - Managing Workload Classes](exercises/hana_cockpit/appendix_ex10/)
+- [Exercise 11 - Recent Activities and Frequently Used Apps](exercises/hana_cockpit/appendix_ex10/)
