@@ -105,10 +105,6 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 - [Exercise 6 - HDI Administration](exercises/hana_cockpit/ex6/)
 - [Exercise 7 - Performance Management](exercises/hana_cockpit/ex7/)
 
-### SAP Business Application Studio Exercises
-
-- [Exercise 4 - Access a Table Outside of the HDI Container using a Synonym](exercises/business_app_studio/ex4/)
-
 ## How to obtain support
 
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.

@@ -16,7 +16,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/ChangeConnection.png)
 
-2. The SQL Console has the ability to auto-complete statements.  Enter the statement below into the SQL Console, position the cursor on the C and press Ctrl + space.
+2. The SQL Console has the ability to auto-complete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.
 
     ```SQL
     SELECT 	NAME, ADDRESS, C, FLDATE, SEAT
@@ -55,7 +55,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/StatementHelpPanel.png)
     
-    *Links are provided to the SAP Help documentation as well as metadata about the tables being used.* 
+    *Links are provided to the SAP Help documentation as well as metadata about the tables, views procedures, or functions being used.* 
     
 5. Resource consumption metrics of the executed SQL statement is available in the **Messages** tab.
 
@@ -100,7 +100,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-9. The SQL Console can enter full screen mode by double tapping on its tab.  
+9. A SQL Console tab or a sub tab such as Results, or Messages, can enter full screen mode, by double tapping on its tab.  
 
     ![](images/FullScreen.png)
 
@@ -148,15 +148,15 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/RunOnMultipleDatabases3.png)
 
-    *Notice that the results of the query are displayed in one JSON file for the results of the query against each database connection.
+    *Notice that the results of the query are displayed in one JSON file for the results of the query against each database connection.*
 
 12. The results of a SQL query can be saved as a CSV file as shown below.  
 
     ![](images/Download.png)
 
-    ![](images/Download2.png.png)
+    ![](images/Download2.png)
 
-    Wizards are also provided that can be used to export the data from table or view or multiple objects including their schema and data using (catalog).
+    Wizards are also provided that can be used to export the data from table or view or from multiple objects and include their schema and data (catalog import/export).
 
     ![](images/ExportandImportWizards.png)
 
@@ -191,7 +191,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     SELECT NEW ST_Point('POINT (-80.55100416451384 43.48025646678657)', 4326) FROM DUMMY;
     ```
 
-    TODO.
+    ![](images/view-map.png)
 
     Further details on how the SAP HANA database explorer can be used with multi-model features including graph, JSON, and spatial can be found at [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 

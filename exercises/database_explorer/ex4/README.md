@@ -1,11 +1,11 @@
 # Exercise 4 - Export and Import HDI Containers
 
-  In this exercise, the HDI container will be exported and then imported.  This could occur if you wished to move an HDI container from one SAP HANA Cloud instance to another such as from DEV to QA or PROD to Dev.  The export contains the data stored in the container so this is useful should you wish to do a system copy.  This process may also be useful if you wish to move an HDI container from a more heavily used databases instance to a less heavily used instance.
+  In this exercise, the HDI container will be exported and then imported.  This could occur if you wished to move an HDI container from one SAP HANA Cloud instance to another such as from dev to QA or prod to dev.  The export contains the data stored in the container so this is useful should you wish to do a system copy.  This process may also be useful if you wish to move an HDI container from a more heavily used databases instance to a less heavily used instance.
   
   >It should be noted that there are additional methods that can be used to deploy an HDI container to a new SAP HANA Cloud instance.  A few are mentioned below.
  > 
   >* Right click on the yaml file and select **Build MTA Project**.  The resultant mtar file located in the mta_archives folder can then be deployed using the tooling or with the SAP BTP CLI.
-  >* As demonstrated in the Business Application Studio exercies, when signing into Cloud Foundry, an endpoint, organization and space can be specified and the project can be bound to a database connection.
+  >* As demonstrated in the Business Application Studio exercies, when signing into Cloud Foundry, an endpoint, organization, and space can be specified and the project can be bound to a database connection.
 
 ## Exercise 4.1 Grant Container Admin
 
@@ -49,7 +49,7 @@
 
     ![](images/view.png)
 
-    The HDI container can be downloaded.  The downloaded file FLIGHTRESERVATION_HDI_DB_1.tar.gz can be used in the import HDI wizard.
+    Press the **Download** button.  The downloaded file FLIGHTRESERVATION_HDI_DB_1.tar.gz can be used in the import HDI wizard.
 
     ![](images/download.png)
 

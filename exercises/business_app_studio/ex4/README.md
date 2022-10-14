@@ -86,14 +86,14 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/open-admin.png)
 
-    Notice that the select from M_JOBS and M_OBJECTS now succeeds as the user is 
+    Notice that the select from M_JOBS and M_OBJECTS now succeeds. 
 
     ```SQL
     SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
     --SELECT * FROM PASSENGERS;  --Fails
     SELECT USER_NAME, CREATE_TIME, LAST_SUCCESSFUL_CONNECT FROM USERS WHERE USER_NAME LIKE '%FLIGHT%';
     SELECT SCHEMA_NAME, CREATE_TIME FROM SYS.SCHEMAS WHERE SCHEMA_NAME LIKE '%FLIGHT%';
-    SELECT REQUEST_ID, STATUS, JOB_START_TIMESTAMP_UTC FROM FLIGHTRESERVATION_HDI_DB_1#DI.M_JOBS;
+    SELECT REQUEST_ID, STATUS, START_TIMESTAMP_UTC FROM FLIGHTRESERVATION_HDI_DB_1#DI.M_JOBS ORDER BY START_TIMESTAMP_UTC DESC;
     SELECT CONTAINER_NAME, OBJECT_NAME, OBJECT_TYPE FROM FLIGHTRESERVATION_HDI_DB_1#DI.M_OBJECTS;
     ```
 
@@ -107,7 +107,7 @@ Alternatively, database objects can also be created directly in the database usi
 
 ## Summary
 
-You have now have a better understanding of some of the HDI concepts.  
+You have now further explored the schemas and some of the objects in an HDI container.
 
 In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
 
