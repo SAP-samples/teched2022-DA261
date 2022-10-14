@@ -40,7 +40,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >
     >![](images/cf-cli.png)
     >
-    >It should also be noted that if you are using a non-trial account (trial account limit the number of instances to one), you may wish to specify which SAP HANA Cloud instance to deploy the HDI container to.
+    >It should also be noted that if you are using a non-trial account (trial account limit the number of instances to one), you may wish to specify which SAP HANA Cloud instance to deploy the SAP HANA Deployment Infrastructure (HDI) container to.
     >
     >![](images/select-instance.png)
 
@@ -66,7 +66,11 @@ This exercise will demonstrate how to create a project containing tables, a calc
     
     >Optionally right click on **OPEN EDITORS** and choose **Hide** or uncheck the item.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
-    At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.  Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.
+    At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.
+    
+    HDI provides a service that enables you to deploy database development artifacts to so-called containers. This service includes a family of consistent design-time artifacts for all key SAP HANA database features which describe the target (run-time) state of SAP HANA database artifacts, for example: tables, views, or procedures. These artifacts are modeled, staged (uploaded), built, and deployed into SAP HANA. HDI uses containers to store design-time artifacts and the corresponding deployed run-time (catalog) objects. The design-time container is used to store the design-time representations of the catalog objects that you want to create during the deployment process.
+    
+    Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.
     
     The HDI container can be seen in the SAP BTP Cockpit. 
 
