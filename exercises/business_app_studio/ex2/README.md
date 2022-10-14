@@ -66,7 +66,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     
     >Optionally right click on **OPEN EDITORS** and choose **Hide** or uncheck the item.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
-    At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.  Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.  TODO Volker benefits (is it cost savings, better utilization, much quicker to deploy) 
+    At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.  Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.
     
     The HDI container can be seen in the SAP BTP Cockpit. 
 
