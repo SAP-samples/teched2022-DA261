@@ -8,7 +8,7 @@ Through the Database Overview page, you can view key health indicators for this 
 
 This exercise will teach you the basics of navigating the Database Overview page and how to find the information you need as a database administrator.
 
-1. Navigate to your SAP HANA Cloud Trial instance from the SAP BTP Cockpit ("trial" subaccount and "dev" space). Open the SAP HANA cockpit by clicking item **Open in SAP HANA Cockpit** from the **Actions** menu.
+1. Navigate to your SAP HANA Cloud instances from the SAP BTP Cockpit. Open the SAP HANA cockpit by clicking item **Open in SAP HANA Cockpit** from the **Actions** menu for the instance DEMO_HANA_DB.
 
     **Note:** *If this is the first time you launch the SAP HANA cockpit or SAP HANA database explorer, you will be asked to enter your credentials. The default username is DBADMIN and the password is what you entered when creating the instance.*
 
@@ -24,15 +24,15 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     Click on **Close** to dismiss the pop up.
 
-4. Below the toolbar you see the cockpit's collapsible header, where you'll find the status of the database, the database user you're connecting as, the host name, and a search bar. From the header, you can also change the database user (via the Choose Authentication button), enable single sign-on (via the Enable JWT SSO button) and open the SQL Console. You can also change or filter the cards that appear on this page and save that as a new view.
+4. Below the toolbar you see the cockpit's collapsible header, where you'll find the status of the database, the database user you're connecting as, the host name, and a search bar. From the header, you can also change the database user (via the Log in as a Different User button), enable single sign-on (via the Enable JWT SSO button) and open the SQL Console. You can also change or filter the cards that appear on this page and save that as a new view.
 
     ![Header](./images/1-04_Header.png)
 
     By default, when you first access the Database Overview page you see a quick synopsis of the database status and its alerts, as well as the utilization of memory, CPU and disk.
     
-    As you scroll down, you see high-level performance metrics in the form of the number of threads, sessions and long-running statements. You also see general information about your SAP HANA database.
+    As you scroll down, you see high-level performance metrics in the form of the number of threads, sessions and long-running statements. You also see general information about your SAP HANA Cloud database.
     
-    Down further, you see security settings, such as data volume encryption, auditing status, authentication status, as well as security-related hyperlinks. There are also a number of hyperlinks to launch additional administration and Smart Data Integration applications.
+    Down further, you see security settings, such as user & role management, auditing status, and authentication & trust configuration, as well as security-related hyperlinks. There are also a number of hyperlinks to launch additional administration and Smart Data Integration applications.
 
 5. The organization of the cards in the Database Overview page is completely customizable. Click and hold any card and drag it across the screen to change its location.
 
