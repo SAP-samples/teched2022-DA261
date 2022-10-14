@@ -78,15 +78,11 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/11.png)
     </kbd>
 
-[@Abbey: please add a step here for the "Copy Configuration" button and mention why this is useful]
-
 10. Click the **Copy Configuration** button in the bottom right corner. A pop-up window will appear that provides a JSON-compliant string to create a new SAP HANA database with the same configuration details you have just entered. There is the option of copying the configuration to the clipboard or downloading it as a JSON file. This allows you to save the entered configuration so that you can re-use it in the future.
-   <kbd>
+
     ![](./images/copy_configuration.png)
-    </kbd>
-    <kbd>
+
     ![](./images/cc_window.png)
-    </kbd>
 
 11. **If you are using the SAP HANA Cloud trial and already have a database instance, click the *Cancel* button and then the *Leave* button to return to the All Instances view in SAP HANA Cloud Central (recall that you can only have 1 database instance in SAP HANA Cloud trial, so you cannot create a second one).** Otherwise, click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created. **Note:** Creating a new instance takes approx. 10 mins.
     <kbd>
