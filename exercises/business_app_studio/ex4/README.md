@@ -25,18 +25,23 @@ Alternatively, database objects can also be created directly in the database usi
 1. In the SAP HANA database explorer, in the **DEMO_HANA_DB** connection, select **Show Schemas**.
 
     ![](images/HDI-Schemas.png)
-    
-    >Notice that the DBADMIN does not have privileges on these schemas. 
 
     - "FLIGHTRESERVATION_HDI_DB_1 contains the runtime objects (tables, calculation view, stored procedure)
+
+        ```SQL
+        SELECT * FROM SYS.TABLES WHERE SCHEMA_NAME = 'FLIGHTRESERVATION_HDI_DB_1';
+        SELECT * FROM SYS.PROCEDURES WHERE SCHEMA_NAME = 'FLIGHTRESERVATION_HDI_DB_1';
+        SELECT * FROM SYS.VIEWS WHERE SCHEMA_NAME = 'FLIGHTRESERVATION_HDI_DB_1';
+        ```
+
+        ![](images/objects.png)
+
     - FLIGHTRESERVATION_HDI_DB_1#DI is the design time schema and contains procedures used by the deployment infrastructure 
     - FLIGHTRESERVATION_HDI_DB_1#OO is a technical schema for the object owner
     - FLIGHTRESERVATION_HDI_DB_1_GUID_DT is a schema for the design-time user
     - FLIGHTRESERVATION_HDI_DB_1_GUID_RT is a schema for the runtime or application user
 
     A RT and DT user and schema is created when a new service key is created.  
-
-    TODO add screenshots showing the dbx catalog browser showing some of the objects in each schema.
 
 ## Exercise 4.3 Opening a SQL Console as Admin
 

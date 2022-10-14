@@ -94,7 +94,7 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 - [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
 - [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
 - [Exercise 4 - Import and Export of HDI Containers](exercises/database_explorer/ex4/)
-- [Exercise 5 - SAP HANA Database Explorer Extension](exercises/database_explorer/ex6/)
+- [Exercise 5 - SAP HANA Database Explorer Extension](exercises/database_explorer/ex5/)
 
 ### SAP HANA Cockpit Exercises
 
