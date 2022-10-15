@@ -44,15 +44,11 @@ Database to invoke the Create Instance wizard.
 ## SAP Business Technology Platform (SAP BTP)
 The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
-### SAP Business Technology Platform Exercises
-
 - [Exercise 1 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex1/)
 
 ## SAP HANA Cloud Central
 
 The SAP HANA Cloud Central tool provides database administrators (DBAs) with a simple and centralized overview of their SAP HANA Cloud databases and SAP HANA Cloud data lake instances. 
-
-### SAP HANA Cloud Central Exercises
 
 - [Exercise 1 - Overview of SAP HANA Cloud Central](exercises/hana_cloud_central/ex1/)
 - [Exercise 2 - Create Instances](exercises/hana_cloud_central/ex2/)
@@ -63,8 +59,6 @@ The SAP HANA Cloud Central tool provides database administrators (DBAs) with a s
 
 The SAP HANA cockpit tool provides administration and monitoring of individual SAP HANA Cloud database instances. 
 
-### SAP HANA Cockpit Exercises
-
 - [Exercise 1 - The Database Overview Page](exercises/hana_cockpit/ex1/)
 
 
@@ -72,15 +66,11 @@ The SAP HANA cockpit tool provides administration and monitoring of individual S
 
 The SAP HANA database explorer is a web-based tool for browsing and working with  database schema objects such as tables, views, and stored procedures and executing SQL.
 
-### SAP HANA Database Explorer Exercises
-
 - [Exercise 1 - Launch the SAP HANA Database Explorer](exercises/database_explorer/ex1/)
 
 ## SAP Business Application Studio
 
 SAP Business Application Studio is a SAP BTP service that offers a modern development environment tailored for business application development.
-
-### SAP Business Application Studio Exercises
 
 - [Exercise 1 - Create a Development Workspace](exercises/business_app_studio/ex1/)
 - [Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development](exercises/business_app_studio/ex2/)
