@@ -2,9 +2,16 @@
 
 This exercise will demonstrate how to open the SAP Business Application Studio (app studio) and create your first workspace for native SAP HANA development.  When the SAP HANA tool extensions are added, it can be used to build and deploy native SAP HANA database artifacts such as tables, calculation views, and stored procedures.  
 
-1. In the BTP Cockpit:
+1. In the [BTP Cockpit](https://account.hanatrial.ondemand.com/trial/#/home/trial):
+   * Select **Go To Your Trial Account**
    * Select the **trial** subaccount
+
+       ![](images/TrialSubAccount.png)
+
    * Expand **Services** and select **Service Marketplace** in the left nav bar
+    
+       ![](images/ServiceMarketPlace.png)
+
    * Search for SAP Business Application Studio
    * Launch SAP Business Application Studio by selecting **Go to Application** from the horizontal three-dot menu.  If you see a privacy statement, click OK to continue.
     
@@ -14,7 +21,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/Welcome-screen.png)
 
-3. Click the button Create Dev Space and then create a development workspace that is configured with the *SAP HANA Native Application* development extensions.  Make sure to name this new dev space "TechEd2022" (in top left).
+3. Click the button **Create Dev Space** and then create a development workspace that is configured with the *SAP HANA Native Application* development extensions.  Make sure to name this new dev space "TechEd2022" (in top left).
 
     ![](images/workspace.png)
 
@@ -26,7 +33,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/Welcome.png)
 
-    >Should you wish to re-open the Welcome page, it can be opened via a command palette command.  To open the command palette select View, Find Command and then search for Welcome.
+    >Should you wish to re-open the Welcome page, it can be opened via a command palette command.  To open the command palette, select **View**, **Find Command** and then search for **Welcome**.
     >
     >![](images/re-open-welcome.png)
 

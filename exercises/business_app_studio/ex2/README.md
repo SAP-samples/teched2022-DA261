@@ -1,6 +1,6 @@
 # Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development
 
-This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the guided development tool.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).  Exercise 3 is an optional exercise and walks through the process of importing a completed project.
+This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the guided development tool.  [Exercise 3](../ex3/README.md) is an optional exercise and walks through the process of importing a completed project.
 
 ## Exercise 2.1 Create a New SAP HANA Database Project from a Template
 
@@ -26,7 +26,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/create_and_next.png)
 
-    When asked to, provide your **Cloud Foundry API endpoint**, **email address** used for the trial account, **password**, and select **login**.  The API endpoint value can be obtained from the BTP Cockpit subaccount page.
+    When asked to on the third page, provide your **Cloud Foundry API endpoint**, **email address** used for the trial account, **password**, and select **login**.  The API endpoint value can be obtained from the BTP Cockpit subaccount page.
 
     ![](images/log-in.png)
 
@@ -68,9 +68,9 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.
     
-    HDI provides a service that enables you to deploy database development artifacts to so-called containers. This service includes a family of consistent design-time artifacts for all key SAP HANA database features which describe the target (run-time) state of SAP HANA database artifacts, for example: tables, views, or procedures. These artifacts are modeled, staged (uploaded), built, and deployed into SAP HANA. HDI uses containers to store design-time artifacts and the corresponding deployed run-time (catalog) objects. The design-time container is used to store the design-time representations of the catalog objects that you want to create during the deployment process.
+    HDI provides a service that enables you to deploy database development artifacts to containers. This service includes a family of consistent design-time artifacts for all key SAP HANA database features which describe the target (run-time) state of SAP HANA database artifacts, for example: tables, views, or procedures. These artifacts are modeled, staged (uploaded), built, and deployed into SAP HANA. 
     
-    Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database with isolated data.
+    Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database each with a separate container.
     
     The HDI container can be seen in the SAP BTP Cockpit. 
 
@@ -82,11 +82,11 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/add-HDI-in-dbx.png)
 
-    A service key has been added to the service.  
+    *Above, the service key SharedDevKey is created when A service key has been added to the service.  
 
     ![](images/service-key.png)
 
-    It contains details such as the parameters needed to connect to the HDI container as well as credentials for a DT or design time user and RT or runtime user. 
+    It contains details such as the parameters needed to connect to the HDI container (host, port, certificate) as well as credentials for a DT or design time user and RT or runtime user. 
 
     ![](images/service-key-details.png)
 
@@ -107,7 +107,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.2 Initialize the Git Repository
 
-1. The Git repository will be initialized now so that after subsequent steps it can be easily seen what changes have been made to the project.
+1. Initialize the Git repository by selecting the **GIT** extension and pressing the **+** icon.
 
     ![](images/git-init.png)
 
@@ -187,7 +187,7 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Exercise 2.6 Create a Database Procedure File
 
-1. In the guided development tool, select **Create a Database Procedure File** and complete the steps.
+1. In the guided development tool, skip a couple of steps and select **Create a Database Procedure File** and complete the steps.
 
 2. Notice that the changed artifact, the procedure is identified as needing to be deployed.
 
@@ -203,6 +203,6 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Summary
 
-You now have now created native SAP HANA database artifacts and deployed them into an HDI container.
+You now have now created native SAP HANA database artifacts and deployed them into an HDI container.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).
 
 Continue to - [Exercise 3 - Import and Deploy the Completed Project (Optional)](../ex3/README.md)
