@@ -1,5 +1,5 @@
 # Exercise 3 - Using the SQL Console
-In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL Console. 
+In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL Console. Please repeat the steps shown below.
 
 1. A SQL Console can be opened by the context menu of a connection or after selecting a connection and clicking on the SQL Console toolbar icon.  
 
@@ -12,11 +12,13 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     SELECT * FROM PUBLIC.M_CONNECTIONS WHERE CONNECTION_ID = CURRENT_CONNECTION;
     ```
 
-    The connection that the SQL Console is attached to can be changed if needed.
+    Multiple SQL Console tabs can be opened, or the connection that the SQL Console is attached to can be changed if needed.
 
     ![](images/ChangeConnection.png)
 
 2. The SQL Console has the ability to auto-complete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.
+
+    ![](images/AutoComplete.png)
 
     ```SQL
     SELECT 	NAME, ADDRESS, C, FLDATE, SEAT
@@ -27,9 +29,6 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
         ORDER BY NAME ASC;
     ```
 
-    ![](images/AutoComplete.png)
-
-
 3. Commonly used statements can be saved to or retrieved from the statement library.  
 
     ![](images/StatementLibrary.png)
@@ -38,10 +37,13 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     
     ![](images/StatementLibraryShow.png)
 
-    In this dialog it is also possible to import statements from a zip file such as the 
-    diagnostic SQL statements downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).
+    In this dialog it is also possible to export selected statements or import statements from a zip file such as the diagnostic SQL statements downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).
 
-4. The SQL Console has an optional statement help panel that shows additional details SQL statement that currently has focus.  
+4. The SQL Console has an optional statement help panel that shows additional details for a SQL statement that is selected by the input indicator.
+
+    ![](images/StatementHelpPanel.png)
+    
+    *Links are provided to the SAP Help documentation as well as metadata about the tables, views procedures, or functions being used.* 
 
     ```SQL
     SELECT SEAT, COUNT(SEAT)
@@ -52,16 +54,12 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     GROUP BY F.SEAT
     ORDER BY F.SEAT ASC;
     ```
-
-    ![](images/StatementHelpPanel.png)
-    
-    *Links are provided to the SAP Help documentation as well as metadata about the tables, views procedures, or functions being used.* 
     
 5. Resource consumption metrics of the executed SQL statement is available in the **Messages** tab.
 
     ![](images/Messages.png)
 
-6. The previously executed statements can be found in the **History** tab.  Previously executed statements can be recalled by double clicking on them or by dragging and dropping them.
+6. The previously executed statements can be found in the **History** tab.  Statements can be recalled by double clicking on them or by dragging and dropping them.
 
     ![](images/History.png)
 
@@ -72,7 +70,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     A few notable settings are:
     * Byte limit for the size of a returned value
     * Max number of rows to display
-    * Indicate potential SQL errors can be used to disable the syntax parser
+    * Indicate potential SQL errors can be used to enable or disable the syntax parser
     * Auto-save contents of SQL consoles
    
    ![](images/DBX_Settings.png)
@@ -80,6 +78,8 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
    >If changes are made to this screen, the Save button must be pressed.
 
 8.  A list of keyboard shortcuts can be found by right-clicking and selecting **Keyboard Shortcuts** within the SQL console window.
+
+    ![](images/OpenShortcuts.png)
 
     ![](images/KeyboardShortcuts.png)
 
@@ -104,7 +104,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/FullScreen.png)
 
-10. A context menu is available on SQL Console tabs.
+10. A context menu is available on SQL Console tabs.  You may wish provide a more descriptive tab name for a SQL Console.
 
     ![](images/SQLConsoleContextMenu.png)
 
@@ -146,9 +146,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/RunOnMultipleDatabases4.png)
 
-    ![](images/RunOnMultipleDatabases3.png)
+    *Selecting both query results will generate a JSON file with the details of both queries.*
 
-    *Notice that the results of the query are displayed in one JSON file for the results of the query against each database connection.*
+    ![](images/RunOnMultipleDatabases3.png)
 
 12. The results of a SQL query can be saved as a CSV file as shown below.  
 
@@ -156,13 +156,13 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/Download2.png)
 
-    Wizards are also provided that can be used to export the data from table or view or from multiple objects and include their schema and data (catalog import/export).
+    Wizards are also provided that can be used to export the data from a table or view or from multiple objects and include their schema and data (catalog import/export).
 
     ![](images/ExportandImportWizards.png)
 
     Further details on how to configure the SAP HANA database explorer to be used with cloud storage providers can be found at [Export and Import Data and Schema with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-export-import.html).
 
-13. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and Spatial.  
+13. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  
 
     ```SQL
     SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", car2":"BMW", car3":"Fiat" }}'
@@ -192,7 +192,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     ```
 
     ![](images/view-map.png)
-
+    
     Further details on how the SAP HANA database explorer can be used with multi-model features including graph, JSON, and spatial can be found at [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
 This concludes the exercise on the using SQL console.

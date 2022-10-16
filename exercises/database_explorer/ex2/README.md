@@ -1,8 +1,8 @@
 # Exercise 2 - Catalog Browser and Object Search
 
-In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced in the exercise that created the tables, calculation view, and stored procedure in the SAP Business Application Studio.
+In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced in a previous exercise..
 
-1. Database objects can be viewed in the catalog browser as shown below after selecting the HDI container contection and then **Tables**.
+1. Database objects can be viewed in the catalog browser as shown below after selecting the HDI container connection and then **Tables**.
 
     ![](images/tables.png)
 
@@ -44,13 +44,15 @@ In this exercise, we will explore some of the functionality that the catalog bro
     
     *Note that the input parameter is not referenced.*
 
-6. Database objects can also be found using *Object Search*.  The below search looks for any objects that use FLIGHTRESERVATION in their definitions in the HDI connection. 
+6. Database objects can also be found using **Object Search**.  The below search looks for any objects that use FLIGHTRESERVATION in their definitions in the HDI connection. 
 
     ![](images/ObjectSearch.png)
 
     A found object can be double clicked on to open its properties page.
 
     ![](images/OpenInDatabaseBrowser.png)
+    
+    It is also possible to reveal the item ii the Catalog Browser after selecting **Display in Database Browser**.
 
 7. Database diagnostic files can also be viewed or downloaded. 
 
