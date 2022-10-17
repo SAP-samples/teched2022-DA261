@@ -1,6 +1,6 @@
 # Exercise 2: Configuring Database Properties
 
-An SAP HANA Cloud, SAP HANA database has several configuration files (*.ini) that contain properties for configuring the database.
+An SAP HANA Cloud, SAP HANA instance has several configuration files (*.ini) that contain properties for configuring the instance.
 
 SAP HANA's configuration files contain parameters for global database configuration (global.ini), as well as the configuration of each service in the system (for example, indexserver.ini).
 Properties can be configured at different layers, depending on the configuration file:
