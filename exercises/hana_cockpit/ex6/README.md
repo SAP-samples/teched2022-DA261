@@ -51,11 +51,11 @@ In SAP HANA Deployment Infrastructure (HDI), an HDI container group is used for 
 
 - In the *Create* Wizard, choose *Container Group* and specify a name for the new container group. You can also define details of the trace tool in the *Optional Parameters* pane.
 
+    ![Create a container group](./images/create1.png)
+
 An HDI container group can also be dropped by selecting the container group and choosing the trash can icon, as indicated.
 
-TO DO - add SnagIt content
-
-![Dropping](./images/create.png)
+![Dropping](./images/dropped.png)
 
 An HDI Container group can be moved to another container group, as follows:
 
