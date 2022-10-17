@@ -18,21 +18,21 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     
     >![](images/Authentication.png)
     
-## Exercise 1.2 Examine the Database Connection
+## Exercise 1.2 Examine the Database Instance
 
-1. Hover over your database in the database context menu. A summary should appear that identifies the type as a cockpit database.
+1. Hover over your instance in the database context menu. A summary should appear that identifies the type as a cockpit database.
 
     ![](images/DBSummary.png)
 
-     Right-click on the database name and select **Show Overview**. The release your database belongs to can be identified by looking at the version fields.
+     Right-click on the instance name and select **Show Overview**. The release your instance belongs to can be identified by looking at the version fields.
 
     ![](images/ShowOverview.png)
 
-    *In this example, the database is the QRC 3 2022 release.*
+    *In this example, the instance is the QRC 3 2022 release.*
 
-## Exercise 1.3 Examine Database Details using a Monitoring View
+## Exercise 1.3 Examine Instance Details using a Monitoring View
 
-1. Click the arrow next to the database icon to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the database.
+1. Click the arrow next to the database icon to expand the object hierarchy for the instance. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the instance.
 
     ![](images/Catalog.png)
 
@@ -40,13 +40,11 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/SchemaMenu.png)
 
-## Exercise 1.4 Set the Database Connection's Usage
+## Exercise 1.4 Set the Instance's Usage
 
-1. Users may benefit from visual clues identifying  production databases. This next step will demonstrate how to label production databases, and how to remove the production label from a database. To enable this, use the SQL console to run the statements below and refresh your browser.
+1. Users may benefit from visual clues identifying  production instance. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. To enable this, use the SQL console to run the statements below and refresh your browser.
    
-    >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left after selecting a connection.  
-    
-    >An instance of a SQL console is associated with the selected database.
+    >To open the SQL console, right-click on the database instance and select **Open SQL Console** or click on the toolbar icon in the top left after selecting a connection.  
 
     >To execute SQL commands, click on the green run arrow.
 
@@ -60,22 +58,22 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     >Note: Remember to refresh your browser window once you've run the above statement.
 
 
-    As this database is not a production database, we can turn off this setting by executing the below SQL statement.
+    As this instance is not a production instance, we can turn off this setting by executing the below SQL statement.
 
     ```SQL
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
-## Exercise 1.5 Add the Database Connection to a Group
+## Exercise 1.5 Add the Instance to a Group
 
-1. Database connections can be organized by creating database groups. Use the folder icon at the top of your databases panel to create a new group and drag and drop the connection into it.
+1. Instances can be organized by creating database groups. Use the folder icon  to create a new group and drag and drop the connection into it.
 
     ![](images/Groups.png)
 
-    A database can be quickly found using the filter as shown below.
+    An instance can be quickly found using the filter as shown below.
     
     ![](images/Filter.png)
 
-This concludes the exercise on launching and exploring database connections in the SAP HANA database explorer.  In the next exercise, the SAP Business Application Studio will be opened with a development workspace for native SAP HANA development.
+This concludes the exercise on launching and exploring database instances in the SAP HANA database explorer.  In the next exercise, the SAP Business Application Studio will be opened with a development workspace for native SAP HANA development.
 
 Continue to - [Exercise 1 - Create a Development Workspace](../../business_app_studio/ex1/README.md)
