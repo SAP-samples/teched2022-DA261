@@ -30,8 +30,6 @@ Click the **Users & Roles** tab. You should see the two users that have already 
 The selected privileges can be modified by clicking the checkbox to select a privilege. Changes can be saved using the *Save* button in the top right corner of the table. *(NOTE: Do not save privilege changes. The purpose of the following actions are for you to gain familiarity with the HDI Administration tool.)*
     ![Modifying Privileges](./images/priv_change.png)
 
-TO DO - Look into the dropdown bar that says "None" (is this a bug or expected?)
-
 ## Maintaining the SAP HDI 
 
 To perform actions as an HDI administrator, the user must have HDI administrator privileges. In the case that a current user does not have such privileges, they must be assigned prior to performing HDI administration tasks. This can be acheived, as follows:
