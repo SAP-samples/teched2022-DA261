@@ -8,7 +8,7 @@ This repository contains the material for the SAP TechEd 2022 session called DA2
 
 This session introduces attendees to the operations required for end-to-end administration and development of SAP HANA Cloud database instances using the tools offered in the SAP Business Technology Platform (SAP BTP).  Attendees will learn how to accomplish administration tasks such as instance monitoring and security management, as well as development tasks such as creating native SAP HANA artifacts and analyzing their performance.  Part 1 will introduce the tools and deploy some sample tables, a calculation view, and a stored procedure.  Part 2 will demonstrate how to further administer these deployed artifacts.  
 
-Optional content can be skipped and will have (Optional) in its title.  
+Optional content can be skipped or simply read through will have (Optional) in its title.  
 >Content appearing in this format is for additional information and does not need to be followed.
 
 

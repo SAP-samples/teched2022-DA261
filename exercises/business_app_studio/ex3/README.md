@@ -2,11 +2,11 @@
 
 This exercise demonstrates how a project could be imported and deployed into a workspace.  If you were successful with the previous step, continue to [exercise 4](../ex4/README.md) or optionally read through the below content.
 
-## Exercise 3.1 Open an empty workspace
+## Exercise 3.1 Open an Empty Workspace
 
 1. Select **File**, **Open Workspace** and browse to the **projects** folder.
 
-    An empty workspace will open.  If a previous project exists with the same name it can be deleted.
+    An empty workspace will open.  If a previous project exists with the same name, it can be deleted.
 
 ## Exercise 3.2 Import the FlightReservation Project
 

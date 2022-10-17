@@ -2,7 +2,9 @@
 
   In addition to browsing schema objects and executing SQL, the SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.
 
-In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to HANA database connections.
+In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to HANA database connections.  In later exercises, the Catalog Browser, SQL Console, and the database explorer extension will be covered. 
+
+## Exercise 1.1 Open the SAP HANA Database Explorer
 
 1. From the SAP HANA cockpit select **SQL Console**.
 
@@ -10,12 +12,13 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     You may be prompted to enter database login credentials at this point. Enter **DBADMIN** for the user and the password that was specified in the SAP HANA instance creation wizard.
 
-    Credentials for a cockpit database can be configured within the SAP HANA cockpit.  
+    >Credentials for a cockpit database can be configured within the SAP HANA cockpit.  
     
-    ![](images/Authentication.png)
+    >![](images/Authentication.png)
     
+## Exercise 1.2 Examine the Database Connection
 
-2. Hover over your database in the database context menu. A summary should appear that identifies the type as a cockpit database.
+1. Hover over your database in the database context menu. A summary should appear that identifies the type as a cockpit database.
 
     ![](images/DBSummary.png)
 
@@ -25,7 +28,9 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     *In this example, the database is the QRC 3 2022 release.*
 
-3. Click the arrow next to the database icon to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the database.
+## Exercise 1.3 Examine Database Details using a Monitoring View
+
+1. Click the arrow next to the database icon to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the database.
 
     ![](images/Catalog.png)
 
@@ -33,8 +38,9 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/SchemaMenu.png)
 
+## Exercise 1.4 Set the Database Connection's Usage
 
-4. Users may benefit from visual clues identifying  production databases. This next step will demonstrate how to label production databases, and how to remove the production label from a database. To enable this, use the SQL console to run the statements below and refresh your browser.
+1. Users may benefit from visual clues identifying  production databases. This next step will demonstrate how to label production databases, and how to remove the production label from a database. To enable this, use the SQL console to run the statements below and refresh your browser.
    
     >To open the SQL console, right-click on the database connection and select **Open SQL Console** or click on the toolbar icon in the top left after selecting a connection.  
     
@@ -58,7 +64,9 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
-5. Database connections can be organized by creating database groups. Use the folder icon at the top of your databases panel to create a new group and drag and drop the connection into it.
+## Exercise 1.5 Add the Database Connection to a Group
+
+1. Database connections can be organized by creating database groups. Use the folder icon at the top of your databases panel to create a new group and drag and drop the connection into it.
 
     ![](images/Groups.png)
 

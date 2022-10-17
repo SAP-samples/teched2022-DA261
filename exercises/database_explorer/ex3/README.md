@@ -1,6 +1,8 @@
 # Exercise 3 - Using the SQL Console
 In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL Console. Please repeat the steps shown below.
 
+## Exercise 3.1 Open a SQL Console
+
 1. A SQL Console can be opened by the context menu of a connection or after selecting a connection and clicking on the SQL Console toolbar icon.  
 
     ![](images/OpenSQLConsole.png)
@@ -16,7 +18,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/ChangeConnection.png)
 
-2. The SQL Console has the ability to auto-complete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.
+## Exercise 3.2 AutoCompletion
+
+1. The SQL Console can auto-complete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.
 
     ![](images/AutoComplete.png)
 
@@ -29,7 +33,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
         ORDER BY NAME ASC;
     ```
 
-3. Commonly used statements can be saved to or retrieved from the statement library.  
+## Exercise 3.3 Statement Library
+
+1. Commonly used statements can be saved to or retrieved from the statement library.  
 
     ![](images/StatementLibrary.png)
 
@@ -39,7 +45,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     In this dialog it is also possible to export selected statements or import statements from a zip file such as the diagnostic SQL statements downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).
 
-4. The SQL Console has an optional statement help panel that shows additional details for a SQL statement that is selected by the input indicator.  Enter the statement below into the SQL Console and show the Statement Help panel. 
+## Exercise 3.4 Statement Help Panel
+
+1. The SQL Console has an optional statement help panel that shows additional details for a SQL statement that is selected by the input indicator.  Enter the statement below into the SQL Console and show the Statement Help panel. 
 
     ![](images/StatementHelpPanel.png)
     
@@ -54,18 +62,24 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     GROUP BY F.SEAT
     ORDER BY F.SEAT ASC;
     ```
-    
-5. Resource consumption metrics of the executed SQL statement is available in the **Messages** tab.
+
+ ## Exercise 3.5 Messages Tab
+
+1. Resource consumption metrics of the executed SQL statement is available in the **Messages** tab.
 
     ![](images/Messages.png)
 
-6. The previously executed statements can be found in the **History** tab.  Statements can be recalled by double clicking on them or by dragging and dropping them.
+## Exercise 3.6 History Tab
+
+1. The previously executed statements can be found in the **History** tab.  Statements can be recalled by double clicking on them or by dragging and dropping them.
 
     ![](images/History.png)
 
     >The results, messages, and history contents are not preserved following a browser reload while the SQL statements are preserved by default.
 
-7. Examine the SQL Console preferences.  Navigate to the database explorer preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
+## Exercise 3.5 SQL Console Preferences
+
+1. Examine the SQL Console preferences.  Navigate to the database explorer preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
 
     A few notable settings are:
     * Byte limit for the size of a returned value
@@ -77,7 +91,8 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     >If changes are made to this screen, the Save button must be pressed.
 
-    An example of a query that returns more than 1000 rows is shown below.  The setting Max number of rows to display could be updated to display the full result.
+ 
+ 2. An example of a query that returns more than 1000 rows is shown below.  The setting Max number of rows to display could be updated to display the full result.
 
     ![](images/Settings.png)       
 
@@ -86,7 +101,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     SELECT * FROM TABLE_COLUMNS;
     ```
 
-8.  A list of keyboard shortcuts can be found by right-clicking and selecting **Keyboard Shortcuts** within the SQL console window.
+## Exercise 3.6 SQL Console Shortcut Keys
+
+1.  A list of keyboard shortcuts can be found by right-clicking and selecting **Keyboard Shortcuts** within the SQL console window.
 
     ![](images/OpenShortcuts.png)
 
@@ -109,15 +126,19 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-9. A SQL Console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double tapping on its tab.  
+## Exercise 3.7 Additional SQL Console Tab Features 
+
+1. A SQL Console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double tapping on its tab.  
 
     ![](images/FullScreen.png)
 
-10. A context menu is available on SQL Console tabs.  You may wish provide a more descriptive tab name for a SQL Console.
+2. A context menu is available on SQL Console tabs.  You may wish to provide a more descriptive tab name for a SQL Console.
 
     ![](images/SQLConsoleContextMenu.png)
 
-11. Statements that may take a while to execute can be optionally run in the background.
+## Exercise 3.8 Background Execution
+
+1. Statements that may take a while to execute can be optionally run in the background.
 
     ```SQL
     DO BEGIN
@@ -133,9 +154,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     A benefit of running a statement in the background is that the result can be examined later even from another laptop.
 
-    ![](images/ViewBackgroundResults.png)
-    
-    *Once the status has changed to SUCCESS, the results can be viewed*
+    ![](images/ViewBackgroundResults.png)  
+  
+2. Once the status has changed to SUCCESS, the results can be viewed.
     
     >Optionally press the refresh button to update the status sooner.
 
@@ -143,7 +164,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/ViewBackgroundResults2.png)
 
-    The results can also be downloaded.  This can be helpful if the SQL statement was run against multiple databases as the results are combined into one results file as shown below.
+## Exercise 3.9 Run on Multiple Databases
+
+1. SQL can also be executed against multiple databases and the results are provided in a downloadable file.
 
     ```SQL
     SELECT CURRENT_USER FROM DUMMY;
@@ -159,7 +182,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/RunOnMultipleDatabases3.png)
 
-12. The results of a SQL query can be saved as a CSV file as shown below.  
+## Exercise 3.10 Export and Import
+
+1. The results of a SQL query can be saved as a CSV file as shown below.  
 
     ![](images/Download.png)
 
@@ -171,7 +196,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     Further details on how to configure the SAP HANA database explorer to be used with cloud storage providers can be found at [Export and Import Data and Schema with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-export-import.html).
 
-13. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  Execute the below SQL, select a value from the results tab and choose **View data**. 
+## Exercise 3.11 Data Viewers
+
+1. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  Execute the below SQL, select a value from the results tab and choose **View data**. 
 
     ```SQL
     SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", car2":"BMW", car3":"Fiat" }}'

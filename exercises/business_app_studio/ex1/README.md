@@ -2,6 +2,8 @@
 
 This exercise will demonstrate how to open the SAP Business Application Studio (app studio) and create your first workspace for native SAP HANA development.  When the SAP HANA tool extensions are added, it can be used to build and deploy native SAP HANA database artifacts such as tables, calculation views, and stored procedures.  
 
+## Exercise 1.1 Open the SAP Business Application Studio
+
 1. In the [BTP Cockpit](https://account.hanatrial.ondemand.com/trial/#/home/trial):
    * Select **Go To Your Trial Account**
    * Select the **trial** subaccount
@@ -17,19 +19,23 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
     
     ![](images/create-or-open.png)
 
-2. A welcome screen may appear.  If so, click on **Create Dev Space**.
+## Exercise 1.2 Create a Development Workspace
+
+1. A welcome screen may appear.  If so, click on **Create Dev Space**.
 
     ![](images/Welcome-screen.png)
 
-3. Click the button **Create Dev Space** and then create a development workspace that is configured with the *SAP HANA Native Application* development extensions.  Make sure to name this new dev space "TechEd2022" (in top left).
+2. Click the button **Create Dev Space** and then create a development workspace that is configured with the *SAP HANA Native Application* development extensions.  Make sure to name this new dev space "TechEd2022" (in top left).
 
     ![](images/workspace.png)
 
-4. Once the development space status has changed to running, it can be opened by clicking on the name of the development space.
+## Exercise 1.3 Open and Configure the Development Workspace
+
+1. Once the development space status has changed to running, it can be opened by clicking on the name of the development space.
 
     ![](images/started.png)
 
-5. The SAP Business Application Studio will open and display the Welcome page that contains various helpful links along the bottom including the documentation and a Guided Development wizard that will be used in the next exercise.
+2. The SAP Business Application Studio will open and display the Welcome page that contains various helpful links along the bottom including the documentation and a Guided Development wizard that will be used in the next exercise.
 
     ![](images/Welcome.png)
 
@@ -39,15 +45,15 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     The SAP Business Application Studio is a browser-based application, so there is no need to install or update software.  You can continue to work on your project later from any computer.
 
-6. The preferences can be viewed or set via **File**, **Preferences** or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
+3. The preferences can be viewed or set via **File**, **Preferences** or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
 
     ![](images/preferences.png)
 
-7. Your color theme of choice can be set using **File**, **Preferences**, **Color Theme**.
+4. Your color theme of choice can be set using **File**, **Preferences**, **Color Theme**.
 
     ![](images/color-theme.png)
 
-8. SAP Business Application Studio has been configured with a selected set of extensions.  These can be seen by selecting the extensions icon.  
+5. SAP Business Application Studio has been configured with a selected set of extensions.  These can be seen by selecting the extensions icon.  
 
     ![](images/extensions.png)
 
@@ -55,7 +61,9 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/git-panel.png)
 
-9. A terminal can be opened by selecting **Terminal**, **New Terminal**.  The terminal comes 
+## Exercise 1.4 Open a Terminal
+
+1. A terminal can be opened by selecting **Terminal**, **New Terminal**.  The terminal comes 
 
     ![](images/terminal.png)
 
