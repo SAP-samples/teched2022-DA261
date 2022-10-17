@@ -91,16 +91,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
 <<<<<<< HEAD
 <<<<<<< HEAD
 13. Next in the Actions column is Copy SQL Endpoint functionality. Upon clicking this, the SQL endpoint is copied to the clipboard. We get a success message saying that the SQL endpoint is copied to the clipboard.
-=======
-<<<<<<< HEAD
-13. Next in the Actions menu is Copy SQL Endpoint functionality. Upon clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint. We get a success message saying that the SQL endpoint is copied to the clipboard.
-=======
-13. Next in the Actions column is Copy SQL Endpoint functionality. Upon clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint. We get a success message saying that the SQL endpoint is copied to the clipboard.
->>>>>>> 1ce2b39ba7d98e0456634383fb4ebf50a8f67a2e
->>>>>>> f01d8d94a207a90d37a3b05252419c06c424189d
-=======
-13. Next in the Actions menu is Copy SQL Endpoint functionality. Upon clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint. We get a success message saying that the SQL endpoint is copied to the clipboard.
->>>>>>> 3734c7ec2253e305beadd23dd39036cb9a01cc7b
+
     <kbd>
     ![](./images/19.png)
     </kbd>
