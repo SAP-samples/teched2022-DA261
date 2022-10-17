@@ -44,9 +44,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     
     ![](images/HostView.png)
 
-    More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html).
-
-    
+    More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html). 
 
 ## Exercise 1.4 Set the Instance's Usage
 

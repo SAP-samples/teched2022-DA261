@@ -81,7 +81,7 @@ Alternatively, database objects can also be created directly in the database usi
     
     ![](images/rt-user.png)
 
-    Notice that the user is the _RT or runtime user as opposed to the _DT or design time user.
+    Notice that the user is the RT or runtime user as opposed to the DT or design time user.
 
     Details of the HDI container such as when was the last successful deployment can be seen when connecting as an Admin/DT user.  Right click on the HDI container and choose **Open SQL Console (ADMIN)**.
 
