@@ -1,4 +1,4 @@
-# Exercise 5 - SAP HANA Database Explorer Extension
+# Exercise 4 - SAP HANA Database Explorer Extension (Optional)
 
   In this exercise, we will examine how the SAP HANA database explorer extension can be used to browse schema and execute queries.  The extension has  a subset of the functionality available in the SAP HANA database explorer that has been shown previously.  The extension is automatically included when the development workspace is created as shown below.
 

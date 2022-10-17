@@ -20,7 +20,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 ## Exercise 3.2 Autocompletion
 
-1. The SQL Console can autocomplete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.
+1. The SQL Console can autocomplete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.  Select **COUNTRY** to complete the SQL query.
 
     ![](images/AutoComplete.png)
 
@@ -32,8 +32,6 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
         WHERE P.PASSENGERID = F.PASSENGERID
         ORDER BY NAME ASC;
     ```
-
-    After viewing the options, select **Country**.
 
 ## Exercise 3.3 Statement Library
 

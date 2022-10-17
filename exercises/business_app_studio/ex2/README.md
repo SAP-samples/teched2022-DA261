@@ -26,7 +26,11 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/create_and_next.png)
 
-    When asked to on the third page, provide your **Cloud Foundry API endpoint**, **email address** used for the trial account, **password**, and select **login**.  The API endpoint value can be obtained from the BTP Cockpit subaccount page.
+    When asked to on the third page, provide your **Cloud Foundry API endpoint**, **email address** used for the trial account, **password**, and select **login** icon.  
+    
+    >The API endpoint value can be obtained from the BTP Cockpit subaccount page.  
+    
+    >If 2 factor authentication is enabled, provide your password followed by a 2 factor authentication code. 
 
     ![](images/log-in.png)
 
