@@ -6,7 +6,7 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
     ![](images/BTP.png)
 
-2. The SAP BTP platform is organized by a global account and one or more subaccounts. If Cloud Foundry is enabled, there is a n additional Cloud Foundry organization, plus one or more spaces.
+2. The SAP BTP platform is organized by a global account and one or more subaccounts. If Cloud Foundry is enabled, there is an additional Cloud Foundry organization, plus one or more spaces.
 
     ![](images/btp-structure.png)
 

@@ -33,6 +33,8 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
         ORDER BY NAME ASC;
     ```
 
+    After viewing the options, select **Country**.
+
 ## Exercise 3.3 Statement Library
 
 1. Commonly used statements can be saved to or retrieved from the statement library.  
