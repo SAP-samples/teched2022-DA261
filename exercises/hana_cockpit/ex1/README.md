@@ -1,6 +1,6 @@
 # Exercise 1: The Database Overview Page
 
-The SAP HANA cockpit is the main administration tool for SAP HANA databases. With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, database services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also view backups, manage configuration parameters, manage table distribution, administer smart data access (SDA) and administer smart data integration (SDI). Finally, you can perform security tasks such as user and role management, data encryption, auditing, data anonymization and trust configuration.
+The SAP HANA cockpit is the main administration tool for SAP HANA databases. SAP HANA Cockpit can also be used to administer data lake, but this exercise will focus on SAP HANA database. With the SAP HANA cockpit, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, database services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also view backups, manage configuration parameters, manage table distribution, administer smart data access (SDA) and administer smart data integration (SDI). Finally, you can perform security tasks such as user and role management, data encryption, auditing, data anonymization and trust configuration.
 
 The Database Overview page displays health metrics for an *individual* SAP HANA Cloud database.
 

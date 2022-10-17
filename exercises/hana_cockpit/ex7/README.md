@@ -1,8 +1,6 @@
 # Exercise 7: Performance Management
 
-Managing and monitoring past and current information about the performance of the SAP HANA database is important for root-cause analysis and the prevention of future performance issues. In this exercise, you'll explore the additional performance management tools available in the SAP HANA cockpit. For more informaiton on applications to visualize and analyze current and historical performance data, please see Performance Monitor and Memory Analysis exercises in the Appendix.
-
-TO DO - link the two exercise pages
+Managing and monitoring past and current information about the performance of the SAP HANA database is important for root-cause analysis and the prevention of future performance issues. In this exercise, you'll explore the additional performance management tools available in the SAP HANA cockpit. For more information on applications to visualize and analyze current and historical performance data, please see [Managing Services](../appendix_ex9/README.md) and [Monitoring Memory Usage](../appendix_ex8/README.md) exercises in the Appendix.
 
 1. Locate the *Threads* card. This card shows the number of active and blocked threads in the database. Clicking on it takes you to the *Threads* app, which is used to monitor the longest-running threads active in your system. It may be useful to see, for example, how long a thread is running, or if a thread is blocked for an inexplicable length of time.
 
