@@ -18,9 +18,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/ChangeConnection.png)
 
-## Exercise 3.2 AutoCompletion
+## Exercise 3.2 Autocompletion
 
-1. The SQL Console can auto-complete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.
+1. The SQL Console can autocomplete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.
 
     ![](images/AutoComplete.png)
 
