@@ -1,6 +1,6 @@
 # Exercise 3 - Edit Instances
 
-In this chapter, we will discuss the Edit functionality across all the instance types. An existing instance can be modified after creation as per requirement through the Edit functionality. Let's edit the DEMO_HANA_DB instance.
+In this chapter, we will discuss the *Manage Configuration* functionality across all the instance types. An existing instance can be modified after creation as per requirement through the *Manage Configuration* functionality. Let's edit the DEMO_HANA_DB instance.
 
 1. Click on the '...' icon (under the Actions menu in the instances list) to see the operations that can be performed on the DEMO_HANA_DB database. Click on Manage Configuration.
     <kbd>
