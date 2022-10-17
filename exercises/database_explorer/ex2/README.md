@@ -1,6 +1,6 @@
 # Exercise 2 - Catalog Browser and Object Search
 
-In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced in a previous exercise..
+In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced in a previous exercise.
 
 1. Database objects can be viewed in the catalog browser as shown below after selecting the HDI container connection and then **Tables**.
 
@@ -12,7 +12,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     *Additional filters can be applied in this view by clicking on the column header and the list of columns displayed can specified.*
 
-2. A create, select, or insert statement for can be generated as shown below.
+2. A create, select, or insert statement can be generated as shown below.
 
     ![](images/GenerateInsert.png)
 
@@ -20,12 +20,10 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/StoredProcedureSource.png)
 
-4. A graphical debugger can be used.
+4. A graphical debugger can be used.  Add a breakpoint on line 19.
 
     ![](images/OpenForDebugging.png)
-
-    *Add a breakpoint on line 19*
-
+  
     To trigger the breakpoint, call the stored procedure.
 
     ![](images/CallStoredProcedure.png)
@@ -38,13 +36,13 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/AnalyzeSQLScriptCode.png)
 
-    *To view more details, double click on a row.*
+    To view more details, double click on a row.
 
     ![](images/AnalyzeSQLScriptCode2.png)
     
     *Note that the input parameter is not referenced.*
 
-6. Database objects can also be found using **Object Search**.  The below search looks for any objects that use FLIGHTRESERVATION in their definitions in the HDI connection. 
+6. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use FLIGHTRESERVATION in their definitions in the HDI connection. 
 
     ![](images/ObjectSearch.png)
 
@@ -52,7 +50,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/OpenInDatabaseBrowser.png)
     
-    It is also possible to reveal the item ii the Catalog Browser after selecting **Display in Database Browser**.
+    It is also possible to reveal the item in the Catalog Browser after selecting **Display in Database Browser**.
 
 7. Database diagnostic files can also be viewed or downloaded. 
 

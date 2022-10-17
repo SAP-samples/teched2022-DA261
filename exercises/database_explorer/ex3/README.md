@@ -39,7 +39,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     In this dialog it is also possible to export selected statements or import statements from a zip file such as the diagnostic SQL statements downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).
 
-4. The SQL Console has an optional statement help panel that shows additional details for a SQL statement that is selected by the input indicator.
+4. The SQL Console has an optional statement help panel that shows additional details for a SQL statement that is selected by the input indicator.  Enter the statement below into the SQL Console and show the Statement Help panel. 
 
     ![](images/StatementHelpPanel.png)
     
@@ -73,9 +73,18 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     * Indicate potential SQL errors can be used to enable or disable the syntax parser
     * Auto-save contents of SQL consoles
    
-   ![](images/DBX_Settings.png)
+    ![](images/DBX_Settings.png)
 
-   >If changes are made to this screen, the Save button must be pressed.
+    >If changes are made to this screen, the Save button must be pressed.
+
+    An example of a query that returns more than 1000 rows is shown below.  The setting Max number of rows to display could be updated to display the full result.
+
+    ![](images/Settings.png)       
+
+    ```SQL
+    SELECT count(*) FROM TABLE_COLUMNS;
+    SELECT * FROM TABLE_COLUMNS;
+    ```
 
 8.  A list of keyboard shortcuts can be found by right-clicking and selecting **Keyboard Shortcuts** within the SQL console window.
 
@@ -100,7 +109,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-9. A SQL Console tab or a sub tab such as Results, or Messages, can enter full screen mode, by double tapping on its tab.  
+9. A SQL Console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double tapping on its tab.  
 
     ![](images/FullScreen.png)
 
@@ -126,7 +135,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/ViewBackgroundResults.png)
     
-    *Once the status has changed to Finished, the results can be viewed*
+    *Once the status has changed to SUCCESS, the results can be viewed*
     
     >Optionally press the refresh button to update the status sooner.
 
@@ -162,7 +171,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     Further details on how to configure the SAP HANA database explorer to be used with cloud storage providers can be found at [Export and Import Data and Schema with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-export-import.html).
 
-13. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  
+13. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  Execute the below SQL, select a value from the results tab and choose **View data**. 
 
     ```SQL
     SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", car2":"BMW", car3":"Fiat" }}'
@@ -197,4 +206,4 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 This concludes the exercise on the using SQL console.
 
-Continue to - [Exercise 4 - Export and Import HDI Containers](../ex4/README.md)
+Continue to - [Exercise 4 - SAP HANA Database Explorer Extension](../ex4/README.md)

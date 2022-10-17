@@ -50,6 +50,7 @@ Alternatively, database objects can also be created directly in the database usi
         SELECT * FROM SYS.PROCEDURES WHERE SCHEMA_NAME = '_SYS_DI';
         SELECT * FROM SYS.VIEWS WHERE SCHEMA_NAME = '_SYS_DI';
         SELECT * FROM SYS.SCHEMAS WHERE SCHEMA_NAME = '_SYS_DI';
+        --SELECT * FROM PASSENGERS; --Fails as we are connected as DBADMIN and not the RT user
         ```
 
         ![](images/sysdi.png)
@@ -99,10 +100,7 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/dt-user.png)
 
-    For additional details on the monitoring views used above consult [_SYS_DI Monitoring Views](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/78e1657f43f04741b9c2b161632e4fe5.html) in the Database Deployment Infrastructure (HDI) Reference.
-
-    Here is a blog on this topic:
-    https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/
+    For additional details on the monitoring views used above consult [_SYS_DI Monitoring Views](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/78e1657f43f04741b9c2b161632e4fe5.html) in the Database Deployment Infrastructure (HDI) Reference and [Can I see the HANA deployment history ?](https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/)
 
 
 ## Summary

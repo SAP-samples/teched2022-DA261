@@ -48,7 +48,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
     ![](images/open-dbx.png)
 
-2. View the deployed objects.
+2. View the deployed objects (1 Column View, 2 tables, and 1 stored procedure)
 
     ![](images/view.png)
 

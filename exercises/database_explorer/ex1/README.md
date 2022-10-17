@@ -19,11 +19,11 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/DBSummary.png)
 
-     Right-click on the database name and select **Show Overview**. The release your database belongs to can be identified by looking at the last section of the Version field.
+     Right-click on the database name and select **Show Overview**. The release your database belongs to can be identified by looking at the version fields.
 
     ![](images/ShowOverview.png)
 
-    *In this example, the database is the QRC 3 20222 release.*
+    *In this example, the database is the QRC 3 2022 release.*
 
 3. Click the arrow next to the database icon to expand the object hierarchy for the database. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the database.
 

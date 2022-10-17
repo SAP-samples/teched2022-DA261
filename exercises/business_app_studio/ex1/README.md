@@ -55,7 +55,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/git-panel.png)
 
-9. A terminal can be opened by selecting **Terminal**, **New Terminal**.
+9. A terminal can be opened by selecting **Terminal**, **New Terminal**.  The terminal comes 
 
     ![](images/terminal.png)
 
@@ -64,5 +64,5 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
 You have now created a development space that is configured for use with SAP HANA native artifact development.
 
-Continue to - [Exercise 2 - Create and deploy a project using the SAP HANA Getting Started Wizard](../ex2/README.md)
+Continue to - [Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development](../ex2/README.md)
 
