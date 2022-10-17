@@ -93,9 +93,8 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/19.png)
     </kbd>
 
-    <kbd>
     ![](./images/20.png)
-    </kbd>
+
     SQL Endpoints are useful when you want to connect to your SAP HANA Cloud instance from other applications or if you want to access it from the command line.
 14. Next is the Copy Instance ID option. This will help us copy the instance ID to the clipboard. This function is similar to the previous copy option we discussed. On clicking Copy Instance ID option, we get a success message.
     <kbd>
