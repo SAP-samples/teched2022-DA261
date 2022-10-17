@@ -21,9 +21,9 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     * Instance Name - The name of the instance. The name must start and end with an alphanumeric character. The name can include the underscore character _.  
     * Description - A description of the instance.
     * Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
-    * Version - The new instance you create can be of a specific supported version. By default, the latest version is used when creating a new SAP HANA Cloud instance
+    * Version - The new instance you create can be of a specific supported version. By default, the latest version is used when creating a new SAP HANA Cloud instance.
 
-    Notice that certain fields display helpful tips on what constitutes a valid entry (e.g. instance name, administrator password). You can also open the Help dialog by clicking its button on the toolbar in the top right. The contents of the Help are dynamic, meaning that they change depending on the dialog you're working on. In this case, you see additional information on the different fields of this page.
+    Notice that certain fields display helpful tips on what constitutes a valid entry (for example instance name, administrator password). You can also open the Help dialog by clicking its button on the toolbar in the top right. The contents of the Help are dynamic, meaning that they change depending on the dialog you're working on. In this case, you see additional information on the different fields of this page.
 
     Click on Next Step once you complete all the fields. 
     <kbd>
@@ -48,7 +48,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
 
     <kbd>![](./images/5.png)</kbd>
     
-5. Click on Next Step button. There is an Additional Features section to make configurations on Script Server (to execute application function libraries) and Document Store (for native operations on JSON documents) capabilities. Then you have an option to make configurations related to allowed connections like IP address settings. Select Allow all IP addresses.
+5. Click on Next Step. There is an Additional Features section to make configurations on Script Server (to execute application function libraries) and Document Store (for native operations on JSON documents) capabilities. Then you have an option to make configurations related to allowed connections like IP address settings. Select Allow all IP addresses.
     <kbd>
     ![](./images/6.png)
     </kbd>
@@ -84,7 +84,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
 
     ![](./images/cc_window.png)
 
-11. **If you are using the SAP HANA Cloud trial and already have a database instance, click the *Cancel* button and then the *Leave* button to return to the All Instances view in SAP HANA Cloud Central (recall that you can only have 1 database instance in SAP HANA Cloud trial, so you cannot create a second one).** Otherwise, click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created. **Note:** Creating a new instance takes approx. 10 mins.
+11. **If you are using the SAP HANA Cloud trial and already have a database instance, click the *Cancel* button and then the *Leave* button to return to the All Instances view in SAP HANA Cloud Central (recall that you can only have 1 database instance in SAP HANA Cloud trial, so you cannot create a second one).** Otherwise, click on Create Instance button and you will be redirected to the SAP Cloud Central overview page to see the instance you have just created. **Note:** Creating a new instance takes approximately 10 mins.
     <kbd>
     ![](./images/12.png)
     </kbd>
