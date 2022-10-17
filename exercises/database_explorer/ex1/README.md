@@ -36,9 +36,17 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/Catalog.png)
 
-    Expand **Catalog** then select **Views**.  Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. Right-click and select **Open Data** to access those views. More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html).
-
+    Expand **Catalog** then select **Views**.  Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. 
+    
     ![](images/SchemaMenu.png)
+    
+    Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of a view.  
+    
+    ![](images/HostView.png)
+
+    More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html).
+
+    
 
 ## Exercise 1.4 Set the Instance's Usage
 
@@ -56,7 +64,6 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ![](images/ProductionLabel.png)
 
     >Note: Remember to refresh your browser window once you've run the above statement.
-
 
     As this instance is not a production instance, we can turn off this setting by executing the below SQL statement.
 
