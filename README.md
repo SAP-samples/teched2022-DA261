@@ -28,7 +28,7 @@ Database to invoke the Create Instance wizard.
     
     ![](images/create-hana-instance.png)
 5.  Choose SAP HANA Cloud, SAP HANA Database and click the button Next Step.
-6.  Use default values for the remainder of the wizard, with the following expcetions:
+6.  Use default values for the remainder of the wizard, with the following exceptions:
     * In Step 2 (General), enter **DEMO_HANA_DB** for the instance name. Enter and confirm your administrator password – ***PLEASE REMEMBER IT AND/OR WRITE IT DOWN!***.
     * In Step 6 (Data Lake), turn on the toggle switch to Create Data Lake. Enter **DEMO_HANA_HDL** for the instance name.
 

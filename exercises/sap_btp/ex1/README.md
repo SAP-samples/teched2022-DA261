@@ -1,4 +1,4 @@
-# Exercise 1 - Overview of the SAP Business Technology Platform (SAP BTP)
+# Overview of the SAP Business Technology Platform (SAP BTP)
 
 This exercise will provide a brief overview of the SAP BTP and demonstrate how to access the SAP HANA Cloud service.  
 
