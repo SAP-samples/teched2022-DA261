@@ -1,6 +1,6 @@
 # Exercise 7: Performance Management
 
-Managing and monitoring past and current information about the performance of the SAP HANA database is important for root-cause analysis and the prevention of future performance issues. In this exercise, you'll explore the additional performance management tools available in the SAP HANA cockpit. For more information on applications to visualize and analyze current and historical performance data, please see [Managing Services](../appendix_ex9/README.md) and [Monitoring Memory Usage](../appendix_ex8/README.md) exercises in the Appendix.
+Managing and monitoring past and current information about the performance of the SAP HANA instance is important for root-cause analysis and the prevention of future performance issues. In this exercise, you'll explore the additional performance management tools available in the SAP HANA cockpit. For more information on applications to visualize and analyze current and historical performance data, please see [Managing Services](../appendix_ex9/README.md) and [Monitoring Memory Usage](../appendix_ex8/README.md) exercises in the Appendix.
 
 1. Locate the *Threads* card. This card shows the number of active and blocked threads in the database. Clicking on it takes you to the *Threads* app, which is used to monitor the longest-running threads active in your system. It may be useful to see, for example, how long a thread is running, or if a thread is blocked for an inexplicable length of time.
 
@@ -18,7 +18,7 @@ Managing and monitoring past and current information about the performance of th
 
 4. Click the **Back** button at the top left to return to the Database Overview page.
 
-5. Locate the **Sessions** card. This card shows the currently running and total number of sessions in the database. Analyzing the sessions connected to your SAP HANA database can help you identify which applications or which users are currently connected to your system, as well as what they are doing in terms of SQL execution.
+5. Locate the **Sessions** card. This card shows the currently running and total number of sessions in the database. Analyzing the sessions connected to your SAP HANA instance can help you identify which applications or which users are currently connected to your system, as well as what they are doing in terms of SQL execution.
 
     ![Sessions Card](./images/7-05_SessionsCard.png)
 
@@ -59,7 +59,7 @@ Managing and monitoring past and current information about the performance of th
 
     ![Monitoring Card](./images/7-12_MonitoringCard.png)
 
-13. Locate the **Database Administration** card. You'll see the link to launch the *Workload Classes* application. Use it to create workload classes and workload class mappings. Workload classes allow SAP HANA to influence dynamic resource consumption on the session or statement level. Workload management allows you to determine how much concurrent work takes place on an SAP HANA database and how that work is prioritized. The goal is to maximize the overall database performance by balancing the demand for resources between the various workloads.
+13. Locate the **Database Administration** card. You'll see the link to launch the *Workload Classes* application. Use it to create workload classes and workload class mappings. Workload classes allow SAP HANA to influence dynamic resource consumption on the session or statement level. Workload management allows you to determine how much concurrent work takes place on an SAP HANA instance and how that work is prioritized. The goal is to maximize the overall database performance by balancing the demand for resources between the various workloads.
 
     ![Database Administration Card](./images/7-13_DBAdminCard.png)
 

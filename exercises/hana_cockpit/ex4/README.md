@@ -1,9 +1,9 @@
 # Exercise 4: Security Basics
 
-Security administration encompasses a wide range of topics, from monitoring critical security settings, to auditing activity in the SAP HANA database, to managing SAP HANA users and roles.
+Security administration encompasses a wide range of topics, from monitoring critical security settings, to auditing activity in the SAP HANA instance, to managing SAP HANA users and roles.
 This exercise concentrates on user, role and user group management to provide you with a basic understanding of this important task of database administration.
 
-Every user who wants to work with the SAP HANA database must have a database user. As the database administrator, you create and provision the required users, as well as perform other tasks related to user administration. Roles are the standard mechanism of granting privileges to SAP HANA database users. It is recommended that you assign roles to users instead of granting privileges individually. User groups are a mechanism to organize users with similar roles or purposes.
+Every user who wants to work with the SAP HANA instance must have a database user. As the database administrator, you create and provision the required users, as well as perform other tasks related to user administration. Roles are the standard mechanism of granting privileges to SAP HANA database users. It is recommended that you assign roles to users instead of granting privileges individually. User groups are a mechanism to organize users with similar roles or purposes.
 
 In this exercise, you'll create a new user, a new role and a new user group.
 

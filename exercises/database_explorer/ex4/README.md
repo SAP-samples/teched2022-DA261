@@ -4,14 +4,14 @@
 
   ![](images/included-extensions.png)
 
-## Exercise 5.1 Connections
+## Exercise 4.1 Connections
 
 1. Select the **SAP HANA database explorer** extension.  The list of connections should appear.  This list is managed by the full SAP HANA database explorer web application and uses the currently connected cloud foundry user and org to retrieve the connection details.
 
     ![](images/connections.png)
 
 
-## Exercise 5.2 Catalog Browser
+## Exercise 4.2 Catalog Browser
 
 1. Select **Tables** on the HDI Container and see that the list of deployed tables can be seen.
 
@@ -27,7 +27,7 @@
 
     ![](images/views.png)
 
-## Exercise 5.3 SQL Console
+## Exercise 4.3 SQL Console
 
 1. Select the HDI Container and open a SQL Console.  Execute the below SQL.
 

@@ -2,7 +2,7 @@
 
 As an administrator, you actively monitor the status of the system, its services, and the consumption of system resources. However, you are also alerted of critical situations through the Alerts application. For example: memory utilization is reaching a critical level, or a server has stopped.
 
-The internal monitoring infrastructure of the SAP HANA database is continuously collecting and evaluating information about status, performance, and resource usage from all components of the SAP HANA database. In addition, it performs regular checks on the data in system tables and views and when configurable threshold values are exceeded, issues alerts. In this way, you are warned of potential problems. The priority of the alert indicates the severity of the problem and depends on the nature of the check and configured threshold values.
+The internal monitoring infrastructure of the SAP HANA instance is continuously collecting and evaluating information about status, performance, and resource usage from all components of the SAP HANA instance. In addition, it performs regular checks on the data in system tables and views and when configurable threshold values are exceeded, issues alerts. In this way, you are warned of potential problems. The priority of the alert indicates the severity of the problem and depends on the nature of the check and configured threshold values.
 
 In this exercise, you'll examine the Alerts card, with a focus on obtaining more information about raised alerts and configuring alert thresholds.
 
@@ -24,7 +24,7 @@ In this exercise, you'll examine the Alerts card, with a focus on obtaining more
 
 5. Click the **Back** button twice from the cockpit's toolbar to return to the Database Overview page.
 
-6. Locate the *Alerts* card and notice the alert count for Availability increased. The number of alerts depends on the database, but you’ll see at least one high and/or medium priority alert. Click on **Availability** to open the *Alerts* application.
+6. Locate the *Alerts* card and notice the alert count for Availability increased. The number of alerts depends on the instance, but you’ll see at least one high and/or medium priority alert. Click on **Availability** to open the *Alerts* application.
 
     ![Availability Alert](./images/4-06_AvailabilityAlert.png)
 
