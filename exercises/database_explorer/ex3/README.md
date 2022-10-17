@@ -79,7 +79,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     >The results, messages, and history contents are not preserved following a browser reload while the SQL statements are preserved by default.
 
-## Exercise 3.5 SQL Console Preferences
+## Exercise 3.7 SQL Console Preferences
 
 1. Examine the SQL Console preferences.  Navigate to the database explorer preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
 
@@ -103,7 +103,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     SELECT * FROM TABLE_COLUMNS;
     ```
 
-## Exercise 3.6 SQL Console Shortcut Keys
+## Exercise 3.8 SQL Console Shortcut Keys
 
 1.  A list of keyboard shortcuts can be found by right-clicking and selecting **Keyboard Shortcuts** within the SQL console window.
 
@@ -128,7 +128,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-## Exercise 3.7 Additional SQL Console Tab Features 
+## Exercise 3.9 Additional SQL Console Tab Features 
 
 1. A SQL Console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double tapping on its tab.  
 
@@ -138,7 +138,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/SQLConsoleContextMenu.png)
 
-## Exercise 3.8 Background Execution
+## Exercise 3.10 Background Execution
 
 1. Statements that may take a while to execute can be optionally run in the background.
 
@@ -166,7 +166,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/ViewBackgroundResults2.png)
 
-## Exercise 3.9 Run on Multiple Databases
+## Exercise 3.11 Run on Multiple Databases
 
 1. SQL can also be executed against multiple databases and the results are provided in a downloadable file.
 
@@ -184,7 +184,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/RunOnMultipleDatabases3.png)
 
-## Exercise 3.10 Export and Import
+## Exercise 3.12 Export and Import
 
 1. The results of a SQL query can be saved as a CSV file as shown below.  
 
@@ -198,7 +198,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     Further details on how to configure the SAP HANA database explorer to be used with cloud storage providers can be found at [Export and Import Data and Schema with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-export-import.html).
 
-## Exercise 3.11 Data Viewers
+## Exercise 3.13 Data Viewers
 
 1. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  Execute the below SQL, select a value from the results tab and choose **View data**. 
 
