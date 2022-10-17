@@ -63,7 +63,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
 ## Exercise 1.4 Open a Terminal
 
-1. A terminal can be opened by selecting **Terminal**, **New Terminal**.  The terminal comes 
+1. A terminal can be opened by selecting **Terminal**, **New Terminal**.
 
     ![](images/terminal.png)
 
