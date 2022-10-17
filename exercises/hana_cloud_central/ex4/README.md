@@ -88,7 +88,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/18.png)
     </kbd>
     Click the Back button beside the SAP log at the top to return to the instances view of SAP HANA Cloud Central.
-13. Next in the Actions column is Copy SQL Endpoint functionality. Upon clicking this, the SQL endpoint is copied to the clipboard. Click on Copy SQL Endpoint. We get a success message saying that the SQL endpoint is copied to the clipboard.
+13. Next in the Actions column is Copy SQL Endpoint functionality. Upon clicking this, the SQL endpoint is copied to the clipboard. We get a success message saying that the SQL endpoint is copied to the clipboard.
     <kbd>
     ![](./images/19.png)
     </kbd>
@@ -103,7 +103,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     <kbd>
     ![](./images/22.png)
     </kbd>
-    The instance ID is required when connceting to data lake Relational Engine using Interactive SQL.
+    The instance ID is required when connecting to data lake Relational Engine using Interactive SQL.
 15. Click on Copy Configuration. A popup opens with options to copy configuration to clipboard or download it as a JSON file. Depending on how often you will use your instance configuration, either copy or save the JSON-compliant string.
     <kbd>
     ![](./images/23.png)
