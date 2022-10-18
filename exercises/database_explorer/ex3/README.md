@@ -237,6 +237,6 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     
     Further details on how the SAP HANA database explorer can be used with multi-model features including graph, JSON, and spatial can be found at [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
-This concludes the exercise on the using SQL console.  Optionally, view the appendix for [Exercise 4 - SAP HANA Database Explorer Extension](../ex4/README.md).
+This concludes the exercise on the using SQL console.  Optionally, view the appendix for [Appendix 1 - SAP HANA Database Explorer Extension](../ex4/README.md).
 
 Continue to - [SAP HANA Cockpit - Exercise 1 - The Database Overview Page](../../hana_cockpit/ex1/README.md)
