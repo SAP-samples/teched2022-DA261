@@ -40,10 +40,6 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >
     >---
     > 
-    > The Cloud Foundry environment can also be interacted with the [Cloud Foundry CLI](https://docs.cloudfoundry.org/cf-cli/getting-started.html) as shown below.
-    >
-    >![](images/cf-cli.png)
-    >
     >It should also be noted that if you are using a non-trial account (trial account limit the number of instances to one), you may wish to specify which SAP HANA Cloud instance to deploy the SAP HANA Deployment Infrastructure (HDI) container to.
     >
     >![](images/select-instance.png)
