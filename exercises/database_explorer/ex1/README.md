@@ -8,19 +8,19 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
 ## Exercise 1.1 Open the SAP HANA Database Explorer
 
-1. From the SAP HANA cockpit select **SQL Console**.
+1. From either the SAP BTP Cockpit or from SAP HANA Cloud Central, select the SAP HANA instance and choose **Open in SAP HANA Database Explorer**.
 
     ![](images/OpenSQLConsole.png)
 
     You may be prompted to enter database login credentials at this point. Enter **DBADMIN** for the user and the password that was specified in the SAP HANA instance creation wizard.
 
-    >Credentials for a cockpit database can be configured within the SAP HANA cockpit.  
-    
+    >Credentials for a cockpit database can be persisted by setting them within the SAP HANA cockpit which is covered later in this workshop.  
+    >
     >![](images/Authentication.png)
     
 ## Exercise 1.2 Examine the Database Instance
 
-1. Hover over your instance in the database context menu. A summary should appear that identifies the type as a cockpit database.
+1. Hover over your instance to show the context menu. A summary should appear that identifies the type as a cockpit database.
 
     ![](images/DBSummary.png)
 
@@ -30,13 +30,13 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     *In this example, the instance is the QRC 3 2022 release.*
 
-## Exercise 1.3 Examine Instance Details using a Monitoring View
+## Exercise 1.3 Search for a View using a Schema Filter
 
-1. Click the arrow next to the database icon to expand the object hierarchy for the instance. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the instance.
+1. Click the arrow next to the database icon to expand the object hierarchy for the instance. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the instance.  Expand **Catalog** then select **Views**.
 
     ![](images/Catalog.png)
 
-    Expand **Catalog** then select **Views**.  Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. 
+      Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. 
     
     ![](images/SchemaMenu.png)
     
@@ -50,7 +50,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
 1. Users may benefit from visual clues identifying  production instance. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. To enable this, use the SQL console to run the statements below and refresh your browser.
    
-    >To open the SQL console, right-click on the database instance and select **Open SQL Console** or click on the toolbar icon in the top left after selecting a connection.  
+    >To open the SQL console, right-click on the instance and select **Open SQL Console** or click on the toolbar icon in the top left after selecting a connection.  
 
     >To execute SQL commands, click on the green run arrow.
 
@@ -71,7 +71,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
 ## Exercise 1.5 Add the Instance to a Group
 
-1. Instances can be organized by creating database groups. Use the folder icon  to create a new group and drag and drop the connection into it.
+1. Instances can be organized by creating groups. Use the folder icon  to create a new group and drag and drop the connection into it.
 
     ![](images/Groups.png)
 
@@ -79,6 +79,6 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     
     ![](images/Filter.png)
 
-This concludes the exercise on launching and exploring database instances in the SAP HANA database explorer.  In the next exercise, the SAP Business Application Studio will be opened with a development workspace for native SAP HANA development.
+This concludes the exercise on launching and exploring instances in the SAP HANA database explorer.  In the next exercise, the SAP Business Application Studio will be opened with a development workspace for native SAP HANA development.
 
-Continue to - [Exercise 1 - Create a Development Workspace](../../business_app_studio/ex1/README.md)
+Continue to - [Exercise 2 - Catalog Browser and Object Search](../ex2/README.md)

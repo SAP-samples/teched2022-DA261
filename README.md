@@ -67,6 +67,8 @@ The SAP HANA cockpit tool provides administration and monitoring of individual S
 The SAP HANA database explorer is a web-based tool for browsing and working with  database schema objects such as tables, views, and stored procedures and executing SQL.
 
 - [Exercise 1 - Launch the SAP HANA Database Explorer](exercises/database_explorer/ex1/)
+- [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
+- [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
 
 ## SAP Business Application Studio
 
@@ -78,12 +80,6 @@ SAP Business Application Studio is a SAP BTP service that offers a modern develo
 - [Exercise 4 - Additional HDI Container Details (Optional)](exercises/business_app_studio/ex4/)
 
 # Part 2: Administration and Monitoring
-
-### SAP HANA Database Explorer Exercises
-
-- [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
-- [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
-- [Exercise 4 - SAP HANA Database Explorer Extension (Optional)](exercises/database_explorer/ex4/)
 
 ### SAP HANA Cockpit Exercises
 
@@ -102,6 +98,9 @@ Support for the content in this repository is available during the actual time o
 Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
 
 ## Appendix
+Additional SAP HANA Database Explorer Exercises:
+- [Appendix 1 - SAP HANA Database Explorer Extension (Optional)](exercises/database_explorer/ex4/)
+
 Additional SAP HANA Cockpit Exercises:
 - [Appendix 1 - Monitoring Memory Usage](exercises/hana_cockpit/appendix_ex8/)
 - [Appendix 2 - Managing Services](exercises/hana_cockpit/appendix_ex9/)

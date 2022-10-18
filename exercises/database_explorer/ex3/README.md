@@ -65,7 +65,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
  ## Exercise 3.5 Messages Tab
 
-1. Resource consumption metrics of the executed SQL statement is available in the **Messages** tab.
+1. Resource consumption metrics of the executed SQL statement is available in the **Messages** tab.  These provide further details into how long a query took to execute and how much memory was consumed.
 
     ![](images/Messages.png)
 
@@ -166,7 +166,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 ## Exercise 3.11 Run on Multiple Databases
 
-1. SQL can also be executed against multiple databases and the results are provided in a downloadable file.
+1. SQL statements can also be executed against multiple databases.  Paste in the below SQL into the SQL Console and from the **Run** icon select **Run on Multiple Databases**. 
 
     ```SQL
     SELECT CURRENT_USER FROM DUMMY;
@@ -174,23 +174,29 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/RunOnMultipleDatabases.png)
 
+    Select two or more databases.
+
     ![](images/RunOnMultipleDatabases2.png)
+
+    Once the query completes, select the queries whose results should be provided into a downloadable JSON file.
 
     ![](images/RunOnMultipleDatabases4.png)
 
-    *Selecting both query results will generate a JSON file with the details of both queries.*
+    An example of the results file is shown below.
 
     ![](images/RunOnMultipleDatabases3.png)
 
 ## Exercise 3.12 Export and Import
 
-1. The results of a SQL query can be saved as a CSV file as shown below.  
+1. The results of a SQL query can be saved as a CSV file.  Select the Download icon.
 
     ![](images/Download.png)
 
+    Options are provided on how to format the data.
+
     ![](images/Download2.png)
 
-    Wizards are also provided that can be used to export the data from a table or view or from multiple objects and include their schema and data (catalog import/export).
+    Wizards are also provided that can be used to export the data from a table, view or from multiple objects and include their schema and data (catalog import/export).
 
     ![](images/ExportandImportWizards.png)
 
@@ -231,6 +237,6 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     
     Further details on how the SAP HANA database explorer can be used with multi-model features including graph, JSON, and spatial can be found at [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
-This concludes the exercise on the using SQL console.
+This concludes the exercise on the using SQL console.  Optionally, view the appendix for [Exercise 4 - SAP HANA Database Explorer Extension](../ex4/README.md).
 
-Continue to - [Exercise 4 - SAP HANA Database Explorer Extension](../ex4/README.md)
+Continue to - [SAP HANA Cockpit - Exercise 1 - The Database Overview Page](../../hana_cockpit/ex1/README.md)

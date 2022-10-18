@@ -1,4 +1,4 @@
-# Exercise 4 - SAP HANA Database Explorer Extension (Optional)
+# Appendix 1 - SAP HANA Database Explorer Extension (Optional)
 
   In this exercise, we will examine how the SAP HANA database explorer extension can be used to browse schema and execute queries.  The extension has  a subset of the functionality available in the SAP HANA database explorer that has been shown previously.  The extension is automatically included when the development workspace is created as shown below.
 
@@ -45,4 +45,4 @@
 
 This concludes the SAP HANA Database Explorer extension.  Note that it is also available as a plugin for [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer&ssr=false#overview).    
 
-Continue to - [SAP HANA Cockpit - Exercise 2 - Configuring Database Properties](../../hana_cockpit/ex2/README.md)
+Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)

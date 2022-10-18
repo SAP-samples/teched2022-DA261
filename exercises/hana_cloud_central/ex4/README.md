@@ -123,6 +123,6 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/27.png)
     </kbd>
 
-This concludes the exercises for SAP HANA Cloud Central. If you haven't done so already, you may close the browser tabs for the SAP HANA cockpit and the SAP HANA database explorer. Those tools are discussed in the next sections.
+This concludes the exercises for SAP HANA Cloud Central. If you haven't done so already, you may close the browser tabs for the SAP HANA cockpit and the SAP HANA database explorer. Those tools are discussed in the next sections.  In the next exercise, the SAP Business Application Studio will be opened with a development workspace for native SAP HANA development.
 
-Continue to - [SAP HANA Cockpit - Exercise 1](../../hana_cockpit/ex1/README.md)
+Continue to - [Exercise 1 - Create a Development Workspace](../../business_app_studio/ex1/README.md)

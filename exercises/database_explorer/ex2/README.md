@@ -1,6 +1,6 @@
 # Exercise 2 - Catalog Browser and Object Search
 
-In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced in a previous exercise.
+In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced.
 
 ## Exercise 2.1 Viewing a List of Database Objects
 
@@ -30,11 +30,11 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/OpenForDebugging.png)
   
-    To trigger the breakpoint, call the stored procedure.
+2. To trigger the breakpoint, call the stored procedure.
 
     ![](images/CallStoredProcedure.png)
 
-    Once the breakpoint has been hit, the variables can be examined, and the code stepped through.
+3. Once the breakpoint has been hit, the variables can be examined, and the code stepped through.
 
     ![](images/Debugging.png)
 
