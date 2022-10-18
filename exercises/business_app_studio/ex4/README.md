@@ -1,8 +1,8 @@
-# Exercise 4 - Additional HDI Container Details (Optional)
+# Appendix 2 - Additional HDI Container Details (Optional)
 
 This exercise will further examine the deployed HDI container.  
 
-## Exercise 4.1 Why HDI?
+## Exercise 2.1 Why HDI?
 
 - HDI stands for SAP HANA Deployment Infrastructure
 - HDI is an integral part of SAP HANA and SAP HANA Cloud
@@ -20,7 +20,7 @@ This exercise will further examine the deployed HDI container.
 
 Alternatively, database objects can also be created directly in the database using SQL.  An example of this is shown in the tutorial [Create Database Objects with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-create-schema.html).
 
-## Exercise 4.2 HDI Schemas
+## Exercise 2.2 HDI Schemas
 
 1. In the SAP HANA database explorer, in the **DEMO_HANA_DB** connection, select **Show Schemas**.
 
@@ -66,7 +66,7 @@ Alternatively, database objects can also be created directly in the database usi
 
         ![](images/cg.png)
 
-## Exercise 4.3 Opening a SQL Console with Different Users
+## Exercise 2.3 Opening a SQL Console with Different Users
 
 1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
 
@@ -109,5 +109,5 @@ You have now further explored the schemas and some of the objects in an HDI cont
 
 In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
 
-Continue to - [Exercise 2 - Catalog Browser and Object Search](../../database_explorer/ex2/README.md)
+Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)
 

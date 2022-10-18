@@ -1,14 +1,14 @@
-# Exercise 3 - Import and Deploy the Completed Project (Optional)
+# Appendix 1 - Import and Deploy the Completed Project (Optional)
 
 This exercise demonstrates how a project could be imported and deployed into a workspace.  If you were successful with the previous step, continue to [exercise 4](../ex4/README.md) or optionally read through the below content.
 
-## Exercise 3.1 Open an Empty Workspace
+## Exercise 1.1 Open an Empty Workspace
 
 1. Select **File**, **Open Workspace** and browse to the **projects** folder.
 
     An empty workspace will open.  If a previous project exists with the same name, it can be deleted.
 
-## Exercise 3.2 Import the FlightReservation Project
+## Exercise 1.2 Import the FlightReservation Project
 
 1. Download the file [FlightReservation.tar](FlightReservation.tar).
 
@@ -16,7 +16,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
     ![](images/open.png)
 
-## Exercise 3.3 Install the Required Node Modules
+## Exercise 1.3 Install the Required Node Modules
 
 1. Open a terminal by selecting **Terminal**, **New Terminal**.  Change directories to the location where the Node.js modules are specified, view the required Node.js modules, and then install them.
 
@@ -26,7 +26,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
     npm install
     ```
 
-## Exercise 3.4 Bind to an HDI Container
+## Exercise 1.4 Bind to an HDI Container
 
 1. In the SAP HANA PROJECTS editor, choose to **Bind** the hdi_db.  Select **Bind to the default instance**.  This will provide details of which SAP HANA Cloud database to create an HDI container in.  These values are saved in the .env file within the project.
 
@@ -36,13 +36,13 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
     ![](images/auto-undeploy.png)
 
-## Exercise 3.5 Deploy the Project
+## Exercise 1.5 Deploy the Project
 
 1. In SAP HANA PROJECTS, click on the **Deploy** icon.
 
     ![](images/deploy.png)
 
-## Exercise 3.6 Examine the Deployed Objects
+## Exercise 1.6 Examine the Deployed Objects
 
 1. Open the SAP HANA database explorer by selecting **Open HDI container**.
 
@@ -56,5 +56,5 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 You now have imported a project, bound it to an HDI container, and deployed the project.
 
-Continue to - [Exercise 4 - Additional HDI Container Details (Optional)](../ex4/README.md)
+Continue to - [Appendix 2 - Additional HDI Container Details (Optional)](../ex4/README.md)
 
