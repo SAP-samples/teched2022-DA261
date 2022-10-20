@@ -203,6 +203,6 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Summary
 
-You now have now created native SAP HANA database artifacts and deployed them into an HDI container.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).  In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
+You now have now created native SAP HANA database artifacts and deployed them into an HDI container.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).  Optionally, view the additional content in the [appendix](../../../README.md#appendix).  In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
 
 Continue to - [Exercise 1 - Launch the SAP HANA Database Explorer](../../database_explorer/ex1/README.md)

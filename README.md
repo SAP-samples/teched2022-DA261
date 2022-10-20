@@ -38,12 +38,12 @@ Database to invoke the Create Instance wizard.
     ![](images/running.png)
 
 
-## SAP Business Technology Platform (SAP BTP)
+## SAP Business Technology Platform (SAP BTP) - 5 minutes
 The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
 - [Exercise 1 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex1/)
 
-## SAP HANA Cloud Central
+## SAP HANA Cloud Central - 20 minutes
 
 The SAP HANA Cloud Central tool provides database administrators (DBAs) with a simple and centralized overview of their SAP HANA Cloud databases and SAP HANA Cloud data lake instances. 
 
@@ -52,14 +52,14 @@ The SAP HANA Cloud Central tool provides database administrators (DBAs) with a s
 - [Exercise 3 - Edit Instances](exercises/hana_cloud_central/ex3/)
 - [Exercise 4 - Start, Stop, Upgrade Instances, and Other Actions](exercises/hana_cloud_central/ex4/)
 
-## SAP Business Application Studio
+## SAP Business Application Studio - 30 minutes
 
 SAP Business Application Studio is a SAP BTP service that offers a modern development environment tailored for business application development.
 
 - [Exercise 1 - Create a Development Workspace](exercises/business_app_studio/ex1/)
 - [Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development](exercises/business_app_studio/ex2/)
 
-## SAP HANA Database Explorer
+## SAP HANA Database Explorer - 25 minutes
 
 The SAP HANA database explorer is a web-based tool for browsing and working with  database schema objects such as tables, views, and stored procedures and executing SQL.
 
@@ -67,7 +67,7 @@ The SAP HANA database explorer is a web-based tool for browsing and working with
 - [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
 - [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
 
-## SAP HANA Cockpit
+## SAP HANA Cockpit - 35 minutes
 
 The SAP HANA cockpit tool provides administration and monitoring of individual SAP HANA Cloud database instances. 
 
@@ -88,11 +88,11 @@ Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This
 
 ## Appendix
 Additional SAP Business Application Studio Exercises
-- [Appendix 1 - Import and Deploy the Completed Project (Optional)](exercises/business_app_studio/ex3/)
-- [Appendix 2 - Additional HDI Container Details (Optional)](exercises/business_app_studio/ex4/)
+- [Appendix 1 - Import and Deploy the Completed Project](exercises/business_app_studio/ex3/)
+- [Appendix 2 - Additional HDI Container Details](exercises/business_app_studio/ex4/)
 
 Additional SAP HANA Database Explorer Exercises:
-- [Appendix 1 - SAP HANA Database Explorer Extension (Optional)](exercises/database_explorer/ex4/)
+- [Appendix 1 - SAP HANA Database Explorer Extension](exercises/database_explorer/ex4/)
 
 Additional SAP HANA Cockpit Exercises:
 - [Appendix 1 - Monitoring Memory Usage](exercises/hana_cockpit/appendix_ex8/)
