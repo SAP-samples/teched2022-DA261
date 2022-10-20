@@ -46,4 +46,4 @@ This exercise will teach you the basics of navigating the Database Overview page
 
 We will continue to examine the SAP HANA cockpit in part 2 of this workshop.
 
-Continue to [SAP HANA Database Explorer - Exercise 1](../../database_explorer/ex1/README.md)
+Continue to [Exercise 2: Configuring Database Properties](../ex2/README.md)
