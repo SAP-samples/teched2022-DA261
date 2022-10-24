@@ -1,4 +1,4 @@
-# Appendix 2 - Additional HDI Container Details (Optional)
+# Appendix 2 - Additional HDI Container Details
 
 This exercise will further examine the deployed HDI container.  
 
@@ -100,14 +100,12 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/dt-user.png)
 
-    For additional details on the monitoring views used above consult [_SYS_DI Monitoring Views](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/78e1657f43f04741b9c2b161632e4fe5.html) in the Database Deployment Infrastructure (HDI) Reference and [Can I see the HANA deployment history ?](https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/)
+    For additional details on the monitoring views used above consult [_SYS_DI Monitoring Views](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2cc2e43458d4abda6788049c58143dc/78e1657f43f04741b9c2b161632e4fe5.html) in the Database Deployment Infrastructure (HDI) Reference and [Can I see the HANA deployment history?](https://blogs.sap.com/2022/06/13/can-i-see-the-hana-deployment-history/)
 
 
 ## Summary
 
 You have now further explored the schemas and some of the objects in an HDI container.
-
-In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
 
 Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)
 

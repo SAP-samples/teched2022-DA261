@@ -63,6 +63,6 @@ Managing and monitoring past and current information about the performance of th
 
     ![Database Administration Card](./images/7-13_DBAdminCard.png)
 
-This concludes the exercises on the SAP HANA cockpit. Optionally, view the additional content in the [appendix](../../../README.md#appendix).
+This concludes the exercises on the SAP HANA cockpit and this hands-on workshop. Optionally, view the additional content in the [appendix](../../../README.md#appendix).
 
 Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)

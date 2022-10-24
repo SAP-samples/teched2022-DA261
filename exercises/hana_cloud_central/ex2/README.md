@@ -92,7 +92,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
     ![](./images/13.png)
     </kbd>
     
-12. If using a non-trial account, on the Cloud Central overview page, you'll see a status CREATING next to the instance you just provisioned.
+12. If using a non-trial account, on the SAP HANA Cloud Central overview page, you'll see a status CREATING next to the instance you just provisioned.
     <kbd>
     ![](./images/14.png)
     </kbd>

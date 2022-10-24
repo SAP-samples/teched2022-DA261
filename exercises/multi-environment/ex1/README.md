@@ -46,8 +46,11 @@ This appendix will introduce the multi-environment tools which are available as 
     * The multi-environment tooling is accessed from the SAP BTP sub-account page, under the SAP HANA Cloud subscription
     * The URL used to access the tools is different
     * The multi-environment version does not have the Cloud Foundry organization and space drop downs
-    * The multi-environment tooling does not list SAP HANA Cloud instances created with the Cloud Foundry Tooling
+    * The multi-environment SAP HANA Cloud Central includes a link that when clicked, displays the subaccount roles assigned to the current user
+    * The Cloud Foundry SAP HANA Cloud Central includes a link that when clicked, displays the Cloud Foundry space roles assigned to the current user
+    * The multi-environment tooling lists SAP HANA Cloud instances created with either set of the tooling
     * The Cloud Foundry tooling does not list the SAP HANA Cloud instances created with the multi-environment tooling
+    * Within the SAP HANA database explorer, the Add Instance dialog does not show the Cockpit or
     * The instance mapping in the multi-environment version provides instance mapping via the action menu item Manage Configuration.  This is demonstrated in the exercise below.
 
 ## Exercise 1.2 Instance Mapping

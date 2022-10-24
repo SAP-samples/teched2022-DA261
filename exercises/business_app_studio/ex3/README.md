@@ -1,4 +1,4 @@
-# Appendix 1 - Import and Deploy the Completed Project (Optional)
+# Appendix 1 - Import and Deploy the Completed Project
 
 This exercise demonstrates how a project could be imported and deployed into a workspace.  If you were successful with the previous step, continue to [exercise 4](../ex4/README.md) or optionally read through the below content.
 
@@ -56,5 +56,5 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 You now have imported a project, bound it to an HDI container, and deployed the project.
 
-Continue to - [Appendix 2 - Additional HDI Container Details (Optional)](../ex4/README.md)
+Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)
 

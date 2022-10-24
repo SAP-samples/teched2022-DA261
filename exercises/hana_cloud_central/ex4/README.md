@@ -87,7 +87,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     <kbd>
     ![](./images/18.png)
     </kbd>
-    Click the Back button beside the SAP log at the top to return to the instances view of SAP HANA Cloud Central.
+    Click the Back button beside the SAP logo at the top to return to the instances view of SAP HANA Cloud Central.
 
 13. Next in the Actions column is Copy SQL Endpoint functionality. Upon clicking this, the SQL endpoint is copied to the clipboard. We get a success message saying that the SQL endpoint is copied to the clipboard.
 
