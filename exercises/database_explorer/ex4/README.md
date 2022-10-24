@@ -4,14 +4,14 @@
 
   ![](images/included-extensions.png)
 
-## Exercise 4.1 Connections
+## Exercise 1.1 Connections
 
 1. Select the **SAP HANA database explorer** extension.  The list of connections should appear.  This list is managed by the full SAP HANA database explorer web application and uses the currently connected cloud foundry user and org to retrieve the connection details.
 
     ![](images/connections.png)
 
 
-## Exercise 4.2 Catalog Browser
+## Exercise 1.2 Catalog Browser
 
 1. Select **Tables** on the HDI Container and see that the list of deployed tables can be seen.
 
@@ -27,7 +27,7 @@
 
     ![](images/views.png)
 
-## Exercise 4.3 SQL Console
+## Exercise 1.3 SQL Console
 
 1. Select the HDI Container and open a SQL Console.  Execute the below SQL.
 
@@ -43,6 +43,6 @@
     Notice that the result is shown and includes the Messages and History tabs.
 
 
-This concludes the SAP HANA Database Explorer extension.  Note that it is also available as a plugin for [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer&ssr=false#overview).    
+This concludes the appendix on the SAP HANA Database Explorer extension.  Note that it is also available as a plugin for [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer&ssr=false#overview).    
 
 Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)

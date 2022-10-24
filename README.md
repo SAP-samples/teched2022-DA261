@@ -6,7 +6,7 @@ This repository contains the material for the SAP TechEd 2022 session called DA2
 
 ## Overview
 
-This session introduces attendees to the operations required for end-to-end administration and development of SAP HANA Cloud database instances using the tools offered in the SAP Business Technology Platform (SAP BTP).  Attendees will learn how to accomplish administration tasks such as instance monitoring and security management, as well as development tasks such as creating native SAP HANA artifacts and analyzing their performance.  During this workshop, participants will use the tools to create and deploy some sample tables, a calculation view, a stored procedure and will further administer these deployed artifacts.  
+This session introduces attendees to the operations required for end-to-end administration and development of SAP HANA Cloud database instances using the tools offered in the SAP Business Technology Platform (SAP BTP).  Attendees will learn how to accomplish administration tasks such as instance monitoring and security management, as well as development tasks such as creating native SAP HANA artifacts and analyzing their performance.  During this workshop, participants will use the tools to create and deploy some sample tables, a calculation view, a stored procedure, and will further administer these deployed artifacts.  
 
 >Content appearing in this format is for additional information and does not need to be followed.
 
@@ -21,8 +21,7 @@ In your SAP HANA Cloud account, perform the following steps:
     ![](images/go-to-trial.png)
 2.	Enter the subaccount and then select the dev space.
 3.	Click SAP HANA Cloud from the left navigation bar.
-4.	Click the button Create Instance in the top right and select SAP HANA 
-Database to invoke the Create Instance wizard.  
+4.	Click the button Create in the top right and select SAP HANA Cloud, SAP HANA Database to invoke the Create Instance wizard.  
     > Only one instance of a HANA Cloud database can be created in trial or free tier accounts.  If you already have a SAP HANA Cloud database instance created, it can be used.
     
     ![](images/create-hana-instance.png)
@@ -87,6 +86,8 @@ Support for the content in this repository is available during the actual time o
 Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
 
 ## Appendix
+- [Appendix 1 - Multi-Environment SAP HANA Cloud Tools](exercises/multi-environment/ex1/)
+
 Additional SAP Business Application Studio Exercises
 - [Appendix 1 - Import and Deploy the Completed Project](exercises/business_app_studio/ex3/)
 - [Appendix 2 - Additional HDI Container Details](exercises/business_app_studio/ex4/)
