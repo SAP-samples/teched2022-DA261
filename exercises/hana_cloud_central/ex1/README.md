@@ -1,6 +1,6 @@
 # Exercise 1: Overview of SAP HANA Cloud Central
 
-Management tasks such as creating new instances, checking status, reviewing any notifications and alerts, examining memory and storage consumption, and start/stop/edit/delete instances can be performed with this tool. 
+Management tasks such as creating new instances, checking status, reviewing any notifications and alerts, examining memory and storage consumption, and operations including start/stop/edit/delete instances can be performed with this tool. 
 
 To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigated to the "SAP HANA Cloud" page.
 
@@ -9,7 +9,7 @@ To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigate
     ![](./images/4.png)
     </kbd>
 
-2. SAP HANA Cloud Central is launched in a new tab. **Note:** You may see a banner displaying "Multi-Environment SAP HANA Cloud Tools Now Available". We will not be using multi-environment in this workshop, so you can ignore and/or close the banner.
+2. SAP HANA Cloud Central is launched in a new tab. **Note:** You may see a banner displaying "Multi-Environment SAP HANA Cloud Tools Now Available". We will not be using multi-environment in this workshop, so you can ignore and/or close the banner.  Further details about these tools can be found in [Appendix 1 - Multi-Environment SAP HANA Cloud Tools](../../multi-environment/ex1/).
     <kbd>
     ![](./images/3.png)
     </kbd>

@@ -30,7 +30,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
     
     >The API endpoint value can be obtained from the BTP Cockpit subaccount page.  
     
-    >If 2 factor authentication is enabled, provide your password followed by a 2 factor authentication code. 
+    >If 2-factor authentication is enabled, provide your password followed by a 2-factor authentication code. 
 
     ![](images/log-in.png)
 
@@ -66,11 +66,11 @@ This exercise will demonstrate how to create a project containing tables, a calc
     
     >Optionally right click on **OPEN EDITORS** and choose **Hide** or uncheck the item.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
-    At this point an HDI container has been created which is an isolated set of schemas within an SAP HANA Cloud database.
+    At this point, an HDI container has been created which can be thought of as an isolated set of schemas within an SAP HANA Cloud database.
     
     HDI provides a service that enables you to deploy database development artifacts to containers. This service includes a family of consistent design-time artifacts for all key SAP HANA database features which describe the target (run-time) state of SAP HANA database artifacts, for example: tables, views, or procedures. These artifacts are modeled, staged (uploaded), built, and deployed into SAP HANA. 
     
-    Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment or for multiple instances of an application to use one SAP HANA Cloud database each with a separate container.
+    Multiple HDI containers can be included within one SAP HANA Cloud database.  This enables developers to have their own environment, or for multiple instances of an application, to use one SAP HANA Cloud database each with a separate container.
     
     The HDI container can be seen in the SAP BTP Cockpit. 
 
@@ -82,7 +82,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/add-HDI-in-dbx.png)
 
-    *Above, the service key SharedDevKey is created when A service key has been added to the service.  
+    *Above, the service key SharedDevKey is created when a service key has been added to the service.*  
 
     ![](images/service-key.png)
 
@@ -172,11 +172,11 @@ Calculation views allow the developers to express their intent instead of defini
 
     ![](images/clear-privileges.png)
 
-    Once the calculation view has been re-deployed, its data can be viewed in the SAP HANA database explorer as shown below.  The data can be placed in a chart or in columnar form by selecting Raw Data. 
+    Once the calculation view has been re-deployed, its data can be viewed in the SAP HANA database explorer as shown below.  The data can be shown in a chart or in columnar form by selecting **Analysis** or **Raw Data**. 
 
     ![](images/cv-data-preview.png)
     
-    *Notice that the Airline column has been added to the label axis and a count of the passenger ids has been added to the value axis.*
+    *Notice that the Airline column has been added (via drag and drop) to the label axis and a count of the reservation ids has been added to the value axis.*
 
     It is also possible to see a similar preview within the calculation view editor.
 
@@ -187,7 +187,7 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Exercise 2.6 Create a Database Procedure File
 
-1. In the guided development tool, skip a couple of steps and select **Create a Database Procedure File** and complete the steps.
+1. In the guided development tool, skip the steps **Create Analytic Privileges for Your Calculation View** and **Create a Database Role for the Analytic Privilege**.  Select the step **Create a Database Procedure File** and complete the steps.
 
 2. Notice that the changed artifact, the procedure is identified as needing to be deployed.
 
@@ -203,6 +203,6 @@ Calculation views allow the developers to express their intent instead of defini
 
 ## Summary
 
-You now have now created native SAP HANA database artifacts and deployed them into an HDI container.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).  In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
+You now have now created native SAP HANA database artifacts and deployed them into an HDI container.  Further details on some of the concepts shown here can be found at [SAP HANA Cloud, SAP HANA Database Developer Guide for Cloud Foundry Multitarget Applications](https://help.sap.com/docs/HANA_CLOUD_DATABASE/c2b99f19e9264c4d9ae9221b22f6f589/f8e431e3cdc14516b4ba8c9932afd1f4.html?version=latest&locale=en-US).  Optionally, view the additional content in the [appendix](../../../README.md#appendix).  In the next set of exercises, we will focus on functionality within the SAP HANA database explorer.
 
 Continue to - [Exercise 1 - Launch the SAP HANA Database Explorer](../../database_explorer/ex1/README.md)

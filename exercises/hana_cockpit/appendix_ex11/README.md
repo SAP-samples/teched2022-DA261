@@ -10,6 +10,6 @@ As the database administrator, you have the option to view your recent activitie
 
     ![Quick Access](./images/9-02_QuickAccess.png)
 
-TO DO - Should this link to another appendix or just the general overview page?
+This completes the appendices on the SAP HANA cockpit.
 
-Continue to [Exercise 10: Managing Workload Classes](../ex_10)
+Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)

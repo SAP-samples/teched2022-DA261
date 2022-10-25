@@ -79,6 +79,6 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     
     ![](images/Filter.png)
 
-This concludes the exercise on launching and exploring instances in the SAP HANA database explorer.  In the next exercise, the SAP Business Application Studio will be opened with a development workspace for native SAP HANA development.
+This concludes the exercise on launching and exploring instances in the SAP HANA database explorer.
 
 Continue to - [Exercise 2 - Catalog Browser and Object Search](../ex2/README.md)
