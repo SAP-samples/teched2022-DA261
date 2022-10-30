@@ -29,7 +29,7 @@
 
 ## Exercise 1.3 SQL Console
 
-1. Select the HDI Container and open a SQL Console.  Execute the below SQL.
+1. Select the HDI Container and open a SQL console.  Execute the below SQL.
 
     ![](images/sql-console.png)
 

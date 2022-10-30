@@ -1,6 +1,6 @@
 # Exercise 2 - Catalog Browser and Object Search
 
-In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.  Some of this functionality was previously introduced.
+In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.
 
 ## Exercise 2.1 Viewing a List of Database Objects
 
@@ -52,7 +52,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.5 Using Object Search
 
-1. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use FLIGHTRESERVATION in their definitions in the HDI connection. 
+1. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use FLIGHTRESERVATION in their schema name in the HDI container. 
 
     ![](images/ObjectSearch.png)
 

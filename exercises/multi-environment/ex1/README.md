@@ -1,6 +1,6 @@
 # Appendix 1 - Multi-Environment SAP HANA Cloud Tools
 
-This appendix will introduce the multi-environment tools which are available as of QRC 3 in the SAP BTP free tier and production environments but not in trial.  Until now, the tooling (SAP HANA cockpit, SAP HANA database explorer, and SAP HANA Cloud Central) have been accessing SAP HANA Cloud through Cloud Foundry.  The SAP BTP provides support for multiple environments such as Cloud Foundry and Kyma.  With the multi-environment tooling, it is no longer necessary to have a Cloud Foundry environment.  This is explained in more detail at [SAP HANA Cloud goes "multi-environment": Part 1- feature overview](https://blogs.sap.com/2022/09/21/sap-hana-cloud-goes-multi-environment-part-1-feature-overview/).
+This appendix will introduce the multi-environment tools which are available as of QRC 3 in the SAP BTP free tier and production environments but not in trial.  Until now, the tooling (SAP HANA cockpit, SAP HANA database explorer, and SAP HANA Cloud Central) have been accessing SAP HANA Cloud through Cloud Foundry.  The SAP BTP provides support for multiple environments such as Cloud Foundry and Kyma.  With the multi-environment tooling, it is no longer necessary to have a Cloud Foundry environment.  This is explained in more detail at [SAP HANA Cloud goes "multi-environment": Part 1- feature overview](https://blogs.sap.com/2022/09/21/sap-hana-cloud-goes-multi-environment-part-1-feature-overview/).  
 
 ## Exercise 1.1 Introducing and Setting up the Multi-Environment Tooling
 
@@ -20,7 +20,7 @@ This appendix will introduce the multi-environment tools which are available as 
 
     ![](images/Tools-Plan.png)
 
-    *Select the tools plan and press create.*
+    *Select the tools plan and press Create.*
 
     ![](images/Role-Collection.png)
 
@@ -34,28 +34,35 @@ This appendix will introduce the multi-environment tools which are available as 
 
     ![](images/Multi-Environemnt-HCC.png)
 
-    *Multi-Environment SAP HANA Cloud Central.*
+    *Multi-Environment edition of SAP HANA Cloud Central.*
 
     ![](images/Cloud-Foundry-HCC.png)
 
-    *Cloud Foundry SAP HANA Cloud Central.*
+    *Previous edition of SAP HANA Cloud Central.*
 
     Some of the differences include:
 
-    * The Cloud Foundry tooling is accessed from the Cloud Foundry space level under the SAP HANA Cloud tab
+    * The previous edition of the tooling is accessed from the Cloud Foundry space level under the SAP HANA Cloud tab
     * The multi-environment tooling is accessed from the SAP BTP sub-account page, under the SAP HANA Cloud subscription
     * The URL used to access the tools is different
-    * The multi-environment version does not have the Cloud Foundry organization and space drop downs
+    * The multi-environment edition does not have the Cloud Foundry organization and space drop downs
     * The multi-environment SAP HANA Cloud Central includes a link that when clicked, displays the subaccount roles assigned to the current user
-    * The Cloud Foundry SAP HANA Cloud Central includes a link that when clicked, displays the Cloud Foundry space roles assigned to the current user
+    * The previous edition of SAP HANA Cloud Central includes a link that when clicked, displays the Cloud Foundry space roles assigned to the current user
     * The multi-environment tooling lists SAP HANA Cloud instances created with either set of the tooling
-    * The Cloud Foundry tooling does not list the SAP HANA Cloud instances created with the multi-environment tooling
-    * Within the SAP HANA database explorer, the Add Instance dialog does not show the Cockpit or
-    * The instance mapping in the multi-environment version provides instance mapping via the action menu item Manage Configuration.  This is demonstrated in the exercise below.
+    * The previous edition of SAP HANA Cloud Central does not list the SAP HANA Cloud instances created with the multi-environment tooling
+    * The multi-environment tooling does not include HDI Containers as an instance type in the Add Instance dialog
+    * The instance mapping in the multi-environment edition provides instance mapping via the action menu item Manage Configuration.  This is demonstrated in the exercise below.
 
 ## Exercise 1.2 Instance Mapping
 
-If you are using the SAP Business Application Studio to deploy native SAP HANA artifacts into an HDI container and have created the SAP HANA instance using the multi-environment tooling, a mapping will need to be created to map the SAP HANA Cloud instance into an existing Cloud Foundry organization and space.
+If you are using the SAP Business Application Studio to deploy native SAP HANA artifacts into an HDI container and have created the SAP HANA instance using the multi-environment tooling, a mapping will need to be created to map the SAP HANA Cloud instance into an existing Cloud Foundry organization and space.  If this is not added, an error such the below will occur during initial project creation.
+   
+    Generating SAP HANA Database Project
+    Creating the Cloud Foundry service instance "FlightReservation-hdidb-ws-f5hhr"
+    An error occurred while creating the service: Error: Failed to create the service "FlightReservation2-hdidb-ws-f5hhr"; 
+    Service broker error: Service broker hana-broker failed with: Can not create service instance 'FlightReservation-hdidb-ws-f5hhr': 
+    There is no database available. Ensure that you have a database available in space 'dev' within organization 'DansCFOrg'.
+
 
 1. Determine the Cloud Foundry Organization ID.
 
@@ -79,7 +86,7 @@ If you are using the SAP Business Application Studio to deploy native SAP HANA a
 
 ## Summary
 
-You now have an overview of the new multi-environment tooling and how it differs from the Cloud Foundry tooling.
+You now have an overview of the new multi-environment tooling and how it differs from the previous edition of the tooling.
 
 Back to - [DA261 - SAP HANA Cloud Database Administration and Development](../../../README.md)
 

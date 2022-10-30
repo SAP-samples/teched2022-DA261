@@ -68,7 +68,7 @@ Alternatively, database objects can also be created directly in the database usi
 
 ## Exercise 2.3 Opening a SQL Console with Different Users
 
-1.  In the SAP HANA database explorer, open a SQL Console connected to the HDI container.  Execute the following SQL.
+1.  In the SAP HANA database explorer, open a SQL console connected to the HDI container.  Execute the following SQL.
 
     ```SQL
     SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;

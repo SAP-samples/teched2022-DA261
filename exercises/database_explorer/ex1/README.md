@@ -4,7 +4,7 @@ In addition to browsing schema objects and executing SQL, the SAP HANA database 
 
 ![](images/Help.png)
 
-In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to HANA database connections.  In later exercises, the Catalog Browser, SQL Console, and the database explorer extension will be covered. 
+In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to HANA database connections.  In later exercises, the Catalog Browser, SQL console, and the database explorer extension will be covered. 
 
 ## Exercise 1.1 Open the SAP HANA Database Explorer
 
@@ -30,7 +30,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     *In this example, the instance is the QRC 3 2022 release.*
 
-## Exercise 1.3 Search for a View using a Schema Filter
+## Exercise 1.3 Search For a View Using a Schema Filter
 
 1. Click the arrow next to the database icon to expand the object hierarchy for the instance. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the instance.  Expand **Catalog** then select **Views**.
 

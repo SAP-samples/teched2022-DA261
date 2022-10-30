@@ -1,26 +1,26 @@
 # Exercise 3 - Using the SQL Console
-In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL Console. Please repeat the steps shown below.
+In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL console. Please repeat the steps shown below.
 
 ## Exercise 3.1 Open a SQL Console
 
-1. A SQL Console can be opened by the context menu of a connection or after selecting a connection and clicking on the SQL Console toolbar icon.  
+1. A SQL console can be opened by the context menu of an instance or after selecting an instance and clicking on the SQL console toolbar icon.  
 
     ![](images/OpenSQLConsole.png)
 
-    Execute the following SQL after pasting it into a newly opened SQL Console that is connected to the FlightReservation HDI container and press the **Run** button.
+    Execute the following SQL after pasting it into a newly opened SQL console that is connected to the FlightReservation HDI container and press the **Run** button.
 
     ```SQL
     SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
     SELECT * FROM PUBLIC.M_CONNECTIONS WHERE CONNECTION_ID = CURRENT_CONNECTION;
     ```
 
-    Multiple SQL Console tabs can be opened, or the connection that the SQL Console is attached to can be changed if needed.
+    Multiple SQL console tabs can be opened, or the instance that the SQL console is attached to can be changed if needed.
 
     ![](images/ChangeConnection.png)
 
 ## Exercise 3.2 Autocompletion
 
-1. The SQL Console can autocomplete statements.  Enter the statement below into the SQL Console, position the cursor on the **C** and press **Ctrl + space**.  Select **COUNTRY** to complete the SQL query.
+1. The SQL console can autocomplete statements.  Enter the statement below into the SQL console, position the cursor on the **C** and press **Ctrl + space**.  Select **COUNTRY** to complete the SQL query.
 
     ![](images/AutoComplete.png)
 
@@ -47,7 +47,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 ## Exercise 3.4 Statement Help Panel
 
-1. The SQL Console has an optional statement help panel that shows additional details for a SQL statement that is selected by the input indicator.  Enter the statement below into the SQL Console and show the Statement Help panel. 
+1. The SQL console has an optional statement help panel that shows additional details for a SQL statement that is selected by the input indicator.  Enter the statement below into the SQL console and show the Statement Help panel. 
 
     ![](images/StatementHelpPanel.png)
     
@@ -79,7 +79,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 ## Exercise 3.7 SQL Console Preferences
 
-1. Examine the SQL Console preferences.  Navigate to the database explorer preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
+1. Examine the SQL console preferences.  Navigate to the database explorer preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
 
     A few notable settings are:
     * Byte limit for the size of a returned value
@@ -89,7 +89,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
    
     ![](images/DBX_Settings.png)
 
-    >If changes are made to this screen, the Save button must be pressed.
+    >If changes are made to this screen, the Save button must be pressed for the changes to be set.
 
  
  2. An example of a query that returns more than 1000 rows is shown below.  The setting Max number of rows to display could be updated to display the full result.
@@ -128,11 +128,11 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 ## Exercise 3.9 Additional SQL Console Tab Features 
 
-1. A SQL Console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double tapping on its tab.  
+1. A SQL console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double tapping on its tab.  
 
     ![](images/FullScreen.png)
 
-2. A context menu is available on SQL Console tabs.  You may wish to provide a more descriptive tab name for a SQL Console.
+2. A context menu is available on SQL console tabs.  You may wish to provide a more descriptive tab name for a SQL console.
 
     ![](images/SQLConsoleContextMenu.png)
 
@@ -160,13 +160,13 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     
     >Optionally press the refresh button to update the status sooner.
 
-    >Notice that the original SQL Console and the one opened to view the results are both in a disconnected state and would need to be re-connected before executing another statement.
+    >Notice that the original SQL console and the one opened to view the results are both in a disconnected state and would need to be re-connected before executing another statement.
 
     ![](images/ViewBackgroundResults2.png)
 
 ## Exercise 3.11 Run on Multiple Databases
 
-1. SQL statements can also be executed against multiple databases.  Paste in the below SQL into the SQL Console and from the **Run** icon select **Run on Multiple Databases**. 
+1. SQL statements can also be executed against multiple databases.  Paste in the below SQL into the SQL console and from the **Run** icon select **Run on Multiple Databases**. 
 
     ```SQL
     SELECT CURRENT_USER FROM DUMMY;
@@ -204,10 +204,10 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 ## Exercise 3.13 Data Viewers
 
-1. The SQL Console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  Execute the below SQL, select a value from the results tab and choose **View data**. 
+1. The SQL console has built in viewers for data of different formats such as HTML, XML, JSON and spatial.  Execute the below SQL, select a value from the results tab and choose **View data**. 
 
     ```SQL
-    SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", car2":"BMW", car3":"Fiat" }}'
+    SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", "car2":"BMW", "car3":"Fiat" }}'
         AS JSON_EXAMPLE FROM DUMMY;
     
     SELECT '<?xml version="1.0" encoding="UTF-8"?>
