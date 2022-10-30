@@ -8,7 +8,8 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/1.png)
     </kbd>
     
-2. Click the Stop menu item. A pop up shows up, confirming that you want to continue with stopping the instance. Click the Stop button.
+2. *Note: Stopping and Starting an instance can take up to 5 minutes. You may choose to do so, or proceed without stopping your instance and continue to step 6 of the exercise.*
+Click the Stop menu item. A pop up shows up, confirming that you want to continue with stopping the instance. Click the Stop button.
     <kbd>
     ![](./images/2.png)
     </kbd>
@@ -61,7 +62,7 @@ In this section, we will discuss about how to start, stop, and upgrade instances
     ![](./images/13_b.png)
     </kbd>
       
-10. We can also open the SAP HANA Database Explorer to create SQL scripts, run them and also administer the SAP HANA Cloud instance directly from the SAP HANA Cloud Central page. Switch to the tab with SAP HANA Cloud Central and click on Open in SAP HANA Database Explorer menu item in the Actions column for the SAP HANA database. SAP HANA Database Explorer opens in an adjacent new tab.
+10. We can also open the SAP HANA Database Explorer to create SQL scripts and run them. Switch to the tab with SAP HANA Cloud Central and click on Open in SAP HANA Database Explorer menu item in the Actions column for the SAP HANA database. SAP HANA Database Explorer opens in an adjacent new tab.
     <kbd>
     ![](./images/33.png)
     </kbd>

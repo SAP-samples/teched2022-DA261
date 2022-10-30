@@ -37,4 +37,13 @@ Database backups are crucial to ensuring data stays safe. In the SAP HANA Cloud 
 
 9. On the drop-down menu from the cockpit's toolbar (top left), click on **Backup Catalog** and select **Database Overview** from the menu to return to the Database Overview page.
 
+10. If you have a non-trial account, you can initiate a recovery in SAP HANA Cloud Central. Two options are available to recover an instance from backup: 
+    - Recovery to a selected point in time within the last 14 days. Choose **Start Recovery** from the Actions menu in SAP HANA Cloud Central.
+
+    ![Start Recovery](./images/start_recovery.png)
+
+    - Recreate an instance by selecting the availabilty zone into which to recover the instance. This option can be used if an availability zone becomes unavailable, or you wish to migrate your database to a different zone. Choose **Recreate Instance** from the Actions menu in SAP HANA Cloud Central.
+
+    ![Recreate Instance](./images/recreate_instance.png)
+
 Continue to [Exercise 6: HDI Administration](../ex6/README.md)
