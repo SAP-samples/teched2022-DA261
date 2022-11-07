@@ -20,12 +20,12 @@ In your SAP HANA Cloud account, perform the following steps:
 1.  Open the [welcome page](https://account.hanatrial.ondemand.com/trial/#/home/trial) and go to your trial account.
     ![](images/go-to-trial.png)
 2.	Enter the subaccount and then select the dev space.
-3.	Click SAP HANA Cloud from the left navigation bar.
-4.	Click the button Create in the top right and select SAP HANA Cloud, SAP HANA Database to invoke the Create Instance wizard.  
+3.	Click **SAP HANA Cloud** from the left navigation bar.
+4.	Click the button **Create** in the top right and select SAP HANA Cloud, SAP HANA Database to invoke the Create Instance wizard.  
     > Only one instance of a HANA Cloud database can be created in trial or free tier accounts.  If you already have a SAP HANA Cloud database instance created, it can be used.
     
     ![](images/create-hana-instance.png)
-5.  Choose SAP HANA Cloud, SAP HANA Database and click the button Next Step.
+5.  Choose **SAP HANA Cloud, SAP HANA Database** and click the button **Next Step**.
 6.  Use default values for the remainder of the wizard, with the following exceptions:
     * In Step 2 (General), enter **DEMO_HANA_DB** for the instance name. Enter and confirm your administrator password – ***PLEASE REMEMBER IT AND/OR WRITE IT DOWN!***.
     * In Step 6 (Data Lake), turn on the toggle switch to Create Data Lake. Enter **DEMO_HANA_HDL** for the instance name.

@@ -25,7 +25,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/Welcome-screen.png)
 
-2. Click the button **Create Dev Space** and then create a development workspace that is configured with the *SAP HANA Native Application* development extensions.  Make sure to name this new dev space "TechEd2022" (in top left).
+2. Click the button **Create Dev Space** and then create a development workspace that is configured with the SAP HANA Native Application development extensions.  Make sure to name this new dev space **TechEd2022** (in top left).
 
     ![](images/workspace.png)
 
@@ -35,37 +35,45 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/started.png)
 
-2. The SAP Business Application Studio will open and display the Welcome page that contains various helpful links along the bottom including the documentation and a Guided Development wizard that will be used in the next exercise.
+2. The SAP Business Application Studio will open and display a Getting Started page.  It can be closed.
 
-    ![](images/Welcome.png)
+    ![](images/Welcome2.png)
 
-    >Should you wish to re-open the Welcome page, it can be opened via a command palette command.  To open the command palette, select **View**, **Find Command** and then search for **Welcome**.
-    >
-    >![](images/re-open-welcome.png)
+    The SAP Business Application Studio is a browser-based application, so there is no need to install or update software.  You can continue to work on your projects later from any computer.
 
-    The SAP Business Application Studio is a browser-based application, so there is no need to install or update software.  You can continue to work on your project later from any computer.
+3. Enable the menu bar by selecting the toolbar item in the top left, and then choose **View**, **Appearance**, **Menu Bar**.
 
-3. The preferences can be viewed or set via **File**, **Preferences** or the gear icon in the bottom left.  Set the workspace project creation behavior preference to open in a stand-alone folder as shown below.
+    ![](images/MenuBar.png)
+
+3. Preference settings can be viewed or set via **File**, **Preferences**, **Settings**.  
 
     ![](images/preferences.png)
 
-4. Your color theme of choice can be set using **File**, **Preferences**, **Color Theme**.
+    >The gear icon on the bottom left can also be used to quickly access the preferences.
+
+4. A color theme can be set using **File**, **Preferences**, **Color Theme**.
 
     ![](images/color-theme.png)
 
-5. SAP Business Application Studio has been configured with a selected set of extensions.  These can be seen by selecting the extensions icon.  
+5. SAP Business Application Studio has been configured with a selected set of extensions.  These can be seen by selecting the extensions icon and applying a filter such as @builtin.
 
     ![](images/extensions.png)
 
-    Selecting the icon of the extension will show its related panel.   
-
-    ![](images/git-panel.png)
+    Selecting an extension will show additional details the icon of the extension.   
 
 ## Exercise 1.4 Open a Terminal
 
 1. A terminal can be opened by selecting **Terminal**, **New Terminal**.
 
     ![](images/terminal.png)
+
+    Enter a few commands one by one into the terminal and execute them to see the version of Node.js installed, details of the operating system, and to see the contents of the file system.
+
+    ```
+    node -v
+    cat /etc/os-release
+    ls
+    ```
 
 
 ## Summary

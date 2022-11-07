@@ -4,13 +4,9 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.1 Create a New SAP HANA Database Project from a Template
 
-1. In the SAP Business Application Studio, start the **Guided Development** tool by selecting it from the bottom of the Welcome screen.
+1. In the SAP Business Application Studio, start the Guided Development tool.  To do so, open the command palette **View**, **Command Palette**, and search for **SAP HANA: Getting Started**.
 
-    ![](images/welcome.png)
-
-    > Alternatively, select the menu **View**, **Find Command** (or Fn F1) to open the command palette and search for **SAP HANA** and select the option **SAP HANA: Getting Started**.
-    >
-    >![](images/getting-started.png)
+    ![](images/open-guided-dev.png)
 
     It may take a moment or two for the contents of the Guided Development wizard to appear.  If it does not appear, try reloading the page.
 
@@ -40,15 +36,15 @@ This exercise will demonstrate how to create a project containing tables, a calc
     >
     >---
     > 
-    >It should also be noted that if you are using a non-trial account (trial account limit the number of instances to one), you may wish to specify which SAP HANA Cloud instance to deploy the SAP HANA Deployment Infrastructure (HDI) container to.
+    >It should also be noted that if you are using a non-trial account (trial accounts limit the number of instances to one), you may wish to specify which SAP HANA Cloud instance to deploy the SAP HANA Deployment Infrastructure (HDI) container to.
     >
     >![](images/select-instance.png)
 
-    Select the option to Open the Output View when asked.
+    Select the option to **Open Output View** when asked.
 
     ![](images/open-output.png)
 
-    >The bottom panel can also be shown (or hidden) by selecting View, Toggle Bottom Panel or by the icon in the bottom right.
+    >The output view can also be shown (or hidden) by selecting View, Output.
     >
     >![](images/output.png)
     >
@@ -62,9 +58,11 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/project.png)
 
+    The .env file contains connection or binding details on the HDI container.
+
     The panes in the explorer can be expanded and resized.  
     
-    >Optionally right click on **OPEN EDITORS** and choose **Hide** or uncheck the item.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
+    >Optionally right click on **OUTLINE** and **TIMELINE** and choose **Hide**.  Hidden panes can be shown again using the ... menu in the top right of the Explorer.
 
     At this point, an HDI container has been created which can be thought of as an isolated set of schemas within an SAP HANA Cloud database.
     
@@ -107,7 +105,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.2 Initialize the Git Repository
 
-1. Initialize the Git repository by selecting the **GIT** extension and pressing the **+** icon.
+1. Initialize the Git repository by selecting the **GIT** extension, entering in a commit message, and pressing the **Commit** button.
 
     ![](images/git-init.png)
 
@@ -127,11 +125,13 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     ![](images/tables-in-dbx.png)
 
-3. Note that the new files are again marked with a green U which means they are unstaged or new files.
+3. Note that the new files are again marked with a green U which means they are unstaged or new files and modified files are marked with an orange M.
 
     ![](images/git-integration.png)
 
-    Commit the changes and continue to do so after subsequent steps.
+    Switch to the git extension and commit the changes and continue to do so after subsequent steps.
+
+    ![](images/git-commit-create-tables.png)
 
     Note that in this way you will have a record of the changes from each step that can be viewed, or the project can be restored to the state of a previous commit.
 
@@ -189,7 +189,7 @@ Calculation views allow the developers to express their intent instead of defini
 
 1. In the guided development tool, skip the steps **Create Analytic Privileges for Your Calculation View** and **Create a Database Role for the Analytic Privilege**.  Select the step **Create a Database Procedure File** and complete the steps.
 
-2. Notice that the changed artifact, the procedure is identified as needing to be deployed.
+2. Notice that the changed artifact, the hdbprocedure, is identified as needing to be deployed.
 
     ![](images/deployment-project-explorer.png)
 
@@ -197,7 +197,7 @@ Calculation views allow the developers to express their intent instead of defini
 
     ![](images/DeploymentTask.png)
 
-3. In the SAP HANA database explorer, call the stored procedure.
+3. In the SAP HANA database explorer, call the stored procedure.  Provide a value such as 1 for the PASSENGER_ID parameter as shown in the screenshot below.
 
     ![](images/call-stored-procedure.png)
 

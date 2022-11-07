@@ -51,6 +51,7 @@ This appendix will introduce the multi-environment tools which are available as 
     * The multi-environment tooling lists SAP HANA Cloud instances created with either set of the tooling
     * The previous edition of SAP HANA Cloud Central does not list the SAP HANA Cloud instances created with the multi-environment tooling
     * The multi-environment tooling does not include HDI Containers as an instance type in the Add Instance dialog
+    * The multi-environment tooling cannot delete an instance created with the previous tooling
     * The instance mapping in the multi-environment edition provides instance mapping via the action menu item Manage Configuration.  This is demonstrated in the exercise below.
 
 ## Exercise 1.2 Instance Mapping
