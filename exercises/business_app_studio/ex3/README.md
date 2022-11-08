@@ -12,8 +12,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 ## Exercise 1.2 Import the FlightReservation Project
 
-1. Download the file [FlightReservation.tar](FlightReservation.tar).
-<a href="FlightReservation.tar" download="FlightReservation.tar">FlightReservation.tar</a>
+1. Download the file [https://github.com/SAP-samples/teched2022-DA261/raw/main/exercises/business_app_studio/ex3/FlightReservation.tar](FlightReservation.tar).
 
 2. Right click on an empty space below PROJECTS, select **Import Project**, and select the previously downloaded file.
 
