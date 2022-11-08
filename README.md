@@ -78,13 +78,6 @@ The SAP HANA cockpit tool provides administration and monitoring of individual S
 - [Exercise 6 - HDI Administration](exercises/hana_cockpit/ex6/)
 - [Exercise 7 - Performance Management](exercises/hana_cockpit/ex7/)
 
-## How to obtain support
-
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
-
-## License
-Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
-
 ## Appendix
 - [Appendix 1 - Multi-Environment SAP HANA Cloud Tools](exercises/multi-environment/ex1/)
 
@@ -100,3 +93,10 @@ Additional SAP HANA Cockpit Exercises:
 - [Appendix 2 - Managing Services](exercises/hana_cockpit/appendix_ex9/)
 - [Appendix 3 - Managing Workload Classes](exercises/hana_cockpit/appendix_ex10/)
 - [Appendix 4 - Recent Activities and Frequently Used Apps](exercises/hana_cockpit/appendix_ex10/)
+
+## How to obtain support
+
+Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+
+## License
+Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.

@@ -1,16 +1,19 @@
 # Appendix 1 - Import and Deploy the Completed Project
 
-This exercise demonstrates how a project could be imported and deployed into a workspace.  If you were successful with the previous step, continue to the optional appendix on [Additional HDI Container Details](../ex4/README.md) or proceed with [Exercise 1 - Launch the SAP HANA Database Explorer](../../database_explorer/ex1/README.md).
+This exercise demonstrates how a project could be imported and deployed into a workspace.  If you were successful with the previous step, optionally continue to the appendix on [Additional HDI Container Details](../ex4/README.md) or proceed with [Exercise 1 - Launch the SAP HANA Database Explorer](../../database_explorer/ex1/README.md).
 
 ## Exercise 1.1 Open an Empty Workspace
 
-1. Select **File**, **Open Workspace** and browse to the **projects** folder.
+1. If an existing workspace is open, close it by selecting **File**, **Close Folder**.
 
-    An empty workspace will open.  If a previous project exists with the same name, it can be deleted.
+2. Select **File**, **Open Folder** and browse to the **projects** folder.
+
+    An empty workspace will open.  If a previous project exists with the name FlightReservation, delete it.
 
 ## Exercise 1.2 Import the FlightReservation Project
 
 1. Download the file [FlightReservation.tar](FlightReservation.tar).
+<a href="FlightReservation.tar" download="FlightReservation.tar">FlightReservation.tar</a>
 
 2. Right click on an empty space below PROJECTS, select **Import Project**, and select the previously downloaded file.
 

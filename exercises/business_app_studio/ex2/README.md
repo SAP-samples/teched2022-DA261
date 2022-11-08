@@ -1,6 +1,6 @@
 # Exercise 2 - Create and Deploy Native Database Artifacts Using Guided Development
 
-This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the guided development tool.  [Exercise 3](../ex3/README.md) is an optional exercise and walks through the process of importing a completed project.
+This exercise will demonstrate how to create a project containing tables, a calculation view, and a stored procedure using the guided development tool.  [Appendix 1](../ex3/README.md) is an optional exercise and walks through the process of importing a completed project.
 
 ## Exercise 2.1 Create a New SAP HANA Database Project from a Template
 

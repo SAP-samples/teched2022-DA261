@@ -25,7 +25,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/Welcome-screen.png)
 
-2. Click the button **Create Dev Space** and then create a development workspace that is configured with the SAP HANA Native Application development extensions.  Make sure to name this new dev space **TechEd2022** (in top left).
+2. Name this new dev space **TechEd2022**.  Select **SAP HANA Native Application Dev Space** and then click the button **Create Dev Space** to create a development workspace that is configured with the SAP HANA Native Application development extensions.  
 
     ![](images/workspace.png)
 
@@ -35,7 +35,7 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
 
     ![](images/started.png)
 
-2. The SAP Business Application Studio will open and display a Getting Started page.  It can be closed.
+2. The SAP Business Application Studio will open and display a Get Started page.  Optionally click on the **Learn More** link to learn more about the recent change to SAP Business Application Studio to make use of Visual Studio Code - Open Source (code-OSS).  The Get Started tab can be closed.
 
     ![](images/Welcome2.png)
 
