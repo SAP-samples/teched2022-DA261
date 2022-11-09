@@ -6,7 +6,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 1. If an existing workspace is open, close it by selecting **File**, **Close Folder**.
 
-2. Select **File**, **Open Folder** and browse to the **projects** folder.
+2. Select **File**, **Open Folder** and select the **projects** folder.
 
     An empty workspace will open.  If a previous project exists with the name FlightReservation, delete it.
 
@@ -18,15 +18,21 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
     ![](images/open.png)
 
+    Select **Open in New Workspace**.
+
+    ![](images/open-workspace.png)
+
 ## Exercise 1.3 Install the Required Node Modules
 
 1. Open a terminal by selecting **Terminal**, **New Terminal**.  Change directories to the location where the Node.js modules are specified, view the required Node.js modules, and then install them.
 
     ```
-    cd FlightReservation/db
+    cd db
     cat package.json
     npm install
     ```
+
+    ![](images/install-modules.png)
 
 ## Exercise 1.4 Bind to an HDI Container
 
