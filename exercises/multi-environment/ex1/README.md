@@ -1,6 +1,6 @@
 # Appendix 1 - Multi-Environment SAP HANA Cloud Tools
 
-This appendix will introduce the multi-environment tools which are available as of QRC 3 in the SAP BTP free tier and production environments but not in trial.  Until now, the tooling (SAP HANA cockpit, SAP HANA database explorer, and SAP HANA Cloud Central) have been accessing SAP HANA Cloud through Cloud Foundry.  The SAP BTP provides support for multiple environments such as Cloud Foundry and Kyma.  With the multi-environment tooling, it is no longer necessary to have a Cloud Foundry environment.  This is explained in more detail at [SAP HANA Cloud goes "multi-environment": Part 1- feature overview](https://blogs.sap.com/2022/09/21/sap-hana-cloud-goes-multi-environment-part-1-feature-overview/).  
+This appendix will introduce the multi-environment tools which are available as of QRC 3 in the SAP BTP free tier and production environments but not in trial.  Until now, the tooling (SAP HANA cockpit, SAP HANA database explorer, and SAP HANA Cloud Central) have been running in and accessing SAP HANA Cloud through Cloud Foundry.  The SAP BTP provides support for multiple environments such as Cloud Foundry and Kyma.  With the multi-environment tooling, it is no longer necessary to have a Cloud Foundry environment.  This is explained in more detail at [SAP HANA Cloud goes "multi-environment": Part 1- feature overview](https://blogs.sap.com/2022/09/21/sap-hana-cloud-goes-multi-environment-part-1-feature-overview/).  
 
 ## Exercise 1.1 Introducing and Setting up the Multi-Environment Tooling
 
@@ -51,7 +51,8 @@ This appendix will introduce the multi-environment tools which are available as 
     * The multi-environment tooling lists SAP HANA Cloud instances created with either set of the tooling
     * The previous edition of SAP HANA Cloud Central does not list the SAP HANA Cloud instances created with the multi-environment tooling
     * The multi-environment tooling does not include HDI Containers as an instance type in the Add Instance dialog
-    * The multi-environment tooling cannot delete an instance created with the previous tooling
+    * The multi-environment tooling tooling cannot create or delete SAP HANA Cloud instances in Cloud Foundry spaces
+    * To create or delete instances in a Cloud Foundry spaces, use the CF CLI or BTP Cockpit
     * The instance mapping in the multi-environment edition provides instance mapping via the action menu item Manage Configuration.  This is demonstrated in the exercise below.
 
 ## Exercise 1.2 Instance Mapping
@@ -75,7 +76,7 @@ If you are using the SAP Business Application Studio to deploy native SAP HANA a
 
     ![](images/Cloud-Foundry-Space-ID.png)
 
-    *Notice that the URL contains `org/<cloud foundry organization id>/space/<space id>`
+    *Notice that the URL contains `org/<cloud foundry organization id>/space/<space id>`*
 
 3. Create an instance mapping.  In SAP HANA Cloud Central, select the SAP HANA Cloud instance and choose **Manage Configuration**.
 

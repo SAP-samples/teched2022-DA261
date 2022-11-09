@@ -10,6 +10,10 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     It may take a moment or two for the contents of the Guided Development wizard to appear.  If it does not appear, try reloading the page.
 
+    >The search bar can be used to search for files or commands.  To search for a command preceed the search with >
+    >
+    >![](images/search-bar.png)
+
 2. Select **Get Started with SAP HANA Cloud**.
 
     ![](images/guided-development.png)
@@ -124,6 +128,10 @@ This exercise will demonstrate how to create a project containing tables, a calc
 2. Complete all the steps to create two tables, deploy them, and to open the SAP HANA database explorer to view the deployed tables.
 
     ![](images/tables-in-dbx.png)
+
+    If asked to open to an external website, select **Configure Trusted Domains** and trust the URL to the SAP HANA database explorer.
+    
+    ![](images/trusted-site.png)
 
 3. Note that the new files are again marked with a green U which means they are unstaged or new files and modified files are marked with an orange M.
 

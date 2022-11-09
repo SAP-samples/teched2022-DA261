@@ -1,5 +1,5 @@
 # Exercise 3 - Using the SQL Console
-In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL console. Please repeat the steps shown below.
+In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL console. Please follow the examples shown below.
 
 ## Exercise 3.1 Open a SQL Console
 
@@ -11,7 +11,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ```SQL
     SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
-    SELECT * FROM PUBLIC.M_CONNECTIONS WHERE CONNECTION_ID = CURRENT_CONNECTION;
+    SELECT CONNECTION_ID, START_TIME, USER_NAME, CLIENT_TYPE, CLIENT_VERSION, CLIENT_APPLICATION FROM PUBLIC.M_CONNECTIONS WHERE CONNECTION_ID = CURRENT_CONNECTION;
     ```
 
     Multiple SQL console tabs can be opened, or the instance that the SQL console is attached to can be changed if needed.

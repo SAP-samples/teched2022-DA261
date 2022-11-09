@@ -1,6 +1,6 @@
 # Exercise 1 - Launch the SAP HANA Database Explorer
 
-In addition to browsing schema objects and executing SQL, the SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.  Additional information including what's new can be found by consulting the product documentation from the help icon.
+In addition to browsing schema objects and executing SQL, the SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.  Additional information including [what's new](https://help.sap.com/whats-new/2495b34492334456a49084831c2bea4e?Category=SAP%2520HANA%2520Database%2520Explorer&locale=en-US) can be found by consulting the product documentation from the help icon.
 
 ![](images/Help.png)
 
@@ -50,9 +50,11 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
 1. Users may benefit from visual clues identifying  production instance. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. To enable this, use the SQL console to run the statements below and refresh your browser.
    
-    >To open the SQL console, right-click on the instance and select **Open SQL Console** or click on the toolbar icon in the top left after selecting a connection.  
+    >To open the SQL console, right-click on the instance and select **Open SQL Console** or click on the toolbar icon in the top left after selecting an instance.  
 
     >To execute SQL commands, click on the green run arrow.
+
+    >![](images/open-sql-console.png)
 
     ```SQL
     SELECT * FROM M_INIFILE_CONTENTS WHERE KEY = 'usage';

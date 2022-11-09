@@ -17,11 +17,11 @@
 
     ![](images/tables.png)
 
-2. Select **Views** on the **DEMO_HANA_DB** connection.  Notice that no views are shown.  A filter is applied by default to only show views created by the connected user which is DBADMIN in this case.  
+2. Select **Views** on the **DEMO_HANA_DB** instance.  Notice that no views are shown.  A filter is applied by default to only show views created by the connected user which is DBADMIN in this case.  
 
     ![](images/views-empty.png)
 
-    Press F1 to open the command palette and choose **Select Schema**.  Select the schema **_SYS_DI**.  
+    Select the filter icon to set the schema to **_SYS_DI**.  
      
     Now the views that belong to the schema _SYS_DI appear.
 

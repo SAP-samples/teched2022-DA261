@@ -14,7 +14,7 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 1. Download the file [FlightReservation.tar](https://github.com/SAP-samples/teched2022-DA261/raw/main/exercises/business_app_studio/ex3/FlightReservation.tar).
 
-2. Right click on an empty space below PROJECTS, select **Import Project**, and select the previously downloaded file.
+2. Select **File**, **Import Project** and select the previously downloaded file **FlightReservation.tar**.
 
     ![](images/open.png)
 
@@ -36,13 +36,9 @@ This exercise demonstrates how a project could be imported and deployed into a w
 
 ## Exercise 1.4 Bind to an HDI Container
 
-1. In the SAP HANA PROJECTS editor, choose to **Bind** the hdi_db.  Select **Bind to the default instance**.  This will provide details of which SAP HANA Cloud database to create an HDI container in.  These values are saved in the .env file within the project.
+1. In the **SAP HANA PROJECTS** editor, expand **Database Connections** and choose to **Bind** the hdi_db.  Select **Bind to the default instance**.  This will provide details of which SAP HANA Cloud database to create an HDI container in.  These values are saved in the .env file within the project.
 
     ![](images/bind.png)
-
-    Select **Enable & do not ask again** to enable the undeployment of artifacts.
-
-    ![](images/auto-undeploy.png)
 
 ## Exercise 1.5 Deploy the Project
 
