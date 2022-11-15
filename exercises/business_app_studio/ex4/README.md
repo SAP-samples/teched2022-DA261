@@ -26,7 +26,7 @@ Alternatively, database objects can also be created directly in the database usi
 
     ![](images/HDI-Schemas.png)
 
-    - "FLIGHTRESERVATION_HDI_DB_1 contains the runtime objects previously created such as the two tables, calculation view, and stored procedure.
+    - FLIGHTRESERVATION_HDI_DB_1 contains the runtime objects previously created such as the two tables, calculation view, and stored procedure.
 
         Right-click on **DEMO_HANA_DB** and choose **Open SQL Console**.  Execute the below SQL.
 

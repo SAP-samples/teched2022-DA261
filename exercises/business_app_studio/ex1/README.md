@@ -75,6 +75,8 @@ This exercise will demonstrate how to open the SAP Business Application Studio (
     ls
     ```
 
+2. Close the terminal.
+
 
 ## Summary
 

@@ -4,7 +4,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
 ## Exercise 2.1 Create a New SAP HANA Database Project from a Template
 
-1. In the SAP Business Application Studio, start the Guided Development tool.  To do so, open the command palette **View**, **Command Palette**, and search for **SAP HANA: Getting Started**.
+1. In the SAP Business Application Studio, start the Guided Development tool.  To do so, open the command palette  **View**, **Command Palette** (or Fn F1), and search for **SAP HANA: Getting Started**.
 
     ![](images/open-guided-dev.png)
 
@@ -28,7 +28,13 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     When asked to on the third page, provide your **Cloud Foundry API endpoint**, **email address** used for the trial account, **password**, and select **login** icon.  
     
-    >The API endpoint value can be obtained from the BTP Cockpit subaccount page.  
+    >The API endpoint value can be obtained from the BTP Cockpit subaccount page.
+
+    >---
+
+    >Ensure there is no preceding space in the copied API endpoint.
+
+    >--- 
     
     >If 2-factor authentication is enabled, provide your password followed by a 2-factor authentication code. 
 
@@ -94,7 +100,7 @@ This exercise will demonstrate how to create a project containing tables, a calc
 
     These details could also be used to connect to the HDI container from an application using one of the many SAP HANA client drivers (Java, ODBC, Node.js, Python, Go, .NET etc.) or the command line SQL tool HDBSQL.
 
-    >An example is shown below of connecting with the RT user.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown above requires an installation of the SAP HANA Client (which is not on the TechEd laptops) and is shown for illustrative purposes only.
+    >An example is shown below of connecting with the RT user.  Additional details on client connections can be found at [Use Clients to Query an SAP HANA Database](https://developers.sap.com/mission.hana-cloud-clients.html).  The example shown below  requires an installation of the SAP HANA Client (which is not on the TechEd laptops) and is shown for illustrative purposes only.
     >
     > ```SQL
     > \al
